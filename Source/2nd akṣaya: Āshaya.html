@@ -1,0 +1,889 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Bibliotheca Polyglotta</title>
+<link rel='stylesheet' type='text/css' href='css/bp.css'>
+<link rel='stylesheet' type='text/css' href='css/diac_doc.css'>
+
+<link rel='stylesheet' type='text/css' href='css/imageGallery.css'>
+<link rel='stylesheet' type='text/css' href='css/ss.css'>
+	      <link rel='stylesheet' type='text/css' href='css/tree_menu.css'>
+<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+<!--  <script type="text/javascript" src="js/jqModal.js"></script>-->
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/tree_menu.js"></script>
+<!-- <script src="js/analytics_tracking.js" type="text/javascript"></script> -->
+
+
+<!-- <script type="text/javascript" src="js/popupDivhandling.js"></script> -->
+<!--  <script type="text/javascript" src="jquery-latest.js"></script>
+<script type="text/javascript" src="js/jquery-imagegallery.js"></script>-->
+</head>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//vrtx.uio.no/js/analytics/v2/analytics.js','ga');
+
+ga('create', 'UA-86407471-1', 'auto');
+ga(function(tracker) {
+
+	// Modifies sendHitTask to hit ipproxy instead of http://www.google-analytics.com directly
+	tracker.set('sendHitTask', function(model) {
+		payload = model.get('hitPayload');
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', '//w3prod-ipproxy.uio.no/collect' +'?' + payload, true);
+		xhr.send();
+	});
+		ga('send', 'pageview');
+});
+</script>
+<body><div class='banner'></div><!-- banner --><div class='uiologo'>
+<a href='http://www.hf.uio.no/'><img src='https://www2.hf.uio.no/polyglotta/hfe.png' border='0'></a></div><!-- uiologo --><div class='clear'></div>
+<div class='smule_tittel'>
+<div class='brodsmuleboks'>You are here: <a href='/polyglotta/index.php' accesskey='1'> BP HOME</a> >  <a href='/polyglotta/index.php?page=library&amp;bid=2' accesskey='1'>TLB</a> > <a href='/polyglotta/index.php
+	?page=volume&amp;vid=1183' accesskey='1'>Akṣayamatinirdeśa</a> > fulltext</div><div class='clear'></div>
+<div class='headline'>Akṣayamatinirdeśa<div class='clear'></div></div><!-- headline -->
+</div><!-- smule_tittel -->
+<!--<div>-->
+
+<h2 class="trigger" id="tr_lang"><a  href="#">Choose languages</a></h2>
+<h2 class="trigger" id="tr_img"><a  href="#">Choose images, etc.</a></h2>
+
+
+<div id="toggle_container_lan">
+
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_lan.php" method="POST">
+
+<div style="float:left; width:auto; text-align:left; margin-left:20px;">
+<h5>Choose languages</h5>
+<ul>
+<input value="Choose all" type="button" onClick="markAll('tr')"><input value="Uncheck all" type="button" onClick="markNone('tr')">
+
+	<li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_1183[6333]" value="6333" id="lancheckbox" checked >Tibetan: Tib: Braarvig (1993)</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_1183[6334]" value="6334" id="lancheckbox" checked >Sanskrit: San rec: Braarvig (1993)</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_1183[6335]" value="6335" id="lancheckbox" checked >English: Eng:</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_1183[6336]" value="6336" id="lancheckbox" checked >Tibetan: Tib ṭīkā:</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_1183[6337]" value="6337" id="lancheckbox" checked >Chinese: Chi: T. 403, 竺法護 Zhu Fahu, Dharmarakṣa</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_1183[6338]" value="6338" id="lancheckbox" checked >Chinese: Chi: T. 397(13), 智嚴 Zhiyan & 寶雲 Baoyun</label></li><div style="clear:both"></div>
+<input type='submit' name='set_cookie' value='Save view'>
+<div style="clear:both"></div>
+
+</ul>
+<input type="hidden" name="vid" value="1183">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+</div>
+
+<div id="toggle_container_img">
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_img.php" method="POST">
+
+<div style="float:left; width:auto; text-align: left;">
+<h5>Choose display</h5>
+<ul>
+		
+	<li> 
+		<input type='checkbox' name='bilder' checked="checked" > Enable images
+	</li>
+	<li> 
+	<input type='checkbox' onclick="onOffCheckbox();" name='fotnoter' checked="checked"> Enable footnotes
+	<div id="pff" style="display:block" >
+	<ul>
+	<li><input type='radio' name='fotnote_valg'  value='show_a' checked> Show all footnotes</li>
+	<li><input type='radio' name='fotnote_valg'  value='show_h'  > Minimize footnotes</li>
+	</ul>
+	</li>
+	
+	</div>
+	<div style="float:left; width:20em; text-align: left; margin-left:120px ">
+	<div style="clear:both"></div>
+	<input type='submit' name='set_cookie' value='Save view'>
+	<div style="clear:both"></div>
+	</div>
+	
+</ul>
+<input type="hidden" name="vid" value="1183">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+	
+
+
+
+</div>
+</div>
+
+<div class='sok'><form name='Sok' id='FormBlock' action='/polyglotta/index.php' method='get'>
+<input type='hidden' name='page' value='search'>
+<input type='hidden' name='bid' value='2'>
+<input type='hidden' name='vid' value='1183'>
+<div class='sokeboks'>
+<input name='sokefelt' id='sokeboks' type='text' size='30' value=''>
+<input type='submit' name='Sok' value='Search' id='nsubmit'>
+<div class='clear'></div><a class="diacbutton" id="diacbutton" href="#">Diacritica</a><a id="diac2button" class="diac2button"  href="#">Diacritica-help</a><a class="s2button" href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation:SearchHelp">Search-help</a><div class='diacritical' id='diacritical_sign'><div style="text-align: left; ">
+<table class = 'diacritica' width="200" border="1" cellpadding="1" cellspacing="1" id="diacritical">
+    <tbody>
+        <tr>
+            <td style="text-align: center; ">ā</td>
+            <td style="text-align: center; ">ī</td>
+            <td style="text-align: center; ">ū</td>
+            <td style="text-align: center; ">ṛ</td>
+            <td style="text-align: center; ">ṝ</td>
+            <td style="text-align: center; ">ḷ</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ḹ</td>
+            <td style="text-align: center; ">&rsquo;</td>
+            <td style="text-align: center; ">ṃ</td>
+            <td style="text-align: center; ">ḥ</td>
+            <td style="text-align: center; ">ṅ</td>
+            <td style="text-align: center; ">&ntilde;</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ṭ</td>
+            <td style="text-align: center; ">ḍ</td>
+            <td style="text-align: center; ">ṇ</td>
+            <td style="text-align: center; ">ṣ</td>
+            <td style="text-align: center; ">ś</td>
+            <td style="text-align: center; ">ź</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">&scaron;</td>
+            <td style="text-align: center; ">č</td>
+            <td style="text-align: center; ">ǰ</td>
+            <td style="text-align: center; ">&gamma;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+</div></div><!-- diacritical --><div id="ex3a" class="jqmDialog"><div>
+	<span style="font-size:12px;">Note on the transliteration:</span></div>
+<div>
+	<span style="font-size:12px;">The transliteration system of the BP/TLB is based on the Unicode/UTF-8 system. However, there may be difficulties with some of the letters &ndash; particularly on PC/Windows-based systems, but not so much on the Mac. We have chosen the most accepted older and traditional systems of transliteration against, e.g, Wylie for Tibetan, since with Unicode it is possible, in Sanskrit and Tibetan, etc., to represent one sound with one letter in almost all the cases (excepting Sanskrit and Tibetan aspirated letters, and Tibetan tsa, tsha, dza). We thus do not use the Wylie system which widely employs two letters for one sound (ng, ny, sh, zh etc.).</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">Important:</span></div>
+<div>
+	<span style="font-size:12px;">We ask you in particular to note the use of the &rsquo; apostrophe and not the &#39; representing the avagrāha in Sanskrit, and most important the &rsquo;a-chuṅ in Tibetan. On the Mac the &rsquo; is Alt-M.</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">If you cannot find the letters on your key-board, you may click on the link &quot;Diacritica&quot; to access it for your search.</span></div>
+</div><!-- diacritical_doc --><div class='clear'></div><select name='searchmode'><option selected value='phrase'>Search for exact phrase</option>
+<option  value='phraseregex'>Search for exact phrase (regex)</option>
+<option  value='word'>Search for every word in one record</option>
+<option  value='free'>Search for every word fragment in one record</option>
+</select>
+<select name='context'>
+<option ($_GET[context]=="a" ? "selected" : "") value="a"> Search in all libraries</option><option selected value="bTLB">Search in TLB</option><option selected value="v1183">Search in Akṣayamatinirdeśa</option></select><div class='clear'></div><a class='sbutton' href='/polyglotta/index.php?page=asearch&amp;bid=2&amp;vid=1183'>Choose specific texts..</a><div class='clear'></div></div></form></div><!-- sok --><div class='clear'></div><!-- clear --><div id='dcr' class='divControlRead'><div class='venstrefulltekstfelt'><div class='bverknavn'><a href='/polyglotta/index.php?page=volume&amp;vid=1183'>Akṣayamatinirdeśa</a></div><table class="tlvl2">
+					<tr>
+						<td bgcolor="#ffffff"> &nbsp; &nbsp;
+						<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_7627.Verses41-58" border=0 hspace=2>
+						<a href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=1183" class="ajax_tree0">Complete text</a>
+						</td>
+					</tr>
+				  </table><input type="hidden" name="tree_top_options" id="tree_top_options" value="155078.Title|155079.I.Nidāna|155080.II.Upodghāta|155081.III.Dharmamūla|155082.1stakṣaya:Cittotpāda|155083.IV.Tatphala|155084.2ndakṣaya:Āshaya|155085.3rdakṣaya:Prayoga|155086.4thakṣaya:Adhyāshaya|155087.V.Svaparārthakriyā|155088.5thakṣaya:Dāna|155089.6thakṣaya:Śīla|155090.7thakṣaya:Kṣānti|155091.8thakṣaya:Vīrya|155092.9thakṣaya:Dhyāna|155093.10thakṣaya:Prajnyā|155094.VI.Kṛpā|155095.11thakṣaya:Maitrī|155096.12thakṣaya:Karuṇā|155097.13thakṣaya:Muditā|155098.14thakṣaya:Upekṣā|155099.VII.Pariṣkāra|155100.15thaksaya:Divyacakṣuḥ|155101.16thaksaya:Divyashrotra|155102.17thakṣaya:Paracittajnyāna|155103.18thaksaya:Pūrvanivāsānusmṛti|155104.19thaksaya:Ṛddhividhijnyāna_abhijnyā|155105.VIII.Paripākabala|155106.20th-23rdaksaya:Saṃgrahavastu|155107.IX.Nirdeshabalaprāpti|155108.24thaksaya:Arthapratisaṃvid|155109.25thaksaya:Dharmapratisaṃvid|155110.26thaksaya:Niruktipratisaṃvid|155111.27thaksaya:Pratibhānapratisaṃvid|155112.X.Tadupāyajnyāna|155113.28thakṣaya:Arthapratisaraṇa|155114.29thakṣaya:Jnyānapratisaraṇa|155115.30thakṣaya:Nītārthasūtrapratisaraṇa|155116.31thakṣaya:Dharmatāpratisaraṇa|155117.XI.Saṃbhāramārga|155118.32ndakṣaya:Puṇyasaṃbhāra|155119.33rdakṣaya:Jnyānasaṃbhāra|155120.XII.Prayogamārga|155121.34thakṣaya:Kāyasmṛtyupasthāna|155122.35thakṣaya:Vedanāsmṛtyupasthāna|155123.36thakṣaya:Cittasmṛtyupasthāna|155124.37thakṣaya:Kāyasmṛtyupasthāna|155125.38th-41stakṣaya:Catuḥsamyakprahāṇa|155126.42nd-45thakṣaya:Caturṛddhipāda|155127.45th-50thakṣaya:Panyca_indriya|155128.51st-55thakṣaya:Panycabala|155129.XIII.Darshanamārga|155130.56th-62ndakṣaya:Saptabodhyangga|155131.XIV.Bhāvanāmārga|155132.63rd-70thakṣaya:Āryāṣṭānggamārga|155133.XV.Tatprayoga|155134.71stakṣaya:Śamatha|155135.72ndakṣaya:Vipashyanā|155136.XVI.Vyākaraṇaprāpti|155137.73rdakṣaya:Dhāraṇī|155138.74thakṣaya:Pratibhāna|155139.XVII.Tatprāptivyavasthāpanā|155140.75th–78thakṣaya:Dharmoddāna|155141.XVIII.Pratyekabodhi|155142.79thakṣaya:EkāyanoMārgaḥ|155143.XIX.Dharmacakrapravartana|155144.80thakṣaya:Upāya|155145.XX.Parindanā|">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155078.Title" border=0 hspace=2><a id="href_155078.Title" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2000424&level=1&cid=880133" class="ajax_tree0">Title
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155079.I.Nidāna" border=0 hspace=2><a id="href_155079.I.Nidāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2000425&level=1&cid=880134" class="ajax_tree0">I. Nidāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155080.II.Upodghāta" border=0 hspace=2><a id="href_155080.II.Upodghāta" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2000473&level=1&cid=880140" class="ajax_tree0">II. Upodghāta
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155081.III.Dharmamūla" border=0 hspace=2><a id="href_155081.III.Dharmamūla" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2000680&level=1&cid=880200" class="ajax_tree0">III. Dharmamūla
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155082.1stakṣaya:Cittotpāda" border=0 hspace=2><a id="href_155082.1stakṣaya:Cittotpāda" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2000684&level=1&cid=880202" class="ajax_tree0">1st akṣaya: Cittotpāda
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155083.IV.Tatphala" border=0 hspace=2><a id="href_155083.IV.Tatphala" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2000749&level=1&cid=880215" class="ajax_tree0">IV. Tatphala
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155084.2ndakṣaya:Āshaya" border=0 hspace=2><a id="href_155084.2ndakṣaya:Āshaya" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2000750&level=1&cid=880216" class="ajax_tree0">2nd akṣaya: Āshaya
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155085.3rdakṣaya:Prayoga" border=0 hspace=2><a id="href_155085.3rdakṣaya:Prayoga" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2000809&level=1&cid=880227" class="ajax_tree0">3rd akṣaya: Prayoga
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155086.4thakṣaya:Adhyāshaya" border=0 hspace=2><a id="href_155086.4thakṣaya:Adhyāshaya" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2000847&level=1&cid=880248" class="ajax_tree0">4th akṣaya: Adhyāshaya
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155087.V.Svaparārthakriyā" border=0 hspace=2><a id="href_155087.V.Svaparārthakriyā" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2000891&level=1&cid=880254" class="ajax_tree0">V. Svaparārthakriyā
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155088.5thakṣaya:Dāna" border=0 hspace=2><a id="href_155088.5thakṣaya:Dāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2000892&level=1&cid=880255" class="ajax_tree0">5th akṣaya: Dāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155089.6thakṣaya:Śīla" border=0 hspace=2><a id="href_155089.6thakṣaya:Śīla" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2001023&level=1&cid=880263" class="ajax_tree0">6th akṣaya: Śīla
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155090.7thakṣaya:Kṣānti" border=0 hspace=2><a id="href_155090.7thakṣaya:Kṣānti" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2001133&level=1&cid=880274" class="ajax_tree0">7th akṣaya: Kṣānti
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155091.8thakṣaya:Vīrya" border=0 hspace=2><a id="href_155091.8thakṣaya:Vīrya" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2001240&level=1&cid=880301" class="ajax_tree0">8th akṣaya: Vīrya
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155092.9thakṣaya:Dhyāna" border=0 hspace=2><a id="href_155092.9thakṣaya:Dhyāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2001334&level=1&cid=880368" class="ajax_tree0">9th akṣaya: Dhyāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155093.10thakṣaya:Prajnyā" border=0 hspace=2><a id="href_155093.10thakṣaya:Prajnyā" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2001429&level=1&cid=880418" class="ajax_tree0">10th akṣaya: Prajnyā
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155094.VI.Kṛpā" border=0 hspace=2><a id="href_155094.VI.Kṛpā" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002006&level=1&cid=880567" class="ajax_tree0">VI. Kṛpā
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155095.11thakṣaya:Maitrī" border=0 hspace=2><a id="href_155095.11thakṣaya:Maitrī" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002007&level=1&cid=880568" class="ajax_tree0">11th akṣaya: Maitrī
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155096.12thakṣaya:Karuṇā" border=0 hspace=2><a id="href_155096.12thakṣaya:Karuṇā" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002088&level=1&cid=880594" class="ajax_tree0">12th akṣaya: Karuṇā
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155097.13thakṣaya:Muditā" border=0 hspace=2><a id="href_155097.13thakṣaya:Muditā" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002138&level=1&cid=880603" class="ajax_tree0">13th akṣaya: Muditā
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155098.14thakṣaya:Upekṣā" border=0 hspace=2><a id="href_155098.14thakṣaya:Upekṣā" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002203&level=1&cid=880609" class="ajax_tree0">14th akṣaya: Upekṣā
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155099.VII.Pariṣkāra" border=0 hspace=2><a id="href_155099.VII.Pariṣkāra" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002260&level=1&cid=880628" class="ajax_tree0">VII. Pariṣkāra
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155100.15thaksaya:Divyacakṣuḥ" border=0 hspace=2><a id="href_155100.15thaksaya:Divyacakṣuḥ" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002264&level=1&cid=880630" class="ajax_tree0">15th aksaya: Divyacakṣuḥ
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155101.16thaksaya:Divyashrotra" border=0 hspace=2><a id="href_155101.16thaksaya:Divyashrotra" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002310&level=1&cid=880640" class="ajax_tree0">16th aksaya: Divyashrotra
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155102.17thakṣaya:Paracittajnyāna" border=0 hspace=2><a id="href_155102.17thakṣaya:Paracittajnyāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002350&level=1&cid=880655" class="ajax_tree0">17th akṣaya: Paracittajnyāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155103.18thaksaya:Pūrvanivāsānusmṛti" border=0 hspace=2><a id="href_155103.18thaksaya:Pūrvanivāsānusmṛti" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002393&level=1&cid=880667" class="ajax_tree0">18th aksaya: Pūrvanivāsānusmṛti
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155104.19thaksaya:Ṛddhividhijnyāna_abhijnyā" border=0 hspace=2><a id="href_155104.19thaksaya:Ṛddhividhijnyāna_abhijnyā" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002418&level=1&cid=880675" class="ajax_tree0">19th aksaya: Ṛddhividhijnyāna_abhijnyā
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155105.VIII.Paripākabala" border=0 hspace=2><a id="href_155105.VIII.Paripākabala" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002442&level=1&cid=880686" class="ajax_tree0">VIII. Paripākabala
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155106.20th-23rdaksaya:Saṃgrahavastu" border=0 hspace=2><a id="href_155106.20th-23rdaksaya:Saṃgrahavastu" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002443&level=1&cid=880687" class="ajax_tree0">20th-23rd aksaya: Saṃgrahavastu
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155107.IX.Nirdeshabalaprāpti" border=0 hspace=2><a id="href_155107.IX.Nirdeshabalaprāpti" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002495&level=1&cid=880702" class="ajax_tree0">IX. Nirdeshabalaprāpti
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155108.24thaksaya:Arthapratisaṃvid" border=0 hspace=2><a id="href_155108.24thaksaya:Arthapratisaṃvid" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002497&level=1&cid=880704" class="ajax_tree0">24th aksaya: Arthapratisaṃvid
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155109.25thaksaya:Dharmapratisaṃvid" border=0 hspace=2><a id="href_155109.25thaksaya:Dharmapratisaṃvid" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002580&level=1&cid=880712" class="ajax_tree0">25th aksaya: Dharmapratisaṃvid
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155110.26thaksaya:Niruktipratisaṃvid" border=0 hspace=2><a id="href_155110.26thaksaya:Niruktipratisaṃvid" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002613&level=1&cid=880718" class="ajax_tree0">26th aksaya: Niruktipratisaṃvid
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155111.27thaksaya:Pratibhānapratisaṃvid" border=0 hspace=2><a id="href_155111.27thaksaya:Pratibhānapratisaṃvid" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002649&level=1&cid=880725" class="ajax_tree0">27th aksaya: Pratibhānapratisaṃvid
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155112.X.Tadupāyajnyāna" border=0 hspace=2><a id="href_155112.X.Tadupāyajnyāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002706&level=1&cid=880733" class="ajax_tree0">X. Tadupāyajnyāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155113.28thakṣaya:Arthapratisaraṇa" border=0 hspace=2><a id="href_155113.28thakṣaya:Arthapratisaraṇa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002708&level=1&cid=880735" class="ajax_tree0">28th akṣaya: Arthapratisaraṇa
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155114.29thakṣaya:Jnyānapratisaraṇa" border=0 hspace=2><a id="href_155114.29thakṣaya:Jnyānapratisaraṇa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002731&level=1&cid=880758" class="ajax_tree0">29th akṣaya: Jnyānapratisaraṇa
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155115.30thakṣaya:Nītārthasūtrapratisaraṇa" border=0 hspace=2><a id="href_155115.30thakṣaya:Nītārthasūtrapratisaraṇa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002743&level=1&cid=880767" class="ajax_tree0">30th akṣaya: Nītārthasūtrapratisaraṇa
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155116.31thakṣaya:Dharmatāpratisaraṇa" border=0 hspace=2><a id="href_155116.31thakṣaya:Dharmatāpratisaraṇa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002754&level=1&cid=880778" class="ajax_tree0">31th akṣaya: Dharmatāpratisaraṇa
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155117.XI.Saṃbhāramārga" border=0 hspace=2><a id="href_155117.XI.Saṃbhāramārga" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002794&level=1&cid=880788" class="ajax_tree0">XI. Saṃbhāramārga
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155118.32ndakṣaya:Puṇyasaṃbhāra" border=0 hspace=2><a id="href_155118.32ndakṣaya:Puṇyasaṃbhāra" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002796&level=1&cid=880790" class="ajax_tree0">32nd akṣaya: Puṇyasaṃbhāra
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155119.33rdakṣaya:Jnyānasaṃbhāra" border=0 hspace=2><a id="href_155119.33rdakṣaya:Jnyānasaṃbhāra" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002869&level=1&cid=880793" class="ajax_tree0">33rd akṣaya: Jnyānasaṃbhāra
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155120.XII.Prayogamārga" border=0 hspace=2><a id="href_155120.XII.Prayogamārga" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003017&level=1&cid=880817" class="ajax_tree0">XII. Prayogamārga
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155121.34thakṣaya:Kāyasmṛtyupasthāna" border=0 hspace=2><a id="href_155121.34thakṣaya:Kāyasmṛtyupasthāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003024&level=1&cid=880821" class="ajax_tree0">34th akṣaya: Kāyasmṛtyupasthāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155122.35thakṣaya:Vedanāsmṛtyupasthāna" border=0 hspace=2><a id="href_155122.35thakṣaya:Vedanāsmṛtyupasthāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003049&level=1&cid=880829" class="ajax_tree0">35th akṣaya: Vedanāsmṛtyupasthāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155123.36thakṣaya:Cittasmṛtyupasthāna" border=0 hspace=2><a id="href_155123.36thakṣaya:Cittasmṛtyupasthāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003092&level=1&cid=880838" class="ajax_tree0">36th akṣaya: Cittasmṛtyupasthāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155124.37thakṣaya:Kāyasmṛtyupasthāna" border=0 hspace=2><a id="href_155124.37thakṣaya:Kāyasmṛtyupasthāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003139&level=1&cid=880856" class="ajax_tree0">37th akṣaya: Kāyasmṛtyupasthāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155125.38th-41stakṣaya:Catuḥsamyakprahāṇa" border=0 hspace=2><a id="href_155125.38th-41stakṣaya:Catuḥsamyakprahāṇa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003177&level=1&cid=880873" class="ajax_tree0">38th-41st akṣaya: Catuḥsamyakprahāṇa
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155126.42nd-45thakṣaya:Caturṛddhipāda" border=0 hspace=2><a id="href_155126.42nd-45thakṣaya:Caturṛddhipāda" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003213&level=1&cid=880899" class="ajax_tree0">42nd-45th akṣaya: Caturṛddhipāda
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155127.45th-50thakṣaya:Panyca_indriya" border=0 hspace=2><a id="href_155127.45th-50thakṣaya:Panyca_indriya" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003236&level=1&cid=880909" class="ajax_tree0">45th-50th akṣaya: Panyca_indriya
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155128.51st-55thakṣaya:Panycabala" border=0 hspace=2><a id="href_155128.51st-55thakṣaya:Panycabala" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003258&level=1&cid=880928" class="ajax_tree0">51st-55th akṣaya: Panycabala
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155129.XIII.Darshanamārga" border=0 hspace=2><a id="href_155129.XIII.Darshanamārga" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003289&level=1&cid=880947" class="ajax_tree0">XIII. Darshanamārga
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155130.56th-62ndakṣaya:Saptabodhyangga" border=0 hspace=2><a id="href_155130.56th-62ndakṣaya:Saptabodhyangga" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003290&level=1&cid=880948" class="ajax_tree0">56th-62nd akṣaya: Saptabodhyangga
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155131.XIV.Bhāvanāmārga" border=0 hspace=2><a id="href_155131.XIV.Bhāvanāmārga" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003327&level=1&cid=880973" class="ajax_tree0">XIV. Bhāvanāmārga
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155132.63rd-70thakṣaya:Āryāṣṭānggamārga" border=0 hspace=2><a id="href_155132.63rd-70thakṣaya:Āryāṣṭānggamārga" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003328&level=1&cid=880974" class="ajax_tree0">63rd-70th akṣaya: Āryāṣṭānggamārga
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155133.XV.Tatprayoga" border=0 hspace=2><a id="href_155133.XV.Tatprayoga" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003387&level=1&cid=880996" class="ajax_tree0">XV. Tatprayoga
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155134.71stakṣaya:Śamatha" border=0 hspace=2><a id="href_155134.71stakṣaya:Śamatha" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003389&level=1&cid=880998" class="ajax_tree0">71st akṣaya: Śamatha
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155135.72ndakṣaya:Vipashyanā" border=0 hspace=2><a id="href_155135.72ndakṣaya:Vipashyanā" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003435&level=1&cid=881004" class="ajax_tree0">72nd akṣaya: Vipashyanā
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155136.XVI.Vyākaraṇaprāpti" border=0 hspace=2><a id="href_155136.XVI.Vyākaraṇaprāpti" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003468&level=1&cid=881011" class="ajax_tree0">XVI. Vyākaraṇaprāpti
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155137.73rdakṣaya:Dhāraṇī" border=0 hspace=2><a id="href_155137.73rdakṣaya:Dhāraṇī" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003470&level=1&cid=881013" class="ajax_tree0">73rd akṣaya: Dhāraṇī
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155138.74thakṣaya:Pratibhāna" border=0 hspace=2><a id="href_155138.74thakṣaya:Pratibhāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003479&level=1&cid=881016" class="ajax_tree0">74th akṣaya: Pratibhāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155139.XVII.Tatprāptivyavasthāpanā" border=0 hspace=2><a id="href_155139.XVII.Tatprāptivyavasthāpanā" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003506&level=1&cid=881023" class="ajax_tree0">XVII. Tatprāptivyavasthāpanā
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155140.75th–78thakṣaya:Dharmoddāna" border=0 hspace=2><a id="href_155140.75th–78thakṣaya:Dharmoddāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003507&level=1&cid=881024" class="ajax_tree0">75th – 78th akṣaya: Dharmoddāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155141.XVIII.Pratyekabodhi" border=0 hspace=2><a id="href_155141.XVIII.Pratyekabodhi" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003541&level=1&cid=881041" class="ajax_tree0">XVIII. Pratyekabodhi
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155142.79thakṣaya:EkāyanoMārgaḥ" border=0 hspace=2><a id="href_155142.79thakṣaya:EkāyanoMārgaḥ" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003542&level=1&cid=881042" class="ajax_tree0">79th akṣaya: Ekāyano Mārgaḥ
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155143.XIX.Dharmacakrapravartana" border=0 hspace=2><a id="href_155143.XIX.Dharmacakrapravartana" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003559&level=1&cid=881050" class="ajax_tree0">XIX. Dharmacakrapravartana
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155144.80thakṣaya:Upāya" border=0 hspace=2><a id="href_155144.80thakṣaya:Upāya" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003560&level=1&cid=881051" class="ajax_tree0">80th akṣaya: Upāya
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155145.XX.Parindanā" border=0 hspace=2><a id="href_155145.XX.Parindanā" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003611&level=1&cid=881058" class="ajax_tree0">XX. Parindanā
+</td></tr></table>
+<script language=javascript>test('155084.2ndakṣaya:Āshaya|')</script><div class='bverknavn'><a href='/polyglotta/index.php?page=library&amp;bid=2'>Back to library</a></div></div><!-- venstrefulltekstfelt --><div class="clear"></div><!-- clear --><div id="nav-menu"><ul>
+  		  <li  id="nav-1"><a class="tabValgt" href="/polyglotta/index.php?page=record&amp;view=record&amp;vid=1183&amp;mid=2000750&amp;level=1">Sentence by sentence view</a></li>
+  		  <li  id="nav-2"><a  href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=1183&amp;cid=880216&amp;mid=2000750&amp;level=1">Continuous text view</a></li>
+ 		<li  id="nav-3"><a  href="/polyglotta/admin/index.php?page=fulltext&amp;view=fulltext&amp;vid=1183&amp;cid=880216&amp;mid=2000750&amp;level=1">View in admin</a></li>
+
+  		  </ul></div><div class='clear'></div><!-- clear -->			<script language="javascript" type="text/javascript">
+			var kilderef = '';
+			var tekstid = 0;
+			var tekstid_bilder = 0;
+			var filsti = '';
+			var thumbnail = '';
+			</script>
+		<div class='infofulltekstfelt'><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><div class='kilderef' id='8989375'></div><div class='clear'></div><span id='8989375bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><div class='kilderef' id='8992657'></div><div class='clear'></div><span id='8992657bi' class='paragraph'>
+							2nd akṣaya: Āśaya&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><div class='kilderef' id='8995939'></div><div class='clear'></div><span id='8995939bi' class='paragraph'>
+							2nd Imperishable: Intention.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><div class='kilderef' id='8999221'></div><div class='clear'></div><span id='8999221bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><div class='kilderef' id='9002503'></div><div class='clear'></div><span id='9002503bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><div class='kilderef' id='9005785'></div><div class='clear'></div><span id='9005785bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8989376bi' class='paragraph'>
+							btsun pa sha ra dva ti’i bu, gzhan yang byang chub sems dpa’ rnams kyi bsam pa yang mi zad pa ste, de ci’i phyir zhe na?&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8992658bi' class='paragraph'>
+							punar aparam, bhadanta śāradvatīputra, bodhisattvānām āśayo ’py akṣayaḥ. tat kasya hetoḥ?&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8995940bi' class='paragraph'>
+							Further, reverend Śāradvatīputra, the bodhisattvas’ intention is also imperishable. Why?&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999222bi' class='paragraph'>
+							thams cad du ’gro ba’i byang chub sems dpa’ ni rnam pa gsum ste: nges pa dang, khur mi ’dor ba dang, khyad par du ’gro ba’o. de la nges pa ni bla na med pa yang dag par rdzogs pa’i byang chub kyi ’bras bu dang de’i rgyu lam bsgom pa la dad pa dang mos pa bstan pa gang yin pa ste; de bstan pa’i phyir <b>btsun pa sha ra dva ti’i bu gzhan yang byang chub sems dpa’ rnams kyi bsam pa yang mi zad</b> ces bya ba la sogs pa gsungs so. bsam pa dang sbyor ba dang lhag pa’i bsam pa mi zad pa gsum ni bsdus pa’i don las de’i ’bras bu zhes smos pa yin te, chos ’di gsum ni byang chub tu sems bskyed pa’i ’bras bu yin pa’i phyir ro – "The bodhisattvas who move everywhere (sarvatraga) are of three types: 1) the one established (niyata), 2) the one not putting down the burden (anikṣiptabhāra), and 3) the one who distinguishes himself (visheṣagāmin). Then, the one established&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9002504bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9005786bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8989377bi' class='paragraph'>
+							bsam pa de yang ma byas pas na, bcos ma ma yin no;&nbsp;</span><span id='8989378bi' class='paragraph'>
+						 g.yo med pas na, byas pa ma yin no;&nbsp;</span><span id='8989379bi' class='paragraph'>
+						 rab tu rtogs pas na, g.yo med pa’o;&nbsp;</span><span id='8989380bi' class='paragraph'>
+						 sgyu med pas na, rab tu rtogs pa’o;&nbsp;</span><span id='8989381bi' class='paragraph'>
+						 dag pas na, sgyu med pa’o;&nbsp;</span><span id='8989382bi' class='paragraph'>
+						 drang bas na, dag pa’o;&nbsp;</span><span id='8989383bi' class='paragraph'>
+						 gya gyu med pas na, drang ba’o;&nbsp;</span><span id='8989384bi' class='paragraph'>
+						 gsal bas na, gya gyu med pa’o;&nbsp;</span><span id='8989385bi' class='paragraph'>
+						 mi mnyam pa med pas na, gsal ba’o;&nbsp;</span><span id='8989386bi' class='paragraph'>
+						 sra bas na, mi mnyam pa med pa’o;&nbsp;</span><span id='8989387bi' class='paragraph'>
+						 mi phyed pas na, sra ba’o;&nbsp;</span><span id='8989388bi' class='paragraph'>
+						 mkhrang bas na, mi phyed pa’o; mi g.yo bas na, mkhrang ba’o;&nbsp;</span><span id='8989389bi' class='paragraph'>
+						 mi gnas pas na, mi g.yo ba’o;&nbsp;</span><span id='8989390bi' class='paragraph'>
+						 de la ma chags pas na, mi gnas pa’o;&nbsp;</span><span id='8989391bi' class='paragraph'>
+						 bye brag tu ’phags pas na, de la ma chags pa’o;&nbsp;</span><span id='8989392bi' class='paragraph'>
+						 ma smad pas na, bye brag tu ’phags pa’o;&nbsp;</span><span id='8989393bi' class='paragraph'>
+						 legs par byas pa’i las kyi phyir, ma smad pa’o;&nbsp;</span><span id='8989394bi' class='paragraph'>
+						 ma bshungs pas na, legs par byas pa’i las so;&nbsp;</span><span id='8989395bi' class='paragraph'>
+						 ’gyod pa med pas na, ma bshungs pa’o;&nbsp;</span><span id='8989396bi' class='paragraph'>
+						 gdung ba med pas na, ’gyod pa med pa’o;&nbsp;</span><span id='8989397bi' class='paragraph'>
+						 bden par gyur pas na, mi gdung ba’o;&nbsp;</span><span id='8989398bi' class='paragraph'>
+						 slu ba med pas na, bden par gyur pa’o;&nbsp;</span><span id='8989399bi' class='paragraph'>
+						 ji skad smras ba de bzhin byed pas na, mi slu ba’o;&nbsp;</span><span id='8989400bi' class='paragraph'>
+						 legs par byas pas na, ji skad smras ba de bzhin byed pa’o;&nbsp;</span><span id='8989401bi' class='paragraph'>
+						 rjes su sbyor ba med pas na, legs par byas pa’o;&nbsp;</span><span id='8989402bi' class='paragraph'>
+						 ’khrul pa med pas na, rjes su sbyor ba med pa’o;&nbsp;</span><span id='8989403bi' class='paragraph'>
+						 legs par gnas pas na, ’khrul pa med pa’o;&nbsp;</span><span id='8989404bi' class='paragraph'>
+						 phyir mi zlogs pas na, legs par gnas pa’o;&nbsp;</span><span id='8989405bi' class='paragraph'>
+						 sems can la lta bas na, phyir mi zlogs pa’o;&nbsp;</span><span id='8989406bi' class='paragraph'>
+						 snying rje chen po’i rtsa ba yin pas na, sems can la lta ba’o;&nbsp;</span><span id='8989407bi' class='paragraph'>
+						 yongs su mi skyo bas na, snying rje chen po’i rtsa ba’o;&nbsp;</span><span id='8989408bi' class='paragraph'>
+						 sems can yongs su smin par bya ba’i cho ga shes pas na, yongs su mi skyo ba’o;&nbsp;</span><span id='8989409bi' class='paragraph'>
+						 bdag la bde ba med pas na, sems can yongs su smin par bya ba’i cho ga shes pa’o;&nbsp;</span><span id='8989410bi' class='paragraph'>
+						 lan mi re bas na, bdag la bde ba med pa’o;&nbsp;</span><span id='8989411bi' class='paragraph'>
+						 zang zing med pas na, lan re ba med pa’o;&nbsp;</span><span id='8989412bi' class='paragraph'>
+						 chos la rton par gyur pas na, zang zing med pa’o;&nbsp;</span><span id='8989413bi' class='paragraph'>
+						 sems can mthu chung ba rnams la lta bas na, chos la rton par gyur pa’o;&nbsp;</span><span id='8989414bi' class='paragraph'>
+						 dpung gnyen du gyur pas na, sems can mthu chung ngu la lta ba’o;&nbsp;</span><span id='8989415bi' class='paragraph'>
+						 skyabs su gyur pas na, dpung gnyen du gyur pa’o;&nbsp;</span><span id='8989416bi' class='paragraph'>
+						 mgon du gyur pas na, skyabs su gyur pa’o; nyon mi mongs pas na, mgon du gyur pa’o;&nbsp;</span><span id='8989417bi' class='paragraph'>
+						 shin tu brtags pas na, nyon mi mongs pa’o;&nbsp;</span><span id='8989418bi' class='paragraph'>
+						 brgal ba med pas na, shin tu brtags pa’o;&nbsp;</span><span id='8989419bi' class='paragraph'>
+						 bsam pa dge bas na, brgal ba med pa’o;&nbsp;</span><span id='8989420bi' class='paragraph'>
+						 ci yang med pas na, bsam pa dge ba’o;&nbsp;</span><span id='8989421bi' class='paragraph'>
+						 shin tu yongs su dag pas na, ci yang med pa’o;&nbsp;</span><span id='8989422bi' class='paragraph'>
+						 shin tu dkar bas na, shin tu yongs su dag pa’o;&nbsp;</span><span id='8989423bi' class='paragraph'>
+						 nang dri ma med pas na, shin tu dkar ba’o;&nbsp;</span><span id='8989424bi' class='paragraph'>
+						 phyi rol dag pas na, nang dri ma med pa’o;&nbsp;</span><span id='8989425bi' class='paragraph'>
+						 rnam pa thams cad yongs su dag pas na, phyi rol dag pa’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8992659bi' class='paragraph'>
+							sa khalu punar āśayo ’kṛtrimo ’kṛtakatvāt;&nbsp;</span><span id='8992660bi' class='paragraph'>
+						 akṛtako niḥśāṭhyatvāt;&nbsp;</span><span id='8992661bi' class='paragraph'>
+						 niḥśāṭhyaḥ suviditatvāt;&nbsp;</span><span id='8992662bi' class='paragraph'>
+						 suvidito nirmāyatvāt;&nbsp;</span><span id='8992663bi' class='paragraph'>
+						 nirmāyaḥ śuddhatvāt;&nbsp;</span><span id='8992664bi' class='paragraph'>
+						 śuddha ṛjukatvāt;&nbsp;</span><span id='8992665bi' class='paragraph'>
+						 ṛjuko ’kuṭilatvāt;&nbsp;</span><span id='8992666bi' class='paragraph'>
+						 akuṭilaḥ spaṣṭatvāt;&nbsp;</span><span id='8992667bi' class='paragraph'>
+						 spaṣṭo ’viṣamatvāt;&nbsp;</span><span id='8992668bi' class='paragraph'>
+						 aviṣamaḥ sāratvāt;&nbsp;</span><span id='8992669bi' class='paragraph'>
+						 sāro ’bhedyatvāt;&nbsp;</span><span id='8992670bi' class='paragraph'>
+						 abhedyo dṛḍhatvāt; dṛḍho ’calitatvāt;&nbsp;</span><span id='8992671bi' class='paragraph'>
+						 acalito ’niśritatvāt;&nbsp;</span><span id='8992672bi' class='paragraph'>
+						 aniśrito ’tanmayatvāt;&nbsp;</span><span id='8992673bi' class='paragraph'>
+						 atanmayo viśiṣṭatvāt;&nbsp;</span><span id='8992674bi' class='paragraph'>
+						 viśiṣṭo ’ninditatvāt;&nbsp;</span><span id='8992675bi' class='paragraph'>
+						 aninditaḥ sukṛtakarmakāritayā;&nbsp;</span><span id='8992676bi' class='paragraph'>
+						 sukṛtakarmakāry aprakṣveditatvāt;&nbsp;</span><span id='8992677bi' class='paragraph'>
+						 aprakṣvedito ’kaukṛtyatvāt;&nbsp;</span><span id='8992678bi' class='paragraph'>
+						 akaukṛtyo ’tāpatvāt;&nbsp;</span><span id='8992679bi' class='paragraph'>
+						 atāpaḥ satyabhūtatvāt;&nbsp;</span><span id='8992680bi' class='paragraph'>
+						 satyabhūto ’viṣaṃvādakatvāt;&nbsp;</span><span id='8992681bi' class='paragraph'>
+						 aviṣaṃvādako yathāvāditathākāritvāt;&nbsp;</span><span id='8992682bi' class='paragraph'>
+						 yathāvāditathākārī sukṛtatvāt;&nbsp;</span><span id='8992683bi' class='paragraph'>
+						 sukṛto ’nanuyogatvāt;&nbsp;</span><span id='8992684bi' class='paragraph'>
+						 ananuyogo ’skhalitatvāt;&nbsp;</span><span id='8992685bi' class='paragraph'>
+						 askhalitaḥ susthitatvāt;&nbsp;</span><span id='8992686bi' class='paragraph'>
+						 susthito ’vinivartanīyatvāt;&nbsp;</span><span id='8992687bi' class='paragraph'>
+						 avinivartanīyaḥ sattvāvekṣatvāt;&nbsp;</span><span id='8992688bi' class='paragraph'>
+						 sattvāvekṣo mahākaruṇāmūlatvāt;&nbsp;</span><span id='8992689bi' class='paragraph'>
+						 mahākaruṇāmūlo ’parikheditatvāt;&nbsp;</span><span id='8992690bi' class='paragraph'>
+						 aparikheditaḥ sattvaparipācanavidhijñatvāt;&nbsp;</span><span id='8992691bi' class='paragraph'>
+						 sattvaparipācanavidhijño ’nātmasukhatvāt;&nbsp;</span><span id='8992692bi' class='paragraph'>
+						 anātmasukho niṣpratikāratvāt;&nbsp;</span><span id='8992693bi' class='paragraph'>
+						 niṣpratikāro nirāmiṣatvāt;&nbsp;</span><span id='8992694bi' class='paragraph'>
+						 nirāmiṣo dharmapratiśaraṇabhūtatvāt;&nbsp;</span><span id='8992695bi' class='paragraph'>
+						 dharmapratiśaraṇabhūto durbalasattvāvekṣatvāt;&nbsp;</span><span id='8992696bi' class='paragraph'>
+						 durbalasattvāvekṣas trāṇabhūtatvāt;&nbsp;</span><span id='8992697bi' class='paragraph'>
+						 trāṇabhūtaḥ śaraṇabhūtatvāt;&nbsp;</span><span id='8992698bi' class='paragraph'>
+						 śaraṇabhūtaḥ parāyaṇbhūtatvāt; parāyaṇabhūto ’kliṣṭatvāt;&nbsp;</span><span id='8992699bi' class='paragraph'>
+						 akliṣṭaḥ suparīkṣitatvāt;&nbsp;</span><span id='8992700bi' class='paragraph'>
+						 suparīkṣito ’nākṣiptatvāt;&nbsp;</span><span id='8992701bi' class='paragraph'>
+						 anākṣiptaḥ kuśalāśayatvāt;&nbsp;</span><span id='8992702bi' class='paragraph'>
+						 kuśalāśayo niṣkiṃcanatvāt;&nbsp;</span><span id='8992703bi' class='paragraph'>
+						 niṣkiṃcanaḥ supariśuddhatvāt;&nbsp;</span><span id='8992704bi' class='paragraph'>
+						 supariśuddhaḥ suśuklatvāt;&nbsp;</span><span id='8992705bi' class='paragraph'>
+						 suśuklo ’dhyātmavimalatvāt;&nbsp;</span><span id='8992706bi' class='paragraph'>
+						 adhyātmavimalo bāhyaśuddhatvāt;&nbsp;</span><span id='8992707bi' class='paragraph'>
+						 bāhyaśuddhaḥ sarvākārapariśuddhatvāt.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8995941bi' class='paragraph'>
+							[The imperishability of intention is characterized by ten properties (lakṣaṇa), 1. the property of purity (viśuddhalakṣaṇa):] That intention, then, is not artificial since it is not made up [so as to hope for retribution, having a motive, it is not done for the sake of anything else. Having no motive (ahetuka), it is the cause of imperishability in great awakening (mahābodhyakṣayatāhetu), and thus, having that essence, it should be known as imperishable];&nbsp;</span><span id='8995942bi' class='paragraph'>
+						 not made up since it is without hypocrisy [having no view to others with the intention of cheating or deceiving them];&nbsp;</span><span id='8995943bi' class='paragraph'>
+						 without hypocrisy since it is right understanding [hypocrisy and pretence arise from perverted viewpoints];&nbsp;</span><span id='8995944bi' class='paragraph'>
+						 right understanding since it is without pretence;&nbsp;</span><span id='8995945bi' class='paragraph'>
+						 without pretence since it is pure [having subdued the habits (vāsanā) of hypocrisy and pretence].&nbsp;</span><span id='8995946bi' class='paragraph'>
+						 [2. Property of penetration (praveśalakṣaṇa):] It is pure since it is straight;&nbsp;</span><span id='8995947bi' class='paragraph'>
+						 straight since it is not crooked;&nbsp;</span><span id='8995948bi' class='paragraph'>
+						 not crooked since it is clear [in meaning which is to be taught];&nbsp;</span><span id='8995949bi' class='paragraph'>
+						 clear since it is not uneven;&nbsp;</span><span id='8995950bi' class='paragraph'>
+						 not uneven since it is firm;&nbsp;</span><span id='8995951bi' class='paragraph'>
+						 [3. Property of not turning back (avivartyalakṣaṇa):] It is firm since it is not broken [by anger when hurt];&nbsp;</span><span id='8995952bi' class='paragraph'>
+						 not broken because it is stable [in practising the good of others]; stable since it is unwavering [in promise];&nbsp;</span><span id='8995953bi' class='paragraph'>
+						 unwavering since it is not dependent [on material things, or even the impermanence in the five parts of vices in the personality (kleśaskandha) ];&nbsp;</span><span id='8995954bi' class='paragraph'>
+						 not dependent since it is not attached to that;&nbsp;</span><span id='8995955bi' class='paragraph'>
+						 [4. Property of expectation (spṛhālakṣaṇa):] It is not attached [to material things, seeking joy transcending the world] since it is totally different;&nbsp;</span><span id='8995956bi' class='paragraph'>
+						 totally different since it is irreproachable;&nbsp;</span><span id='8995957bi' class='paragraph'>
+						 irreproachable since it is doing good actions;&nbsp;</span><span id='8995958bi' class='paragraph'>
+						 doing good actions since it is not blamed in secrecy [as inconsistent, entering both the way to extinction and the worldly way (saṃsāranirvāṇamārgapratipanna), sometimes practising good (kuśalacarita) and sometimes practising bad (akuśalacarita) ];&nbsp;</span><span id='8995959bi' class='paragraph'>
+						 not blamed in secrecy because it is free from remorse;&nbsp;</span><span id='8995960bi' class='paragraph'>
+						 [5. Property of unpervertedness (aviparītalakṣaṇa):] It is free from remorse since it is without distress;&nbsp;</span><span id='8995961bi' class='paragraph'>
+						 without distress since it is true,&nbsp;</span><span id='8995962bi' class='paragraph'>
+						 true since it is not breaking one’s word;&nbsp;</span><span id='8995963bi' class='paragraph'>
+						 not breaking one’s word since it is doing what has been promised;&nbsp;</span><span id='8995964bi' class='paragraph'>
+						 doing what has been promised since it is well done;&nbsp;</span><span id='8995965bi' class='paragraph'>
+						 well done since it is without reprehension [in not inducing remorse in another by saying his action is bad];&nbsp;</span><span id='8995966bi' class='paragraph'>
+						 [6. Property of not forgetting (amuṣitasmṛtilakṣaṇa):] It is without reprehension since it is unerring;&nbsp;</span><span id='8995967bi' class='paragraph'>
+						 unerring since it is steady;&nbsp;</span><span id='8995968bi' class='paragraph'>
+						 steady since it is not falling back [from the incomparable awakening];&nbsp;</span><span id='8995969bi' class='paragraph'>
+						 not falling back since it has regard for living beings [in making the good of others more important than one’s own];&nbsp;</span><span id='8995970bi' class='paragraph'>
+						 [7. Property of purity of cause (hetuviśuddhilakṣaṇa):] It is regard for living beings since it is rooted in great compassionṭ Tg ci 45b7-46a1 ::: rgyu rnam par dag pa’i mtshan ñid kyaṅ rnam pa drug ste, sñiṅ rje chen po’i rtsa ba daṅ, sbyor ba mi gtoṅ ba daṅ, sbyor ba sgrub pa daṅ, gźan la phan pa’i rgyu ma yin pa’i bde ba mi dgos pa daṅ, gźan la phan pa’i rgyus bde ba ñid du gyur pa daṅ, sems can gyi don byed pas bde ba’i don du gyur pa’o.æææ46a1-3de la <i>sñiṅ rje chen po’i rtsa ba yin pas na, sems can la lta ba’o</i> źes bya bas sñiṅ rje chen po’i rtsa ba bstan te, byaṅ chub sems dpa’i bsam pa rnam par dag pa ste, sñiṅ rje chen po’i rtsa ba daṅ rgyur gyur pa’i phyir sems can gyi don bya ba la lta ba’o. de la rnam pa gsum gyi phyir sñiṅ rje chen po źes bya ste, rgyu che ba ni bsod nams daṅ ye śes kyi tshogs dpag tu med pa bsags pa las byuṅ ba’i phyir ro; dmigs pa chen po ni stoṅ gsum gyi stoṅ chen po’i sems can thams cad la dmigs pa’i phyir ro; rgyud chen po ni sñiṅ rje chen po de ñan thos daṅ raṅ saṅs rgyas kyi sems kyi rgyud la mi ’byuṅ gi, de bźin gśegs pa daṅ byaṅ chub sems dpa’ rnams kyi rgyud la ’byuṅ ba’i phyir ro.&nbsp;</span><span id='8995971bi' class='paragraph'>
+						 rooted in great compassion since it is indefatigable;&nbsp;</span><span id='8995972bi' class='paragraph'>
+						 indefatigable since it is the knowledge of the way to bring beings to maturity;&nbsp;</span><span id='8995973bi' class='paragraph'>
+						 knowing the way to bring beings to maturity since it is not seeking self-centered pleasure;&nbsp;</span><span id='8995974bi' class='paragraph'>
+						 not seeking self-centered pleasure since it is not hoping for recompense;&nbsp;</span><span id='8995975bi' class='paragraph'>
+						 not hoping for recompense since it is unattached to material things;&nbsp;</span><span id='8995976bi' class='paragraph'>
+						 [8. Property of purity of object (ārambaṇaviśuddhilakṣaṇa):] It is unattached to material things since it is confidence in religion;&nbsp;</span><span id='8995977bi' class='paragraph'>
+						 confidence in religion since it is regard for weak living beings;&nbsp;</span><span id='8995978bi' class='paragraph'>
+						 regard for weak living beings since it is a protection;&nbsp;</span><span id='8995979bi' class='paragraph'>
+						 protection since it is a refuge;&nbsp;</span><span id='8995980bi' class='paragraph'>
+						 a refuge since it is the principal aim; and the principal aim since it is without vices;&nbsp;</span><span id='8995981bi' class='paragraph'>
+						 [9. Property of purity of mental effort (manasikāraviśuddhilakṣaṇa):] It is without vices since it has well understood [that which things are (dharmāṇāṃ tattvam) ];&nbsp;</span><span id='8995982bi' class='paragraph'>
+						 having well understood since it is beyond abuse;&nbsp;</span><span id='8995983bi' class='paragraph'>
+						 beyond abuse since it is good intention;&nbsp;</span><span id='8995984bi' class='paragraph'>
+						 good intention since it is not anything in particular;&nbsp;</span><span id='8995985bi' class='paragraph'>
+						 not anything in particuar since it is completely pure;&nbsp;</span><span id='8995986bi' class='paragraph'>
+						 [10. Property of purity of viewpoint (dṛṣṭiviśuddhilakṣaṇa):] It is completely pure since it is very white;&nbsp;</span><span id='8995987bi' class='paragraph'>
+						 very white because of inner stainlessness  [in being without the stain which is the error of imagining distinguishing marks (nimittavikalpa) of thought (citta) ];&nbsp;</span><span id='8995988bi' class='paragraph'>
+						 inner stainlessness because of outer purity, [he does not give up existence (saṃsāra) – since understanding outer moments of existence as empty (śūnya), outer moments of existence are pure];&nbsp;</span><span id='8995989bi' class='paragraph'>
+						 outer purity because of complete purity in all aspects.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999223bi' class='paragraph'>
+							bsam pa mi zad pa de yang mtshan nyid rnam par bcus bstan te, rnam par dag pa’i mtshan nyid dang, ’jug pa’i mtshan nyid dang, mi ldog pa’i mtshan nyid dang, re ba’i mtshan nyid dang, phyin ci ma log pa’i mtshan nyid dang, brjed mi ngas pa’i (Q 53b) mtshan nyid dang, rgyu’i mtshan nyid dang, dmigs pa’i rnam par dag pa’i mtshan nyid dang, yid la byed pa rnam par dag pa’i mtshan nyid dang,  lta ba rnam par dag pa’i mtshan nyid do.<br />de la rnam par dag pa’i mtshan nyid kyang rnam pa lngas bstan te, phan btags pa la mi re ba dang, gzhan du mi lta ba dang, ma rmongs pa dang, bdag dang gzhan gyi khyad mi sgrun pa dang, bag chags ’joms pa’o.<br />44a2-4: de la <b>bsam pa de yang ma byas pas na, bcos ma ma yin no</b> zhes bya bas phan btags pa la mi re ba bstan te, de la phan btags shing sbyin pa byin na slar yang bdag la phan ’dogs par byed do zhes, de’i phyir sbyin pa byed pa ni byas pa zhes bya ste. de lta bu’i bsam pas gzhan gyi bya ba mi byed pas ma byas pa’o, de’i phyir na bcos ma ma yin zhes bya ste, rgyu med ces bya ba’i don to. de ltar yongs su dag cing rgyu med pa de ni byang chub chen por zad mi shes pa’i rgyu dang rang bzhin yin pas mi zad par rig par bya’o.&nbsp;</span><span id='8999224bi' class='paragraph'>
+						 <b>g.yo med pas na, byas pa ma yin no</b> zhes bya bas gzhan du mi lta ba bstan te, <b>g.yo</b> ni sems can rnams la brid cing slu bar sems pa’o. de lta bu’i bsam pa med pas na <b>byas pa ma yin pa </b>zhes bya’o.&nbsp;</span><span id='8999225bi' class='paragraph'>
+						 <b>rab tu rtogs pas na, g.yo med pa’o</b> zhes bya bas ma rmongs pa bstan te, g.yo dang sgyu la sogs pa ni phyin ci log gi lta ba las byung gi yang dag pa’i don phyin ci ma log par rtogs pa la g.yo sgyu mi srid pa’i phyir ro.&nbsp;</span><span id='8999226bi' class='paragraph'>
+						 <b>sgyu med pas na, rab tu rtogs pa’o</b> zhes bya bas bdag dang gzhan gyi khyad mi sgrun pa bstan te, gzhan du smra zhing gzhan du sems pa ni <b>sgyu</b> ste, de ’dra ba’i bsam pa med pas na <b>rab tu rtogs pa</b> zhes bya’o.&nbsp;</span><span id='8999227bi' class='paragraph'>
+						 <b>dag pas na, sgyu med pa’o</b> zhes bya bas bag chags ’joms pa bstan te, g.yo dang sgyu’i (Q 54a) bag chags dag pas na sgyu dang bsam pa med do.<br />44a6-7:’jug pa’i mtshan nyid kyang rnam pa lnga ste, byas nas ’byung zhing ’jug pa dang, ma byas kyang ’jug pa dang, dus su ’jug pa dang, mi skyo bar ’jug pa dang, rab tu ’jug pa’o.&nbsp;</span><span id='8999228bi' class='paragraph'>
+						 de la <b>drang bas na, dag pa’o</b> zhes bya bas byas nas ’byung zhing ’jug pa bstan te, sems la g.yo sgyu med pa ni <b>drang ba</b> zhes bya ste, de bas na <b>dag pa</b>’o.&nbsp;</span><span id='8999229bi' class='paragraph'>
+						 <b>gya gyu med pas na, drang ba’o</b> zhes bya bas ma byas kyang ’jug pa bstan te, <b>gya gyu</b> ni tshig rnams rlung bskur zhing kha sgyur bar byed pa ste, de lta bu med pas na <b>drang ba</b>’o.&nbsp;</span><span id='8999230bi' class='paragraph'>
+						 <b>gsal bas na, gya gyu med pa’o</b> zhes bya bas dus su ’jug pa bstan te, brjod par bya ba’i don gsal bar ston pas <b>gya gyu med pa</b>’o.&nbsp;</span><span id='8999231bi' class='paragraph'>
+						 <b>mi mnyam pa med pas na, gsal ba’o</b> zhes bya bas mi skyo bar ’jug pa bstan te, <b>mi mnyam pa</b> ni snga phyi mi mthun zhing ’gal ba la bya ste, de med pas na <b>gsal ba</b>’o.&nbsp;</span><span id='8999232bi' class='paragraph'>
+						 <b>sra bas na mi mnyam pa med pa’o </b>zhes bya bas rab tu ’jug pa bstan te, <b>sra ba</b> ni brtan zhing snying por gyur pa la bya ste, mi mthun pa dang ’gal ba’i rkyen mi ’byung zhes bya ba’i don to.&nbsp;</span><span id='8999233bi' class='paragraph'>
+						 mi ldog pa’i mtshan nyid kyang rnam pa bzhi ste, gnod pa byas kyang ’jug pa dang, sbyor ba mi gtong ba dang, zang zing gis mi ’khol ba dang, des bde ba nyid du ma gyur pa’o.<br />44b3-4: de la <b>mi phyed pas na, sra ba’o</b> zhes bya bas gnod pa byas kyang ’jug pa bstan te, phyed pa ni gzhan gyis gnod pa byas na zhe sdang gis phyir gnod par bya bar bsams pa ste, de med pas na <b>sra ba</b>’o.&nbsp;</span><span id='8999234bi' class='paragraph'>
+						 <b>mkhrang bas na, mi phyed pa’o; mi g.yo bas na, mkhrang ba’o</b> zhes bya bas sbyor ba mi gtong ba bstan te, sems can gyi don bya ba las gzhan du mi ’gyur bas na <b>mkhrang ba</b> zhes bya ste, de bas na <b>mi phyed pa</b>’o; ji ltar khas blangs pa las ’gyur ba med pa ni <b>mi g.yo ba</b> zhes bya ste, de bas na <b>mkhrang ba</b>’o.&nbsp;</span><span id='8999235bi' class='paragraph'>
+						 <b>mi gnas pas na, mi g.yo ba’o</b> zhes bya bas zang zing gis mi ’khol ba bstan te, rnyed pa dang bkur sti la sogs pa’i zang zing la mi bsten pas <b>mi gnas pa</b> ste, zang zing la ma chags zhes bya ba’i don to; rnam par gzhan du na nyon mongs pa’i phung po lnga la mi rten pas mi rtag par mi ’gyur zhes bya ba’i don to.<br />Following the Tibetan interpretation. Alternatively "not consisting of that". tad, "that", refers to the skandhas and ānimiṣa according to ṭ. fol. 44b6-7: <b>de la ma chags pas na</b> <b>mi gnas pa’o</b> zhes bya bas des bde ba nyid du mi ’gyur ba bstan te, <b>de la</b> zhes bya ba ni phung po lnga dang zang zing de dag la ma chags pa’i phyir mi gnas pa’o zhes bya ba’i don to. Cf. Kpv. p. 1986-9, Kosha p. 2742, Bbh. p. 5415 on (a)tanmaya.&nbsp;</span><span id='8999236bi' class='paragraph'>
+						 re ba’i mtshan nyid kyang rnam pa lnga ste, de khyad zhugs pa’i bde ba thob pa dang, kha na ma tho ba med pa dang, tshul bzhin yid la byed pa’i bsam pa mngon par ’du byed pa dang, rtag pa dang, yang dag pa’i bden pa’o.&nbsp;</span><span id='8999237bi' class='paragraph'>
+						 de la <b>bye brag tu ’phags pas na, de la ma chags pa’o</b> zhes bya bas khyad zhugs pa’i bde ba thob pa bstan te, <b>bye brag tu ’phags pa</b> ni ’jig rten las ’das pa’i bde ba thob pa la bya ste, ji ltar ’jig rten las ’das pa’i bde ba thob pa’i phyir ’jig rten gyi zang zing la ma chags pa’o.&nbsp;</span><span id='8999238bi' class='paragraph'>
+						 <b>ma smad pas na, bye brag tu ’phags pa’o</b> zhes bya bas kha na ma tho ba med pa bstan te, kha na ba tho ba’i chos ni <b>smad pa</b>’o, sdig pa kha na ma tho ba’i chos ma byas pas <b>bye brag tu ’phags </b>te, ’jig rten las ’das pa’i bde ba thob bo.&nbsp;</span><span id='8999239bi' class='paragraph'>
+						 <b>legs par byas pa’i las kyi phyir, ma smad pa’o</b> zhes bya bas tshul bzhin yid la byed pa’i bsam pa mngon par ’du byed pa bstan te, lus dang, ngag dang, yid gsum gyi sgo nas mi dge ba’i las ma byas pa’i phyir <b>ma smad pa</b>’o.&nbsp;</span><span id='8999240bi' class='paragraph'>
+						 <b>ma bshungs pas na, legs par byas pa’i las so</b> zhes pas rtag pa bstan te, ’khor ba dang mya ngan las ’das pa’i lam la ’jug pa’am, ched ’ga’ dge ba spyod pa ched ’ga’ mi dge ba spyod pa ni <b>bshungs pa</b> zhes bya ste, de ltar bshungs pa’i las mi byed pas na <b>legs par byed pa</b> zhes bya’o. prakṣvedita is somewhat unclear, as notes Edg. Usually it means, also noted by Edg., to "shout"; this does not, however, seem to be the meaning here, at least not according to ṭ. Besides "sound", "noise", etc., MMW notes the meanings "curved", "crooked", "bent", "wicked", "deprived"; and bshung ba means according to Chos kyi grags pa  (bshung ba/ dma’ ’bebs smad pa la’ang gshung zhes pa’ang) "despised as degenerated" or "rebuked" from gshung ba (Jäschke: "to blame in whisper"). The last mentioned connects to the meanings of kṣviḍ- as "murmur", "growl". Does it have a connotation of "grumbling"?&nbsp;</span><span id='8999241bi' class='paragraph'>
+						 <b>’gyod pa med pas na, ma bshungs pa’o</b> zhes bya bas yang dag pa’i bden pa bstan te, <b>’gyod pa</b> de mi dge ba byas nas phyis sems la gdung ba skyes pa ste, de lta bu med pas na ma bshungs pa ste, rtag tu dge ba la gnas shes bya bar ’dod do.&nbsp;</span><span id='8999242bi' class='paragraph'>
+						 phyin ci ma log pa’i mtshan nyid kyang rnam pa lnga ste, phyin ci ma log pa nyid dang, lung gi ’byung ba dang, dam bcas pa las ’byung ba dang, dge ba dang, rigs pa dang ldan pa’o.&nbsp;</span><span id='8999243bi' class='paragraph'>
+						 <b>gdung ba med pas na ’gyod pa med pa’o</b> zhes bya bas phyin ci ma log pa nyid bstan te, <b>gdung ba</b> rtag tu sems la mi bde ba ’byung ste, de med pas na <b>’gyod pa med pa</b>’o.&nbsp;</span><span id='8999244bi' class='paragraph'>
+						 <b>bden par gyur pas na, mi gdung ba’o; slu ba med pas na, bden par gyur pa’o</b> zhes bya bas lung gi ’byung ba bstan te, byas pa don grub bo zhes sngar smras la, phyis ma byas na byas pa don med par gyur to zhes gdung ba skye’i, sngar byas pa de bzhin du phyis kyang ’grub par ’gyur te, bden pas na <b>mi gdung ba</b> yin la, sngar bsgrubs pa de bzhin du phyis kyang ’grub ste, phyis slu ba med pas na <b>bden par gyur pa’o</b>.&nbsp;</span><span id='8999245bi' class='paragraph'>
+						 <b>ji skad smras pa de bzhin du byed pas na mi slu ba’o</b> zhes bya bas dam bcas pa las ’byung ba bstan te, ji skad khas blangs shing dam bcas pa de bzhin du phyis sgrub cing byed pas <b>mi slu ba</b>’o.&nbsp;</span><span id='8999246bi' class='paragraph'>
+						 <b>legs par byas pas na, ji skad smras pa de bzhin byed pa’o</b> zhes bya bas dge ba bstan te, rtag tu dge ba ’ba’ zhig byas pas ji skad sngar khas blangs pa de bzhin du phyis kyang ’grub par ’gyur ro.&nbsp;</span><span id='8999247bi' class='paragraph'>
+						 <b>rjes su sbyar ba med pas, legs par byas pa’o</b> zhes bya bas rig pa dang ldan pa bstan te, khyod kyis ’di ltar du byas pa nyes so zhes ’gyod ’debs la <b>rjes su sbyor ba</b> zhes bya ste, de lta bu med na <b>legs par byas pa</b>’o.&nbsp;</span><span id='8999248bi' class='paragraph'>
+						 brjed mi ngas pa’i mtshan nyid kyang rnam pa bzhi ste, brjed mi ngas pa nyid dang, bag yod pa dang, dub pa med pa dang, bdag pas gzhan gyi don lhur byed pa’o.<br />45b3-4: de la <b>’khrul pa med pas na, rjes su sbyor ba med pa’o</b> zhes bya bas brjed pa mi ngas pa nyid bstan te, <b>’khrul pa</b> ni sdig pa mi dge ba’i chos spyod cing dge ba’i chos mi spyod pa’o; de lta bu med pa ni <b>rjes su sbyor ba med pa</b> ste, nyes so zhes ’gyod ’debs pa med do zhes bya ba’i don to.&nbsp;</span><span id='8999249bi' class='paragraph'>
+						 <b>legs par gnas pas na, ’khrul pa med pa’o</b> zhes bya bas bag yod pa bstan te, mi dge ba’i chos la bag byas pa’am, dge ba’i chos spyad pa las ’gyur ba med pas na <b>’khrul pa med pa</b>’o.&nbsp;</span><span id='8999250bi' class='paragraph'>
+						 <b>phyir mi zlogs pas na, legs par gnas pa’o</b> zhes bya bas dub pa med pa bstan te, sus kyang bla na med pa’i byang chub las mi zlogs shing bdag nyid kyang ldog pa med pas na <b>legs par gnas pa</b> ste, ’gyur ba med par gnas zhes bya ba’i don to.&nbsp;</span><span id='8999251bi' class='paragraph'>
+						 <b>sems can la lta bas na, phyir mi zlogs pa’o</b> zhes bya bas bdag pas gzhan gyi don lhur byed pa bstan te, sems can gyi don bya bar sems shing lta bas na bla na med pa’i byang chub las phyir mi zlogs pa’o.&nbsp;</span><span id='8999252bi' class='paragraph'>
+						 rgyu rnam par dag pa’i mtshan nyid kyang rnam pa drug ste, snying rje chen po’i rtsa ba dang, sbyor ba mi gtong ba dang, sbyor ba sgrub pa dang, gzhan la phan pa’i rgyu ma yin pa’i bde ba mi dgos pa dang, gzhan la phan pa’i rgyus bde ba nyid du gyur pa dang, sems can gyi don byed pas bde ba’i don du gyur pa’o.<br />46a1-3: de la <b>snying rje chen po’i rtsa ba yin pas na, sems can la lta ba’o</b> zhes bya bas snying rje chen po’i rtsa ba bstan te, byang chub sems dpa’i bsam pa rnam par dag pa ste, snying rje chen po’i rtsa ba dang rgyur gyur pa’i phyir sems can gyi don bya ba la lta ba’o. de la rnam pa gsum gyi phyir snying rje chen po zhes bya ste, rgyu che ba ni bsod nams dang ye shes kyi tshogs dpag tu med pa bsags pa las byung ba’i phyir ro; dmigs pa chen po ni stong gsum gyi stong chen po’i sems can thams cad la dmigs pa’i phyir ro; rgyud chen po ni snying rje chen po de nyan thos dang rang sangs rgyas kyi sems kyi rgyud la mi ’byung gi, de bzhin gshegs pa dang byang chub sems dpa’ rnams kyi rgyud la ’byung ba’i phyir ro.&nbsp;</span><span id='8999253bi' class='paragraph'>
+						 <b>yongs su mi skyo bas na, snying rje chen po’i rtsa ba’o</b> zhes bya bas sbyor ba mi gtong ba bstan te, ’khor ba dang sems can gyi don bya ba la skyo ba med pas na snying rje chen po’i rtsa bar gyur pa zhes bya’o.&nbsp;</span><span id='8999254bi' class='paragraph'>
+						 <b>sems can yongs su smin par bya ba’i cho ga shes pas na, yongs su mi skyo ba’o</b> zhes bya bas sbyor ba sgrub pa bstan te, sems can yongs su smin pa dang thar par bya ba’i thabs shes pas na cho ga shes pa ste, de bas na sems can gyi don la mi skyo ba’o.&nbsp;</span><span id='8999255bi' class='paragraph'>
+						 <b>bdag la bde ba med pas na, sems can yongs su smin par bya ba’i cho ga shes pa’o</b> zhes bya bas gzhan la phan pa’i rgyu ma yin pa’i bde ba mi dgos pa bstan te, sems can gyi don gyi phyir bdag nyid kyi lus dang srog la yang mi lta ba’o.&nbsp;</span><span id='8999256bi' class='paragraph'>
+						 <b>lan mi re bas na, bdag la bde ba med pa’o</b> zhes bya bas gzhan la phan pa’i rgyus bde ba nyid du gyur pa bstan te, phan btags pa’i lan la re ba med pas na bdag gi bde ba med pa ste, lus dang srog la mi lta ba’o.&nbsp;</span><span id='8999257bi' class='paragraph'>
+						 <b>zang zing med pas na, lan re ba med pa’o</b> zhes bya bas sems can gyi don byed pas bde ba’i don du gyur pa bstan te, khe dang bkur sti’i zang zing la ma chags pas na phan btags pa’i lan re ba med pas na bde ba med pa ste, lus dang srog la mi lta ba’o.&nbsp;</span><span id='8999258bi' class='paragraph'>
+						 dmigs pa rnam par dag pa’i mtshan nyid kyang rnam pa lnga ste, chos la so sor rton pa’i shes pa dang, nyan thos dang rang sangs rgyas dang thun mong ma yin pa dang, sdug bsngal las rnam par thar pa’i gnas su gyur pa dang, de’i gzhi gnyen po’i gnas su gyur pa dang, mu stegs can dang thun mong ma yin pa’o.<br />46b1-2: de la <b>chos la rton</b> par gyur pas na, zang zing med pa’o</b> zhes bya bas chos la so sor rton pa’i shes pa bstan te, chos don du gnyer gyi rnyed pa dang bkur sti don du mi gnyer bas na <b>zang zing med pa’o</b>.&nbsp;</span><span id='8999259bi' class='paragraph'>
+						 <b>sems can mthu chung ba rnams la lta bas na, chos la rton par gyur pa’o</b> zhes bya bas nyan thos dang rang sangs rgyas dang thun mong ma yin pa bstan te, ’khor ba’i sems can sdug bsngal ba rnams kyi don bya bar lta zhing sems pas na chos la rton par gyur pa’o.&nbsp;</span><span id='8999260bi' class='paragraph'>
+						 <b>dpung gnyen du gyur pas na, sems can mthu chung ngu la lta ba’o</b> zhes bya bas sdug bsngal las rnam par thar pa’i gnas su gyur pa bstan te, ’khor ba’i sdug bsngal las sems can thar par byed pa’i gnas su gyur pas na <b>mthu chung ngu la lta ba</b> zhes bya’o.&nbsp;</span><span id='8999261bi' class='paragraph'>
+						 <b>skyabs su gyur pas na, dpung</b> gnyen du gyur pa’o</b> zhes bya bas de’i gnyen po’i gnas su gyur pa bstan te, ’khor ba’i sdug bsngal las thar par byed pa’i gnyen po zhi gnas dang lhag mthong la bkod cing bstan pa ni <b>skyabs su gyur pa</b> zhes bya ste, de gnyis ston par byed pas na <b>dpung gnyen du gyur pa’o</b> zhes bya’o.&nbsp;</span><span id='8999262bi' class='paragraph'>
+						 <b>mgon du gyur pas na, skyabs su gyur pa’o; snyon mi rmongs pas na, mgon du gyur pa’o;</b> zhes bya bas mu stegs can dang thun mong ma yin pa bstan te, khams gsum thams cad las sems can thar par byed pa’i mgon du gyur pas na <b>skyabs su gyur pa</b> zhes bya’o; bu smad la sogs pa la chags shing byams pas mgon byed pas ni snyon rmongs pa’i mgon du gyur pa yin gyi, de las bzlog pa ni bsam pa rnam par dag pa’i mgon du gyur pa’o.&nbsp;</span><span id='8999263bi' class='paragraph'>
+						 yid la byed pa rnam par dag pa’i mtshan nyid kyang rnam pa lnga ste, de kho na nyid shin tu rtogs pa dang, so so rang gis rig pa dang, rang bzhin gyis rnam par dag pa dang, nyon mongs pa thams cad rnam par dag pa dang, kun nas dkris pa dang bag la nyal spangs pas shin tu rnam par dag pa’o.<br />46b7-47a1: de la <b>shin tu brtags pas na, snyon mi rmongs pa’o</b> zhes bya bas de kho na nyid shin tu rtogs pa bstan te, chos rnams kyi de kho na nyid shin tu rtogs pas na ’dod chags la sogs pas nyon mi mongs zhes bya ba’i don to.&nbsp;</span><span id='8999264bi' class='paragraph'>
+						 <b>brgal ba med pas na, shin tu rtogs pa’o</b> zhes bya bas so so rang gis rig pa bstan te, <b>brgal ba </b>ni mtshang ’bru zhing skyon gdags pa la bya’o; shin tu brtags pa la de lta bu mi ’byung zhing mi srid pa’i phyir ro.&nbsp;</span><span id='8999265bi' class='paragraph'>
+						 <b>bsam pa dge bas na, de brgal ba med pa’o</b> zhes bya bas rang bzhin gyis rnam par dag pa bstan te, rang bzhin gyis sems rnam par dag pa ste, skyon med pas na <b>brgal ba med pa</b> zhes bya’o.&nbsp;</span><span id='8999266bi' class='paragraph'>
+						 <b>ci yang med pas na, bsam pa dge ba’o</b> zhes bya bas nyon mongs pa thams cad rnam par dag pa bstan te, <b>ci yang</b> ces bya ba ni nyon mongs pa la bya la, de med pas na <b>bsam pa dge ba</b> zhes bya’o.&nbsp;</span><span id='8999267bi' class='paragraph'>
+						 <b>shin tu yongs su dag pas na, ci yang med pa’o</b> zhes bya bas kun nas dkris pa dang bag la nyal spangs pas shin tu rnam par dag pa bstan te, sems la nyon mongs pa kun nas dkris pa dang bag la nyal spangs te, rnam par dag pas na <b>ci yang med pa</b> zhes bya’o.&nbsp;</span><span id='8999268bi' class='paragraph'>
+						 lta ba rnam par dag pa’i mtshan nyid kyang rnam pa bzhi ste, bdag med pa gnyis shin tu rtogs pa dang, mtshan ma med pa la gnas pa dang, ’khor ba mi gtong ba dang, de gnyis ka’i nye ba’i nyon mongs pa’o.<br />47a5: de la <b>shin tu dkar bas na, shin tu yongs su dag pa’o</b> zhes bya bas bdag med pa gnyis shin tu rtogs pa bstan te, gang zag dang chos la bdag med par rtogs pas nyon mongs pa dang shes bya’i sgrib pa shin tu spangs te, <b>shin tu dkar bas na shin tu yongs su dag pa</b> zhes bya’o.&nbsp;</span><span id='8999269bi' class='paragraph'>
+						 <b>nang dri ma med pas na, shin tu dkar ba’o</b> zhes bya bas mtshan ma med pa la gnas pa bstan te, sems la mtshan mar rtog pa’i skyon gyis dri ma med pas na <b>shin tu dkar ba </b>zhes bya’o.&nbsp;</span><span id='8999270bi' class='paragraph'>
+						 <b>phyi rol dag pas na, nang dri ma med pa’o</b> zhes bya bas ’khor ba mi gtong ba bstan te, phyi’i chos rnams stong pa nyid du rtogs pas na phyi’i chos dag pa ste, de’i phyir <b>nang dag pa</b> zhes bya’o.&nbsp;</span><span id='8999271bi' class='paragraph'>
+						 <b>rnam pa thams cad yongs su dag pas, phyi rol dag pa ste</b> zhes bya bas gnyi ga’i nye ba’i nyon mongs pa bstan te, phyi nang gi nyon mongs pa’i mtshan ma thams cad rnam par dag pas na <b>phyi rol dag pa</b> zhes bya’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9002505bi' class='paragraph'>
+							.&nbsp;</span><span id='9002506bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002507bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002508bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002509bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002510bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002511bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002512bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002513bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002514bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002515bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002516bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002517bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002518bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002519bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002520bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002521bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002522bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002523bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002524bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002525bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002526bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002527bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002528bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002529bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002530bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002531bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002532bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002533bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002534bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002535bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002536bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002537bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002538bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002539bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002540bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002541bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002542bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002543bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002544bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002545bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002546bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002547bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002548bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002549bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002550bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002551bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002552bi' class='paragraph'>
+						 .&nbsp;</span><span id='9002553bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9005787bi' class='paragraph'>
+							.&nbsp;</span><span id='9005788bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005789bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005790bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005791bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005792bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005793bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005794bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005795bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005796bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005797bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005798bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005799bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005800bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005801bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005802bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005803bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005804bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005805bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005806bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005807bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005808bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005809bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005810bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005811bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005812bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005813bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005814bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005815bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005816bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005817bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005818bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005819bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005820bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005821bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005822bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005823bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005824bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005825bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005826bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005827bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005828bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005829bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005830bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005831bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005832bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005833bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005834bi' class='paragraph'>
+						 .&nbsp;</span><span id='9005835bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8989426bi' class='paragraph'>
+							btsun pa sha ra dva ti’i bu, byang chub sems dpa’ rnams kyi bsam pa de ni ser sna spang ba’i phyir blta ste, sems can ser sna can yongs su smin par byed pas bsam pa mi zad par blta’o;&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8992708bi' class='paragraph'>
+							ayam, bhadanta śāradvatīputra, bodhisattvānām āśayo mātsaryaprahāṇāya draṣṭavyaḥ, āśayo ’kṣayo draṣṭavyo mātsaryasattvaparipācanayā;&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8995990bi' class='paragraph'>
+							That intention of the bodhisattvas, reverend Śāradvatīputra, should be seen as [pure] for the sake of getting rid of envy [in one’s own continuity of thoughts (cittasaṃtana) ], but intention should be seen as imperishable through maturing envious beings [in having endless numbers of envious living beings as the object (anantamātsaryasattvālambanatvāt) ];&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999272bi' class='paragraph'>
+							<b>btsun pa sha ra dva ti’i bu</b> zhes bya ba la sogs pas yang bsam pa mi zad pa rnam grangs gzhan gyis ston te: <b>byang chub sems dpa’ rnams kyi bsam pa de ni ser sna spang ba’i phyir blta ste</b> zhes bya ba ni bdag gi sems kyi rgyud la ser sna yod pa spang bar sems pa’i phyir bsam pa rnam par dag par lta’o.<br /><b>sems can ser sna can yongs su smin par bya bar sems pa’i phyir bsam pa mi zad pa</b> zhes bya ste, sems can ser sna can mtha’ yas pa la dmigs pa’i phyir ro.<br />’chal pa’i tshul khrims la sogs pa lhag ma rnams la yang de bzhin du sbyar ro, ’chal pa’i shes rab ni mu stegs la sogs pa’i lta ba log par rtog pa la bya’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9002554bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9005836bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8989427bi' class='paragraph'>
+							bsam pa ni ’chal pa’i tshul khrims kyi dri ma spang ba’i phyir blta ste, sems can tshul khrims ’chal pa yongs su smin par byed pas bsam pa mi zad par blta’o;&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8992709bi' class='paragraph'>
+							āśayo duḥśīlamalaprahāṇāya draṣṭavyaḥ, āśayo ’kṣayo draṣṭavyo duḥśīlasattvaparipācanayā;&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8995991bi' class='paragraph'>
+							That intention should be seen as for the sake of getting rid of the stain of bad morality, but intention should be seen as imperishable through maturing beings of bad morality;&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999273bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9002555bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9005837bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8989428bi' class='paragraph'>
+							bsam pa ni gnod sems dang, tha ba dang, nyes pa spang ba’i phyir blta ste, nyes par sems pa’i sems can yongs su smin par byed pas bsam pa mi zad par blta’o;&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8992710bi' class='paragraph'>
+							āśayo vyāpādakhiladoṣaprahāṇāya draṣṭavyaḥ, āśayo ’kṣayo draṣṭavyo duṣṭacittasattvaparipācanayā;&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8995992bi' class='paragraph'>
+							That intention should be seen as for the sake of getting rid of ill-will, harshness and hatred, but intention should be seen as imperishable through maturing beings with hatred in their thoughts;&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999274bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9002556bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9005838bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8989429bi' class='paragraph'>
+							bsam pa ni le lo spang ba’i phyir blta ste, sems can le lo can yongs su smin par byed pas bsam pa mi zad par blta’o;&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8992711bi' class='paragraph'>
+							āśayo kausīdyaprahāṇāya draṣṭavyaḥ, āśayo ’kṣayo draṣṭavyo kusīdasattvaparipācanayā;&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8995993bi' class='paragraph'>
+							That intention should be seen as for the sake of getting rid of sloth, but intention should be seen as imperishable through maturing slothful beings;&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999275bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9002557bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9005839bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8989430bi' class='paragraph'>
+							bsam pa ni sems rnam par g.yeng ba gtong ba’i phyir blta ste, sems can sems rnam par g.yeng ba yongs su smin par byed pas bsam pa mi zad par blta’o;&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8992712bi' class='paragraph'>
+							āśayo vikṣiptacittaprahāṇāya draṣṭavyaḥ, āśayo ’kṣayo draṣṭavyo vikṣiptacittasattvaparipācanayā;&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8995994bi' class='paragraph'>
+							That intention should be seen as for the sake of getting rid of lack of concentration, but intention should be seen as imperishable through maturing unconcentrated beings;&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999276bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9002558bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9005840bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8989431bi' class='paragraph'>
+							bsam pa ni ’chal pa’i shes rab spang ba’i phyir blta ste, sems can shes rab ’chal pa yongs su smin par byed pas bsam pa mi zad par blta’o;&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8992713bi' class='paragraph'>
+							āśayo duṣprajñāprahāṇāya draṣṭavyaḥ, āśayo ’kṣayo draṣṭavyo duṣprajñāsattvaparipācanayā;&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8995995bi' class='paragraph'>
+							That intention should be seen as for the sake of getting rid of bad insight, but intention should be seen as imperishable through maturing beings of bad insight;&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999277bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9002559bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9005841bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8989432bi' class='paragraph'>
+							btsun pa sha ra dva ti’i bu, de ltar na bsam pa ni sems can thams cad kyi mi dge ba’i chos thams cad spang ba’i phyir blta ste; sems can thams cad dge ba’i chos la sbyor du ’dzud pas bsam pa mi zad par blta’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8992714bi' class='paragraph'>
+							evaṃ, bhadanta śāradvatīputrāśayaḥ sarvasattvānām sarvākuśaladharmaprahāṇāya draṣṭavyaḥ, āśayo ’kṣayo draṣṭavyaḥ sarvasattvānāṃ kuśaladharmaprayogāvatāraṇatayā;&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8995996bi' class='paragraph'>
+							Thus, reverend Śāradvatīputra, [to teach purity of intention (āśayaśuddhi) as contrasted with imperishability of intention (āśayākṣayatā) in short, it is said] that intention should be seen as for the sake of getting rid of all bad moments of existence of all living beings, but it should be seen as imperishable through bringing all beings to strive for the good;&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999278bi' class='paragraph'>
+							<b>btsun pa sha ra dva ti’i bu, de ltar na </b>zhes bya ba la sogs pas bsam pa rnam par dag pa dang bsam pa mi zad pa mdor bsdus nas ston te, sems can thams cad kyi sems kyi rgyud la ’dod chags la sogs pa mi dge ba’i chos yod pa thams cad spang bar sems pas na <b>bsam pa rnam par dag par lta</b> la, sems can thams cad dad pa la sogs pa’i dge ba’i chos la gzhag par sems pas na <b>bsam pa mi zad pa</b> zhes bya’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9002560bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9005842bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8989433bi' class='paragraph'>
+							btsun pa sha ra dva ti’i bu, ’di ni byang chub sems dpa’ rnams kyi bsam pa mi zad pa zhes bya’o.&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "8989375";
+							kilderef = "Akṣ Tib: Braarvig (1993)  23 - Tib: Braarvig (1993) 24";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8992715bi' class='paragraph'>
+							ayam ucyate, bhadanta śāradvatīputra, bodhisattvānām akṣaya āśayaḥ;&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "8992657";
+							kilderef = "Akṣ San rec: Braarvig (1993)  84,2 - San rec: Braarvig (1993) 92,30";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8995997bi' class='paragraph'>
+							This, reverend Śāradvatīputra, is called the bodhisattvas’ imperishable intention.&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "8995939";
+							kilderef = "Akṣ Eng:  84,2 - Eng: 92,29";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999279bi' class='paragraph'>
+							bsam pa mi zad pa bshad zin to.&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "8999221";
+							kilderef = "Akṣ Tib ṭīkā:  - Tib ṭīkā: 47b4";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9002561bi' class='paragraph'>
+							.&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "9002503";
+							kilderef = "Akṣ Chi: T. 403, 竺法護 Zhu Fahu, Dharmarakṣa  - Chi: T. 403, 竺法護 Zhu Fahu, Dharmarakṣa ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9005843bi' class='paragraph'>
+							.&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "9005785";
+							kilderef = "Akṣ Chi: T. 397(13), 智嚴 Zhiyan & 寶雲 Baoyun  - Chi: T. 397(13), 智嚴 Zhiyan & 寶雲 Baoyun ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'></div><div class='textvar' style='width:15.666666666667%;'></div><div class='textvar' style='width:15.666666666667%;'></div><div class='textvar' style='width:15.666666666667%;'></div><div class='textvar' style='width:15.666666666667%;'></div><div class='textvar' style='width:15.666666666667%;'></div></div><div class='clear'></div><div class="fontboks"><a onClick=onOffdiv('permlink') name="permlink" href="#permlink">Permanent link</a></div><div class='clear'></div><div class='perm_felt' id='permlink'>http://www2.hf.uio.no/common/apps/permlink/permlink.php?app=polyglotta&amp;context=ctext&amp;uid=606797da-189e-11e4-856a-001cc4ddf0f4</div></div></div><!-- infofelt --></div><!-- divControl --><div class="clear"></div>
+<div style="clear:both"></div><div class="signatur"><div class="signatur_left">
+		<a href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation">Go to Wiki Documentation</a></br>Enhet: <a HREF=http://www.hf.uio.no>Det humanistiske fakultet</a> &nbsp; Utviklet av: <a href="http://www.hf.uio.no/tjenester/it">IT-seksjonen ved HF</a></div><!--signatur_left -->
+		<div class="signatur_right"><a href="/polyglotta/admin/index.php">Login</a></div>
+		<div style="clear:both"></div></div>
+</body></html><SCRIPT LANGUAGE="JAVASCRIPT">
+	
+	$("#tr_IA").click(function(){
+	    if ($("#toggle_container_IA").is(':hidden'))
+	    	$("#toggle_container_IA").show();
+	    else{
+	        $("#toggle_container_IA").hide();
+	    }
+	    return false;
+		});
+
+	$("#tr_lang").click(function(){
+	    if ($("#toggle_container_lan").is(':hidden'))
+	    	$("#toggle_container_lan").show();
+	    else{
+	        $("#toggle_container_lan").hide();
+	    }
+	    return false;
+	});
+
+	$("#tr_img").click(function(){
+	    if ($("#toggle_container_img").is(':hidden'))
+	    	$("#toggle_container_img").show();
+	    else{
+	        $("#toggle_container_img").hide();
+	    }
+	    return false;
+	});
+
+	$("#diac2button").click(function(){
+	   if ($("#ex3a").is(':hidden')){
+		   $("#ex3a").show();
+	       $("#diac2button").html("Hide&#32Diacritica-help");
+	   }else{
+	       $("#ex3a").hide();
+	       $("#diac2button").html("Diacritica-help");
+	   }
+	   return false;
+	});
+
+	$("#diacbutton").click(function(){
+	   if ($("#diacritical_sign").is(':hidden')){
+		   	$("#diacritical_sign").show();
+	      	$("#diacbutton").html("Hide&#32diacritica");
+	   }else{
+	        $("#diacritical_sign").hide();
+	        $("#diacbutton").html("Diacritica");
+	   }
+	   return false;
+    });
+
+	$('#toggle_container_IA').click(function(e) {
+	   e.stopPropagation();
+	});
+
+	$('#toggle_container_lan').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#toggle_container_img').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#ex3a').click(function(e) {
+	    e.stopPropagation();
+	});
+
+	$('#diacritical_sign').click(function(e) {
+        e.stopPropagation();
+    });
+
+	//Kode for å sette inn diakritiske tegn
+	$('#diacritical > tbody > tr > td').click(function() {
+	  	//alert('red');
+		$("#sokeboks").val($("#sokeboks").val() + $(this).text());
+	});
+
+	$('.diac2button').text(($('.diacbutton').text() == 'Diacritica-help') ? 'Hide Diacritica-help' : 'Diacritica-help');
+	
+	//Lukker alle åpnede pop'uper ved klikk på siden
+	$(document).click(function() {
+		$('#toggle_container_IA').hide();
+	    
+        $('#toggle_container_lan').hide();
+    
+        $('#toggle_container_img').hide();
+   
+   		$('#diacritical_sign').hide();
+   		$("#diacbutton").html("Diacritica");
+   
+       	$('#ex3a').hide();
+       	$("#diac2button").html("Diacritica-help");
+   });
+	</SCRIPT>

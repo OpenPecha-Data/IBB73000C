@@ -1,0 +1,291 @@
+id: IBB73000C
+source: https://www2.hf.uio.no/polyglotta/index.php?page=library&bid=2
+source_file: null
+initial_creation_type: input
+imported: '2022-05-27T14:31:50.231174'
+last_modified: '2022-05-27T14:31:50.231188'
+parser: null
+source_metadata:
+  title: Akṣayamatinirdeśa
+  language: zh
+  base:
+    fF5B9:
+      title: Title
+      base_file: fF5B9.txt
+      order: 1
+    f7428:
+      title: I. Nidāna
+      base_file: f7428.txt
+      order: 2
+    fD428:
+      title: II. Upodghāta
+      base_file: fD428.txt
+      order: 3
+    f2989:
+      title: III. Dharmamūla
+      base_file: f2989.txt
+      order: 4
+    f63BA:
+      title: '1st akṣaya: Cittotpāda'
+      base_file: f63BA.txt
+      order: 5
+    fF14E:
+      title: IV. Tatphala
+      base_file: fF14E.txt
+      order: 6
+    f7434:
+      title: '2nd akṣaya: Āshaya'
+      base_file: f7434.txt
+      order: 7
+    fB138:
+      title: '3rd akṣaya: Prayoga'
+      base_file: fB138.txt
+      order: 8
+    f755D:
+      title: '4th akṣaya: Adhyāshaya'
+      base_file: f755D.txt
+      order: 9
+    f0272:
+      title: V. Svaparārthakriyā
+      base_file: f0272.txt
+      order: 10
+    f3BD2:
+      title: '5th akṣaya: Dāna'
+      base_file: f3BD2.txt
+      order: 11
+    fBE29:
+      title: '6th akṣaya: Śīla'
+      base_file: fBE29.txt
+      order: 12
+    f401B:
+      title: '7th akṣaya: Kṣānti'
+      base_file: f401B.txt
+      order: 13
+    f4938:
+      title: '8th akṣaya: Vīrya'
+      base_file: f4938.txt
+      order: 14
+    f80F7:
+      title: '9th akṣaya: Dhyāna'
+      base_file: f80F7.txt
+      order: 15
+    f63AA:
+      title: '10th akṣaya: Prajnyā'
+      base_file: f63AA.txt
+      order: 16
+    f338A:
+      title: VI. Kṛpā
+      base_file: f338A.txt
+      order: 17
+    f7A95:
+      title: '11th akṣaya: Maitrī'
+      base_file: f7A95.txt
+      order: 18
+    f1DC3:
+      title: '12th akṣaya: Karuṇā'
+      base_file: f1DC3.txt
+      order: 19
+    f6A62:
+      title: '13th akṣaya: Muditā'
+      base_file: f6A62.txt
+      order: 20
+    f2114:
+      title: '14th akṣaya: Upekṣā'
+      base_file: f2114.txt
+      order: 21
+    f45C0:
+      title: VII. Pariṣkāra
+      base_file: f45C0.txt
+      order: 22
+    f40B0:
+      title: '15th aksaya: Divyacakṣuḥ'
+      base_file: f40B0.txt
+      order: 23
+    f7924:
+      title: '16th aksaya: Divyashrotra'
+      base_file: f7924.txt
+      order: 24
+    f69AA:
+      title: '17th akṣaya: Paracittajnyāna'
+      base_file: f69AA.txt
+      order: 25
+    f97ED:
+      title: '18th aksaya: Pūrvanivāsānusmṛti'
+      base_file: f97ED.txt
+      order: 26
+    fAAFF:
+      title: '19th aksaya: Ṛddhividhijnyāna_abhijnyā'
+      base_file: fAAFF.txt
+      order: 27
+    fC00A:
+      title: VIII. Paripākabala
+      base_file: fC00A.txt
+      order: 28
+    f8F84:
+      title: '20th-23rd aksaya: Saṃgrahavastu'
+      base_file: f8F84.txt
+      order: 29
+    f804A:
+      title: IX. Nirdeshabalaprāpti
+      base_file: f804A.txt
+      order: 30
+    fEEFF:
+      title: '24th aksaya: Arthapratisaṃvid'
+      base_file: fEEFF.txt
+      order: 31
+    fD4F7:
+      title: '25th aksaya: Dharmapratisaṃvid'
+      base_file: fD4F7.txt
+      order: 32
+    f7FF3:
+      title: '26th aksaya: Niruktipratisaṃvid'
+      base_file: f7FF3.txt
+      order: 33
+    fB058:
+      title: '27th aksaya: Pratibhānapratisaṃvid'
+      base_file: fB058.txt
+      order: 34
+    f5263:
+      title: X. Tadupāyajnyāna
+      base_file: f5263.txt
+      order: 35
+    f0ABE:
+      title: '28th akṣaya: Arthapratisaraṇa'
+      base_file: f0ABE.txt
+      order: 36
+    f99D6:
+      title: '29th akṣaya: Jnyānapratisaraṇa'
+      base_file: f99D6.txt
+      order: 37
+    fCBD1:
+      title: '30th akṣaya: Nītārthasūtrapratisaraṇa'
+      base_file: fCBD1.txt
+      order: 38
+    fBBFA:
+      title: '31th akṣaya: Dharmatāpratisaraṇa'
+      base_file: fBBFA.txt
+      order: 39
+    f9EB4:
+      title: XI. Saṃbhāramārga
+      base_file: f9EB4.txt
+      order: 40
+    f4BA0:
+      title: '32nd akṣaya: Puṇyasaṃbhāra'
+      base_file: f4BA0.txt
+      order: 41
+    fDF74:
+      title: '33rd akṣaya: Jnyānasaṃbhāra'
+      base_file: fDF74.txt
+      order: 42
+    fDA09:
+      title: XII. Prayogamārga
+      base_file: fDA09.txt
+      order: 43
+    f09F2:
+      title: '34th akṣaya: Kāyasmṛtyupasthāna'
+      base_file: f09F2.txt
+      order: 44
+    f1C44:
+      title: '35th akṣaya: Vedanāsmṛtyupasthāna'
+      base_file: f1C44.txt
+      order: 45
+    f0583:
+      title: '36th akṣaya: Cittasmṛtyupasthāna'
+      base_file: f0583.txt
+      order: 46
+    fAA37:
+      title: '37th akṣaya: Kāyasmṛtyupasthāna'
+      base_file: fAA37.txt
+      order: 47
+    f4A45:
+      title: '38th-41st akṣaya: Catuḥsamyakprahāṇa'
+      base_file: f4A45.txt
+      order: 48
+    fAA16:
+      title: '42nd-45th akṣaya: Caturṛddhipāda'
+      base_file: fAA16.txt
+      order: 49
+    f82E2:
+      title: '45th-50th akṣaya: Panyca_indriya'
+      base_file: f82E2.txt
+      order: 50
+    fBB6F:
+      title: '51st-55th akṣaya: Panycabala'
+      base_file: fBB6F.txt
+      order: 51
+    fB272:
+      title: XIII. Darshanamārga
+      base_file: fB272.txt
+      order: 52
+    f3B70:
+      title: '56th-62nd akṣaya: Saptabodhyangga'
+      base_file: f3B70.txt
+      order: 53
+    f52F9:
+      title: XIV. Bhāvanāmārga
+      base_file: f52F9.txt
+      order: 54
+    f54CD:
+      title: '63rd-70th akṣaya: Āryāṣṭānggamārga'
+      base_file: f54CD.txt
+      order: 55
+    f96F6:
+      title: XV. Tatprayoga
+      base_file: f96F6.txt
+      order: 56
+    f2AA1:
+      title: '71st akṣaya: Śamatha'
+      base_file: f2AA1.txt
+      order: 57
+    f1AC3:
+      title: '72nd akṣaya: Vipashyanā'
+      base_file: f1AC3.txt
+      order: 58
+    f03C8:
+      title: XVI. Vyākaraṇaprāpti
+      base_file: f03C8.txt
+      order: 59
+    f7713:
+      title: '73rd akṣaya: Dhāraṇī'
+      base_file: f7713.txt
+      order: 60
+    f0FBF:
+      title: '74th akṣaya: Pratibhāna'
+      base_file: f0FBF.txt
+      order: 61
+    f47E4:
+      title: XVII. Tatprāptivyavasthāpanā
+      base_file: f47E4.txt
+      order: 62
+    f2D2E:
+      title: '75th – 78th akṣaya: Dharmoddāna'
+      base_file: f2D2E.txt
+      order: 63
+    f84CE:
+      title: XVIII. Pratyekabodhi
+      base_file: f84CE.txt
+      order: 64
+    fBBD8:
+      title: '79th akṣaya: Ekāyano Mārgaḥ'
+      base_file: fBBD8.txt
+      order: 65
+    fCB16:
+      title: XIX. Dharmacakrapravartana
+      base_file: fCB16.txt
+      order: 66
+    f867C:
+      title: '80th akṣaya: Upāya'
+      base_file: f867C.txt
+      order: 67
+    f5FF0:
+      title: XX. Parindanā
+      base_file: f5FF0.txt
+      order: 68
+  chapter_to_tile: {}
+statistics: {}
+quality: {}
+copyright:
+  status: Unknown
+  notice: ''
+  info_url: null
+license: null

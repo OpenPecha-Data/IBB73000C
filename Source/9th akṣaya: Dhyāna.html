@@ -1,0 +1,1105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Bibliotheca Polyglotta</title>
+<link rel='stylesheet' type='text/css' href='css/bp.css'>
+<link rel='stylesheet' type='text/css' href='css/diac_doc.css'>
+
+<link rel='stylesheet' type='text/css' href='css/imageGallery.css'>
+<link rel='stylesheet' type='text/css' href='css/ss.css'>
+	      <link rel='stylesheet' type='text/css' href='css/tree_menu.css'>
+<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+<!--  <script type="text/javascript" src="js/jqModal.js"></script>-->
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/tree_menu.js"></script>
+<!-- <script src="js/analytics_tracking.js" type="text/javascript"></script> -->
+
+
+<!-- <script type="text/javascript" src="js/popupDivhandling.js"></script> -->
+<!--  <script type="text/javascript" src="jquery-latest.js"></script>
+<script type="text/javascript" src="js/jquery-imagegallery.js"></script>-->
+</head>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//vrtx.uio.no/js/analytics/v2/analytics.js','ga');
+
+ga('create', 'UA-86407471-1', 'auto');
+ga(function(tracker) {
+
+	// Modifies sendHitTask to hit ipproxy instead of http://www.google-analytics.com directly
+	tracker.set('sendHitTask', function(model) {
+		payload = model.get('hitPayload');
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', '//w3prod-ipproxy.uio.no/collect' +'?' + payload, true);
+		xhr.send();
+	});
+		ga('send', 'pageview');
+});
+</script>
+<body><div class='banner'></div><!-- banner --><div class='uiologo'>
+<a href='http://www.hf.uio.no/'><img src='https://www2.hf.uio.no/polyglotta/hfe.png' border='0'></a></div><!-- uiologo --><div class='clear'></div>
+<div class='smule_tittel'>
+<div class='brodsmuleboks'>You are here: <a href='/polyglotta/index.php' accesskey='1'> BP HOME</a> >  <a href='/polyglotta/index.php?page=library&amp;bid=2' accesskey='1'>TLB</a> > <a href='/polyglotta/index.php
+	?page=volume&amp;vid=1183' accesskey='1'>Akṣayamatinirdeśa</a> > fulltext</div><div class='clear'></div>
+<div class='headline'>Akṣayamatinirdeśa<div class='clear'></div></div><!-- headline -->
+</div><!-- smule_tittel -->
+<!--<div>-->
+
+<h2 class="trigger" id="tr_lang"><a  href="#">Choose languages</a></h2>
+<h2 class="trigger" id="tr_img"><a  href="#">Choose images, etc.</a></h2>
+
+
+<div id="toggle_container_lan">
+
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_lan.php" method="POST">
+
+<div style="float:left; width:auto; text-align:left; margin-left:20px;">
+<h5>Choose languages</h5>
+<ul>
+<input value="Choose all" type="button" onClick="markAll('tr')"><input value="Uncheck all" type="button" onClick="markNone('tr')">
+
+	<li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_1183[6333]" value="6333" id="lancheckbox" checked >Tibetan: Tib: Braarvig (1993)</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_1183[6334]" value="6334" id="lancheckbox" checked >Sanskrit: San rec: Braarvig (1993)</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_1183[6335]" value="6335" id="lancheckbox" checked >English: Eng:</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_1183[6336]" value="6336" id="lancheckbox" checked >Tibetan: Tib ṭīkā:</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_1183[6337]" value="6337" id="lancheckbox" checked >Chinese: Chi: T. 403, 竺法護 Zhu Fahu, Dharmarakṣa</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_1183[6338]" value="6338" id="lancheckbox" checked >Chinese: Chi: T. 397(13), 智嚴 Zhiyan & 寶雲 Baoyun</label></li><div style="clear:both"></div>
+<input type='submit' name='set_cookie' value='Save view'>
+<div style="clear:both"></div>
+
+</ul>
+<input type="hidden" name="vid" value="1183">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+</div>
+
+<div id="toggle_container_img">
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_img.php" method="POST">
+
+<div style="float:left; width:auto; text-align: left;">
+<h5>Choose display</h5>
+<ul>
+		
+	<li> 
+		<input type='checkbox' name='bilder' checked="checked" > Enable images
+	</li>
+	<li> 
+	<input type='checkbox' onclick="onOffCheckbox();" name='fotnoter' checked="checked"> Enable footnotes
+	<div id="pff" style="display:block" >
+	<ul>
+	<li><input type='radio' name='fotnote_valg'  value='show_a' checked> Show all footnotes</li>
+	<li><input type='radio' name='fotnote_valg'  value='show_h'  > Minimize footnotes</li>
+	</ul>
+	</li>
+	
+	</div>
+	<div style="float:left; width:20em; text-align: left; margin-left:120px ">
+	<div style="clear:both"></div>
+	<input type='submit' name='set_cookie' value='Save view'>
+	<div style="clear:both"></div>
+	</div>
+	
+</ul>
+<input type="hidden" name="vid" value="1183">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+	
+
+
+
+</div>
+</div>
+
+<div class='sok'><form name='Sok' id='FormBlock' action='/polyglotta/index.php' method='get'>
+<input type='hidden' name='page' value='search'>
+<input type='hidden' name='bid' value='2'>
+<input type='hidden' name='vid' value='1183'>
+<div class='sokeboks'>
+<input name='sokefelt' id='sokeboks' type='text' size='30' value=''>
+<input type='submit' name='Sok' value='Search' id='nsubmit'>
+<div class='clear'></div><a class="diacbutton" id="diacbutton" href="#">Diacritica</a><a id="diac2button" class="diac2button"  href="#">Diacritica-help</a><a class="s2button" href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation:SearchHelp">Search-help</a><div class='diacritical' id='diacritical_sign'><div style="text-align: left; ">
+<table class = 'diacritica' width="200" border="1" cellpadding="1" cellspacing="1" id="diacritical">
+    <tbody>
+        <tr>
+            <td style="text-align: center; ">ā</td>
+            <td style="text-align: center; ">ī</td>
+            <td style="text-align: center; ">ū</td>
+            <td style="text-align: center; ">ṛ</td>
+            <td style="text-align: center; ">ṝ</td>
+            <td style="text-align: center; ">ḷ</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ḹ</td>
+            <td style="text-align: center; ">&rsquo;</td>
+            <td style="text-align: center; ">ṃ</td>
+            <td style="text-align: center; ">ḥ</td>
+            <td style="text-align: center; ">ṅ</td>
+            <td style="text-align: center; ">&ntilde;</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ṭ</td>
+            <td style="text-align: center; ">ḍ</td>
+            <td style="text-align: center; ">ṇ</td>
+            <td style="text-align: center; ">ṣ</td>
+            <td style="text-align: center; ">ś</td>
+            <td style="text-align: center; ">ź</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">&scaron;</td>
+            <td style="text-align: center; ">č</td>
+            <td style="text-align: center; ">ǰ</td>
+            <td style="text-align: center; ">&gamma;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+</div></div><!-- diacritical --><div id="ex3a" class="jqmDialog"><div>
+	<span style="font-size:12px;">Note on the transliteration:</span></div>
+<div>
+	<span style="font-size:12px;">The transliteration system of the BP/TLB is based on the Unicode/UTF-8 system. However, there may be difficulties with some of the letters &ndash; particularly on PC/Windows-based systems, but not so much on the Mac. We have chosen the most accepted older and traditional systems of transliteration against, e.g, Wylie for Tibetan, since with Unicode it is possible, in Sanskrit and Tibetan, etc., to represent one sound with one letter in almost all the cases (excepting Sanskrit and Tibetan aspirated letters, and Tibetan tsa, tsha, dza). We thus do not use the Wylie system which widely employs two letters for one sound (ng, ny, sh, zh etc.).</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">Important:</span></div>
+<div>
+	<span style="font-size:12px;">We ask you in particular to note the use of the &rsquo; apostrophe and not the &#39; representing the avagrāha in Sanskrit, and most important the &rsquo;a-chuṅ in Tibetan. On the Mac the &rsquo; is Alt-M.</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">If you cannot find the letters on your key-board, you may click on the link &quot;Diacritica&quot; to access it for your search.</span></div>
+</div><!-- diacritical_doc --><div class='clear'></div><select name='searchmode'><option selected value='phrase'>Search for exact phrase</option>
+<option  value='phraseregex'>Search for exact phrase (regex)</option>
+<option  value='word'>Search for every word in one record</option>
+<option  value='free'>Search for every word fragment in one record</option>
+</select>
+<select name='context'>
+<option ($_GET[context]=="a" ? "selected" : "") value="a"> Search in all libraries</option><option selected value="bTLB">Search in TLB</option><option selected value="v1183">Search in Akṣayamatinirdeśa</option></select><div class='clear'></div><a class='sbutton' href='/polyglotta/index.php?page=asearch&amp;bid=2&amp;vid=1183'>Choose specific texts..</a><div class='clear'></div></div></form></div><!-- sok --><div class='clear'></div><!-- clear --><div id='dcr' class='divControlRead'><div class='venstrefulltekstfelt'><div class='bverknavn'><a href='/polyglotta/index.php?page=volume&amp;vid=1183'>Akṣayamatinirdeśa</a></div><table class="tlvl2">
+					<tr>
+						<td bgcolor="#ffffff"> &nbsp; &nbsp;
+						<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_7627.Verses41-58" border=0 hspace=2>
+						<a href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=1183" class="ajax_tree0">Complete text</a>
+						</td>
+					</tr>
+				  </table><input type="hidden" name="tree_top_options" id="tree_top_options" value="155078.Title|155079.I.Nidāna|155080.II.Upodghāta|155081.III.Dharmamūla|155082.1stakṣaya:Cittotpāda|155083.IV.Tatphala|155084.2ndakṣaya:Āshaya|155085.3rdakṣaya:Prayoga|155086.4thakṣaya:Adhyāshaya|155087.V.Svaparārthakriyā|155088.5thakṣaya:Dāna|155089.6thakṣaya:Śīla|155090.7thakṣaya:Kṣānti|155091.8thakṣaya:Vīrya|155092.9thakṣaya:Dhyāna|155093.10thakṣaya:Prajnyā|155094.VI.Kṛpā|155095.11thakṣaya:Maitrī|155096.12thakṣaya:Karuṇā|155097.13thakṣaya:Muditā|155098.14thakṣaya:Upekṣā|155099.VII.Pariṣkāra|155100.15thaksaya:Divyacakṣuḥ|155101.16thaksaya:Divyashrotra|155102.17thakṣaya:Paracittajnyāna|155103.18thaksaya:Pūrvanivāsānusmṛti|155104.19thaksaya:Ṛddhividhijnyāna_abhijnyā|155105.VIII.Paripākabala|155106.20th-23rdaksaya:Saṃgrahavastu|155107.IX.Nirdeshabalaprāpti|155108.24thaksaya:Arthapratisaṃvid|155109.25thaksaya:Dharmapratisaṃvid|155110.26thaksaya:Niruktipratisaṃvid|155111.27thaksaya:Pratibhānapratisaṃvid|155112.X.Tadupāyajnyāna|155113.28thakṣaya:Arthapratisaraṇa|155114.29thakṣaya:Jnyānapratisaraṇa|155115.30thakṣaya:Nītārthasūtrapratisaraṇa|155116.31thakṣaya:Dharmatāpratisaraṇa|155117.XI.Saṃbhāramārga|155118.32ndakṣaya:Puṇyasaṃbhāra|155119.33rdakṣaya:Jnyānasaṃbhāra|155120.XII.Prayogamārga|155121.34thakṣaya:Kāyasmṛtyupasthāna|155122.35thakṣaya:Vedanāsmṛtyupasthāna|155123.36thakṣaya:Cittasmṛtyupasthāna|155124.37thakṣaya:Kāyasmṛtyupasthāna|155125.38th-41stakṣaya:Catuḥsamyakprahāṇa|155126.42nd-45thakṣaya:Caturṛddhipāda|155127.45th-50thakṣaya:Panyca_indriya|155128.51st-55thakṣaya:Panycabala|155129.XIII.Darshanamārga|155130.56th-62ndakṣaya:Saptabodhyangga|155131.XIV.Bhāvanāmārga|155132.63rd-70thakṣaya:Āryāṣṭānggamārga|155133.XV.Tatprayoga|155134.71stakṣaya:Śamatha|155135.72ndakṣaya:Vipashyanā|155136.XVI.Vyākaraṇaprāpti|155137.73rdakṣaya:Dhāraṇī|155138.74thakṣaya:Pratibhāna|155139.XVII.Tatprāptivyavasthāpanā|155140.75th–78thakṣaya:Dharmoddāna|155141.XVIII.Pratyekabodhi|155142.79thakṣaya:EkāyanoMārgaḥ|155143.XIX.Dharmacakrapravartana|155144.80thakṣaya:Upāya|155145.XX.Parindanā|">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155078.Title" border=0 hspace=2><a id="href_155078.Title" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2000424&level=1&cid=880133" class="ajax_tree0">Title
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155079.I.Nidāna" border=0 hspace=2><a id="href_155079.I.Nidāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2000425&level=1&cid=880134" class="ajax_tree0">I. Nidāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155080.II.Upodghāta" border=0 hspace=2><a id="href_155080.II.Upodghāta" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2000473&level=1&cid=880140" class="ajax_tree0">II. Upodghāta
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155081.III.Dharmamūla" border=0 hspace=2><a id="href_155081.III.Dharmamūla" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2000680&level=1&cid=880200" class="ajax_tree0">III. Dharmamūla
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155082.1stakṣaya:Cittotpāda" border=0 hspace=2><a id="href_155082.1stakṣaya:Cittotpāda" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2000684&level=1&cid=880202" class="ajax_tree0">1st akṣaya: Cittotpāda
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155083.IV.Tatphala" border=0 hspace=2><a id="href_155083.IV.Tatphala" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2000749&level=1&cid=880215" class="ajax_tree0">IV. Tatphala
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155084.2ndakṣaya:Āshaya" border=0 hspace=2><a id="href_155084.2ndakṣaya:Āshaya" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2000750&level=1&cid=880216" class="ajax_tree0">2nd akṣaya: Āshaya
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155085.3rdakṣaya:Prayoga" border=0 hspace=2><a id="href_155085.3rdakṣaya:Prayoga" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2000809&level=1&cid=880227" class="ajax_tree0">3rd akṣaya: Prayoga
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155086.4thakṣaya:Adhyāshaya" border=0 hspace=2><a id="href_155086.4thakṣaya:Adhyāshaya" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2000847&level=1&cid=880248" class="ajax_tree0">4th akṣaya: Adhyāshaya
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155087.V.Svaparārthakriyā" border=0 hspace=2><a id="href_155087.V.Svaparārthakriyā" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2000891&level=1&cid=880254" class="ajax_tree0">V. Svaparārthakriyā
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155088.5thakṣaya:Dāna" border=0 hspace=2><a id="href_155088.5thakṣaya:Dāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2000892&level=1&cid=880255" class="ajax_tree0">5th akṣaya: Dāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155089.6thakṣaya:Śīla" border=0 hspace=2><a id="href_155089.6thakṣaya:Śīla" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2001023&level=1&cid=880263" class="ajax_tree0">6th akṣaya: Śīla
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155090.7thakṣaya:Kṣānti" border=0 hspace=2><a id="href_155090.7thakṣaya:Kṣānti" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2001133&level=1&cid=880274" class="ajax_tree0">7th akṣaya: Kṣānti
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155091.8thakṣaya:Vīrya" border=0 hspace=2><a id="href_155091.8thakṣaya:Vīrya" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2001240&level=1&cid=880301" class="ajax_tree0">8th akṣaya: Vīrya
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155092.9thakṣaya:Dhyāna" border=0 hspace=2><a id="href_155092.9thakṣaya:Dhyāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2001334&level=1&cid=880368" class="ajax_tree0">9th akṣaya: Dhyāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155093.10thakṣaya:Prajnyā" border=0 hspace=2><a id="href_155093.10thakṣaya:Prajnyā" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2001429&level=1&cid=880418" class="ajax_tree0">10th akṣaya: Prajnyā
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155094.VI.Kṛpā" border=0 hspace=2><a id="href_155094.VI.Kṛpā" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002006&level=1&cid=880567" class="ajax_tree0">VI. Kṛpā
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155095.11thakṣaya:Maitrī" border=0 hspace=2><a id="href_155095.11thakṣaya:Maitrī" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002007&level=1&cid=880568" class="ajax_tree0">11th akṣaya: Maitrī
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155096.12thakṣaya:Karuṇā" border=0 hspace=2><a id="href_155096.12thakṣaya:Karuṇā" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002088&level=1&cid=880594" class="ajax_tree0">12th akṣaya: Karuṇā
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155097.13thakṣaya:Muditā" border=0 hspace=2><a id="href_155097.13thakṣaya:Muditā" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002138&level=1&cid=880603" class="ajax_tree0">13th akṣaya: Muditā
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155098.14thakṣaya:Upekṣā" border=0 hspace=2><a id="href_155098.14thakṣaya:Upekṣā" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002203&level=1&cid=880609" class="ajax_tree0">14th akṣaya: Upekṣā
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155099.VII.Pariṣkāra" border=0 hspace=2><a id="href_155099.VII.Pariṣkāra" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002260&level=1&cid=880628" class="ajax_tree0">VII. Pariṣkāra
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155100.15thaksaya:Divyacakṣuḥ" border=0 hspace=2><a id="href_155100.15thaksaya:Divyacakṣuḥ" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002264&level=1&cid=880630" class="ajax_tree0">15th aksaya: Divyacakṣuḥ
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155101.16thaksaya:Divyashrotra" border=0 hspace=2><a id="href_155101.16thaksaya:Divyashrotra" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002310&level=1&cid=880640" class="ajax_tree0">16th aksaya: Divyashrotra
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155102.17thakṣaya:Paracittajnyāna" border=0 hspace=2><a id="href_155102.17thakṣaya:Paracittajnyāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002350&level=1&cid=880655" class="ajax_tree0">17th akṣaya: Paracittajnyāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155103.18thaksaya:Pūrvanivāsānusmṛti" border=0 hspace=2><a id="href_155103.18thaksaya:Pūrvanivāsānusmṛti" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002393&level=1&cid=880667" class="ajax_tree0">18th aksaya: Pūrvanivāsānusmṛti
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155104.19thaksaya:Ṛddhividhijnyāna_abhijnyā" border=0 hspace=2><a id="href_155104.19thaksaya:Ṛddhividhijnyāna_abhijnyā" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002418&level=1&cid=880675" class="ajax_tree0">19th aksaya: Ṛddhividhijnyāna_abhijnyā
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155105.VIII.Paripākabala" border=0 hspace=2><a id="href_155105.VIII.Paripākabala" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002442&level=1&cid=880686" class="ajax_tree0">VIII. Paripākabala
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155106.20th-23rdaksaya:Saṃgrahavastu" border=0 hspace=2><a id="href_155106.20th-23rdaksaya:Saṃgrahavastu" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002443&level=1&cid=880687" class="ajax_tree0">20th-23rd aksaya: Saṃgrahavastu
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155107.IX.Nirdeshabalaprāpti" border=0 hspace=2><a id="href_155107.IX.Nirdeshabalaprāpti" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002495&level=1&cid=880702" class="ajax_tree0">IX. Nirdeshabalaprāpti
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155108.24thaksaya:Arthapratisaṃvid" border=0 hspace=2><a id="href_155108.24thaksaya:Arthapratisaṃvid" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002497&level=1&cid=880704" class="ajax_tree0">24th aksaya: Arthapratisaṃvid
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155109.25thaksaya:Dharmapratisaṃvid" border=0 hspace=2><a id="href_155109.25thaksaya:Dharmapratisaṃvid" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002580&level=1&cid=880712" class="ajax_tree0">25th aksaya: Dharmapratisaṃvid
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155110.26thaksaya:Niruktipratisaṃvid" border=0 hspace=2><a id="href_155110.26thaksaya:Niruktipratisaṃvid" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002613&level=1&cid=880718" class="ajax_tree0">26th aksaya: Niruktipratisaṃvid
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155111.27thaksaya:Pratibhānapratisaṃvid" border=0 hspace=2><a id="href_155111.27thaksaya:Pratibhānapratisaṃvid" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002649&level=1&cid=880725" class="ajax_tree0">27th aksaya: Pratibhānapratisaṃvid
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155112.X.Tadupāyajnyāna" border=0 hspace=2><a id="href_155112.X.Tadupāyajnyāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002706&level=1&cid=880733" class="ajax_tree0">X. Tadupāyajnyāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155113.28thakṣaya:Arthapratisaraṇa" border=0 hspace=2><a id="href_155113.28thakṣaya:Arthapratisaraṇa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002708&level=1&cid=880735" class="ajax_tree0">28th akṣaya: Arthapratisaraṇa
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155114.29thakṣaya:Jnyānapratisaraṇa" border=0 hspace=2><a id="href_155114.29thakṣaya:Jnyānapratisaraṇa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002731&level=1&cid=880758" class="ajax_tree0">29th akṣaya: Jnyānapratisaraṇa
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155115.30thakṣaya:Nītārthasūtrapratisaraṇa" border=0 hspace=2><a id="href_155115.30thakṣaya:Nītārthasūtrapratisaraṇa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002743&level=1&cid=880767" class="ajax_tree0">30th akṣaya: Nītārthasūtrapratisaraṇa
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155116.31thakṣaya:Dharmatāpratisaraṇa" border=0 hspace=2><a id="href_155116.31thakṣaya:Dharmatāpratisaraṇa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002754&level=1&cid=880778" class="ajax_tree0">31th akṣaya: Dharmatāpratisaraṇa
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155117.XI.Saṃbhāramārga" border=0 hspace=2><a id="href_155117.XI.Saṃbhāramārga" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002794&level=1&cid=880788" class="ajax_tree0">XI. Saṃbhāramārga
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155118.32ndakṣaya:Puṇyasaṃbhāra" border=0 hspace=2><a id="href_155118.32ndakṣaya:Puṇyasaṃbhāra" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002796&level=1&cid=880790" class="ajax_tree0">32nd akṣaya: Puṇyasaṃbhāra
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155119.33rdakṣaya:Jnyānasaṃbhāra" border=0 hspace=2><a id="href_155119.33rdakṣaya:Jnyānasaṃbhāra" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2002869&level=1&cid=880793" class="ajax_tree0">33rd akṣaya: Jnyānasaṃbhāra
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155120.XII.Prayogamārga" border=0 hspace=2><a id="href_155120.XII.Prayogamārga" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003017&level=1&cid=880817" class="ajax_tree0">XII. Prayogamārga
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155121.34thakṣaya:Kāyasmṛtyupasthāna" border=0 hspace=2><a id="href_155121.34thakṣaya:Kāyasmṛtyupasthāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003024&level=1&cid=880821" class="ajax_tree0">34th akṣaya: Kāyasmṛtyupasthāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155122.35thakṣaya:Vedanāsmṛtyupasthāna" border=0 hspace=2><a id="href_155122.35thakṣaya:Vedanāsmṛtyupasthāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003049&level=1&cid=880829" class="ajax_tree0">35th akṣaya: Vedanāsmṛtyupasthāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155123.36thakṣaya:Cittasmṛtyupasthāna" border=0 hspace=2><a id="href_155123.36thakṣaya:Cittasmṛtyupasthāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003092&level=1&cid=880838" class="ajax_tree0">36th akṣaya: Cittasmṛtyupasthāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155124.37thakṣaya:Kāyasmṛtyupasthāna" border=0 hspace=2><a id="href_155124.37thakṣaya:Kāyasmṛtyupasthāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003139&level=1&cid=880856" class="ajax_tree0">37th akṣaya: Kāyasmṛtyupasthāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155125.38th-41stakṣaya:Catuḥsamyakprahāṇa" border=0 hspace=2><a id="href_155125.38th-41stakṣaya:Catuḥsamyakprahāṇa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003177&level=1&cid=880873" class="ajax_tree0">38th-41st akṣaya: Catuḥsamyakprahāṇa
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155126.42nd-45thakṣaya:Caturṛddhipāda" border=0 hspace=2><a id="href_155126.42nd-45thakṣaya:Caturṛddhipāda" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003213&level=1&cid=880899" class="ajax_tree0">42nd-45th akṣaya: Caturṛddhipāda
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155127.45th-50thakṣaya:Panyca_indriya" border=0 hspace=2><a id="href_155127.45th-50thakṣaya:Panyca_indriya" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003236&level=1&cid=880909" class="ajax_tree0">45th-50th akṣaya: Panyca_indriya
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155128.51st-55thakṣaya:Panycabala" border=0 hspace=2><a id="href_155128.51st-55thakṣaya:Panycabala" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003258&level=1&cid=880928" class="ajax_tree0">51st-55th akṣaya: Panycabala
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155129.XIII.Darshanamārga" border=0 hspace=2><a id="href_155129.XIII.Darshanamārga" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003289&level=1&cid=880947" class="ajax_tree0">XIII. Darshanamārga
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155130.56th-62ndakṣaya:Saptabodhyangga" border=0 hspace=2><a id="href_155130.56th-62ndakṣaya:Saptabodhyangga" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003290&level=1&cid=880948" class="ajax_tree0">56th-62nd akṣaya: Saptabodhyangga
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155131.XIV.Bhāvanāmārga" border=0 hspace=2><a id="href_155131.XIV.Bhāvanāmārga" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003327&level=1&cid=880973" class="ajax_tree0">XIV. Bhāvanāmārga
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155132.63rd-70thakṣaya:Āryāṣṭānggamārga" border=0 hspace=2><a id="href_155132.63rd-70thakṣaya:Āryāṣṭānggamārga" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003328&level=1&cid=880974" class="ajax_tree0">63rd-70th akṣaya: Āryāṣṭānggamārga
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155133.XV.Tatprayoga" border=0 hspace=2><a id="href_155133.XV.Tatprayoga" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003387&level=1&cid=880996" class="ajax_tree0">XV. Tatprayoga
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155134.71stakṣaya:Śamatha" border=0 hspace=2><a id="href_155134.71stakṣaya:Śamatha" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003389&level=1&cid=880998" class="ajax_tree0">71st akṣaya: Śamatha
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155135.72ndakṣaya:Vipashyanā" border=0 hspace=2><a id="href_155135.72ndakṣaya:Vipashyanā" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003435&level=1&cid=881004" class="ajax_tree0">72nd akṣaya: Vipashyanā
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155136.XVI.Vyākaraṇaprāpti" border=0 hspace=2><a id="href_155136.XVI.Vyākaraṇaprāpti" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003468&level=1&cid=881011" class="ajax_tree0">XVI. Vyākaraṇaprāpti
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155137.73rdakṣaya:Dhāraṇī" border=0 hspace=2><a id="href_155137.73rdakṣaya:Dhāraṇī" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003470&level=1&cid=881013" class="ajax_tree0">73rd akṣaya: Dhāraṇī
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155138.74thakṣaya:Pratibhāna" border=0 hspace=2><a id="href_155138.74thakṣaya:Pratibhāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003479&level=1&cid=881016" class="ajax_tree0">74th akṣaya: Pratibhāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155139.XVII.Tatprāptivyavasthāpanā" border=0 hspace=2><a id="href_155139.XVII.Tatprāptivyavasthāpanā" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003506&level=1&cid=881023" class="ajax_tree0">XVII. Tatprāptivyavasthāpanā
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155140.75th–78thakṣaya:Dharmoddāna" border=0 hspace=2><a id="href_155140.75th–78thakṣaya:Dharmoddāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003507&level=1&cid=881024" class="ajax_tree0">75th – 78th akṣaya: Dharmoddāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155141.XVIII.Pratyekabodhi" border=0 hspace=2><a id="href_155141.XVIII.Pratyekabodhi" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003541&level=1&cid=881041" class="ajax_tree0">XVIII. Pratyekabodhi
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155142.79thakṣaya:EkāyanoMārgaḥ" border=0 hspace=2><a id="href_155142.79thakṣaya:EkāyanoMārgaḥ" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003542&level=1&cid=881042" class="ajax_tree0">79th akṣaya: Ekāyano Mārgaḥ
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155143.XIX.Dharmacakrapravartana" border=0 hspace=2><a id="href_155143.XIX.Dharmacakrapravartana" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003559&level=1&cid=881050" class="ajax_tree0">XIX. Dharmacakrapravartana
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155144.80thakṣaya:Upāya" border=0 hspace=2><a id="href_155144.80thakṣaya:Upāya" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003560&level=1&cid=881051" class="ajax_tree0">80th akṣaya: Upāya
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_155145.XX.Parindanā" border=0 hspace=2><a id="href_155145.XX.Parindanā" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1183&mid=2003611&level=1&cid=881058" class="ajax_tree0">XX. Parindanā
+</td></tr></table>
+<script language=javascript>test('155092.9thakṣaya:Dhyāna|')</script><div class='bverknavn'><a href='/polyglotta/index.php?page=library&amp;bid=2'>Back to library</a></div></div><!-- venstrefulltekstfelt --><div class="clear"></div><!-- clear --><div id="nav-menu"><ul>
+  		  <li  id="nav-1"><a class="tabValgt" href="/polyglotta/index.php?page=record&amp;view=record&amp;vid=1183&amp;mid=2001334&amp;level=1">Sentence by sentence view</a></li>
+  		  <li  id="nav-2"><a  href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=1183&amp;cid=880368&amp;mid=2001334&amp;level=1">Continuous text view</a></li>
+ 		<li  id="nav-3"><a  href="/polyglotta/admin/index.php?page=fulltext&amp;view=fulltext&amp;vid=1183&amp;cid=880368&amp;mid=2001334&amp;level=1">View in admin</a></li>
+
+  		  </ul></div><div class='clear'></div><!-- clear -->			<script language="javascript" type="text/javascript">
+			var kilderef = '';
+			var tekstid = 0;
+			var tekstid_bilder = 0;
+			var filsti = '';
+			var thumbnail = '';
+			</script>
+		<div class='infofulltekstfelt'><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><div class='kilderef' id='8989959'></div><div class='clear'></div><span id='8989959bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><div class='kilderef' id='8993241'></div><div class='clear'></div><span id='8993241bi' class='paragraph'>
+							9th akṣaya: Dhyāna&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><div class='kilderef' id='8996523'></div><div class='clear'></div><span id='8996523bi' class='paragraph'>
+							9th Imperishable: Meditation.(p. 54)&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><div class='kilderef' id='8999805'></div><div class='clear'></div><span id='8999805bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><div class='kilderef' id='9003087'></div><div class='clear'></div><span id='9003087bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><div class='kilderef' id='9006369'></div><div class='clear'></div><span id='9006369bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8989960bi' class='paragraph'>
+							de nas tshe dang ldan pa sha ra dva ti’i bus byang chub sems dpa’ blo gros mi zad pa la ’di skad ces smras so: - rigs kyi bu, byang chub sems dpa’ rnams kyi brtson ’grus mi zad pa ’di ni khyod kyis legs par smras na, rigs kyi bu, byang chub sems dpa’ rnams kyi bsam gtan mi zad pa la brtsams te, ji ltar byang chub sems dpa’ rnams bsam gtan mi zad par ’gyur ba, khyod spobs par gyis shig!&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993242bi' class='paragraph'>
+							atha khalv āyuṣmāñ śāradvatīputro ’kṣayamatiṃ bodhisattvam idam avocat: subhāṣitā tvayeyaṃ, kulaputra, bodhisattvānāṃ vīryākṣayatā. pratibhātu te, kulaputra, dhyānākṣayatām ārabhya, yathā bodhisattvānāṃ dhyānam akṣayaṃ bhavet.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996524bi' class='paragraph'>
+							Then the venerable Śāradvatīputra addressed himself to the bodhisattva Akṣayamati: – Well spoken by you, son of good family, was this imperishability of the bodhisattvas’ vigour.  May you be inspired, son of good family, on the subject of the imperishability of the bodhisattvas’ meditation, as to how the meditation of the bodhisattvas becomes imperishable.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999806bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003088bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006370bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8989961bi' class='paragraph'>
+							blo gros mi zad pas smras pa: - btsun pa sha ra dva ti’i bu, byang chub sems dpa’ rnams kyi bsam gtan gyi pha rol tu phyin pa mi zad pa ni rnam pa bcu drug ste; de ni nyan thos dang rang sangs rgyas thams cad la med do.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993243bi' class='paragraph'>
+							akṣayamatir āha: ṣoḍaśākārā, bhadanta śāradvatīputra, bodhisattvānāṃ dhyānapāramitākṣayatā, sā śrāvakapratyekabuddhānāṃ na saṃvidyate.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996525bi' class='paragraph'>
+							Akṣayamati said: [1. The state of pure excellence of the forms of meditation (dhyānâkāraviśuddhaviśeṣasthiti):] The bodhisattvas’ imperishability of the perfection of meditation has sixteen forms, reverend Śāradvatīputra, but it is not found among disciples and isolated buddhas.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999807bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003089bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006371bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8989962bi' class='paragraph'>
+							de la rnam pa bcu drug po dag gang zhe na? ’di lta ste:&nbsp;</span><span id='8989963bi' class='paragraph'>
+						 de bzhin gshegs pa’i bsam gtan yongs su rdzogs par bya ba’i phyir, byang chub sems dpa’ rnams kyi bsam gtan ni de la ma chags pa’o;&nbsp;</span><span id='8989964bi' class='paragraph'>
+						 bdag bde ba la ma chags pa’i phyir, byang chub sems dpa’ rnams kyi bsam gtan ni ro myang ba med pa’o;&nbsp;</span><span id='8989965bi' class='paragraph'>
+						 sems can thams cad kyi nyon mongs pa spang ba’i phyir, byang chub sems dpa’ rnams kyi bsam gtan ni snying rje chen po la dmigs pa’o;&nbsp;</span><span id='8989966bi' class='paragraph'>
+						 ’dod pa’i khams su dmigs pa’i phyir, byang chub sems dpa’ rnams kyi bsam gtan ni ting nge ’dzin ldog pa’o;&nbsp;</span><span id='8989967bi' class='paragraph'>
+						 sems can thams cad kyi sems kyi spyod pa kun shes pa’i phyir, byang chub sems dpa’ rnams kyi bsam gtan ni mngon par shes pa yongs su sbyang ba byas pa’o;&nbsp;</span><span id='8989968bi' class='paragraph'>
+						 sems kyi dbang phyug shes pa’i phyir, byang chub sems dpa’ rnams kyi bsam gtan ni sems las su rung ba’o;&nbsp;</span><span id='8989969bi' class='paragraph'>
+						 gzugs dang gzugs med pa’i khams zil gyis gnon pa’i phyir, byang chub sems dpa’ rnams kyi bsam gtan ni bsam gtan dang, rnam par thar pa dang, ting nge ’dzin dang, snyoms par ’jug pa dang, ldang ba thams cad shes pa’o;&nbsp;</span><span id='8989970bi' class='paragraph'>
+						 nyan thos dang rang sangs rgyas thams cad kyi snyoms par ’jug pa zil gyis gnon pa’i phyir, byang chub sems dpa’ rnams kyi bsam gtan ni zhi ba dang rab tu zhi ba’o;&nbsp;</span><span id='8989971bi' class='paragraph'>
+						 shin tu mthar thug pa’i phyir, byang chub sems dpa’ rnams kyi bsam gtan ni mi ’khrugs pa’o;&nbsp;</span><span id='8989972bi' class='paragraph'>
+						 nyon mongs pa dang bag chags kyi mtshams sbyor ba thams cad legs par ’joms pa’i phyir, byang chub sems dpa’ rnams kyi bsam gtan ni log par bsgrub pa’i gnyen po’o;&nbsp;</span><span id='8989973bi' class='paragraph'>
+						 ’jig rten thams cad las bsgral ba’i phyir, byang chub sems dpa’ rnams kyi bsam gtan ni shes rab la ’jug pa’o;&nbsp;</span><span id='8989974bi' class='paragraph'>
+						 sems can thams cad bsgral ba’i phyir, byang chub sems dpa’ rnams kyi bsam gtan ni sems can thams cad kyi bsam pa sngon du ’gro ba’o;&nbsp;</span><span id='8989975bi' class='paragraph'>
+						 de bzhin gshegs pa’i bsam gtan mi zad pa yongs su rdzogs par bya ba’i phyir, byang chub sems dpa’ rnams kyi bsam gtan ni dkon mchog gsum gyi rigs mi gcod pa’o;&nbsp;</span><span id='8989976bi' class='paragraph'>
+						 rtag tu mnyam par gzhag pa’i phyir, byang chub sems dpa’ rnams kyi bsam gtan ni ma nyams pa’o;&nbsp;</span><span id='8989977bi' class='paragraph'>
+						 sangs rgyas kyi chos thams cad yongs su rdzogs par bya ba’i phyir, byang chub sems dpa’ rnams kyi bsam gtan ni chos thams cad la dbang byed pa’i ye shes so;&nbsp;</span><span id='8989978bi' class='paragraph'>
+						 ye shes kyi bdag nyid che ba’i phyir, byang chub sems dpa’ rnams kyi bsam gtan ni nam mkha’ khyab pa ste.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993244bi' class='paragraph'>
+							tatra katame ṣoḍaśākārāḥ? tad yathā:&nbsp;</span><span id='8993245bi' class='paragraph'>
+						 atanmayaṃ bodhisattvānāṃ dhyānaṃ tathāgatadhyānaparipūritayā;&nbsp;</span><span id='8993246bi' class='paragraph'>
+						 anāsvāditaṃ bodhisattvānāṃ dhyānam ātmasaukhyāsaktatayā;&nbsp;</span><span id='8993247bi' class='paragraph'>
+						 mahākaruṇālambanaṃ bodhisattvānāṃ dhyānaṃ sarvasattvakleśaprahāṇatayā;&nbsp;</span><span id='8993248bi' class='paragraph'>
+						 samādhivyāvartanaṃ bodhisattvānāṃ dhyānaṃ kāmadhātvālambanatayā;&nbsp;</span><span id='8993249bi' class='paragraph'>
+						 kṛtābhijñāparikarmaṃ bodhisattvānāṃ dhyānaṃ sarvasattvacittacaryājñātayā;&nbsp;</span><span id='8993250bi' class='paragraph'>
+						 cittakarmaṇyaṃ bodhisattvānāṃ dhyānaṃ cittaiśvaryajñānatayā;&nbsp;</span><span id='8993251bi' class='paragraph'>
+						 dhyānavimokṣasamādhisamāpattivyutthānajñānaṃ bodhisattvānāṃ dhyānaṃ rūpārūpyadhātvabhibhāvanatayā;&nbsp;</span><span id='8993252bi' class='paragraph'>
+						 śāntapraśāntaṃ bodhisattvānāṃ dhyānaṃ sarvaśrāvakapratyekabuddhasamāpattyabhibhāvanatayā;&nbsp;</span><span id='8993253bi' class='paragraph'>
+						 akopyam bodhisattvānāṃ dhyānam atyantaniṣṭhatayā;&nbsp;</span><span id='8993254bi' class='paragraph'>
+						 vipratipattipratipakṣaṃ bodhisattvānāṃ dhyānaṃ sarvakleśavāsanāpratisaṃdhisamudghātatayā;&nbsp;</span><span id='8993255bi' class='paragraph'>
+						 prajñāvatāraṃ bodhisattvānāṃ dhyānaṃ sarvalokottīrṇatayā;&nbsp;</span><span id='8993256bi' class='paragraph'>
+						 sarvasattvāśayapūrvaṃgamaṃ bodhisattvānāṃ dhyānaṃ sarvasattvottāraṇatayā;&nbsp;</span><span id='8993257bi' class='paragraph'>
+						 triratnavaṃśānupacchedaṃ bodhisattvānāṃ dhyānaṃ tathāgatadhyānākṣayatāparipūritayā;&nbsp;</span><span id='8993258bi' class='paragraph'>
+						 acyutaṃ bodhisattvānāṃ dhyānaṃ nityasamādhānatayā;&nbsp;</span><span id='8993259bi' class='paragraph'>
+						 sarvadharmādhipatijñānaṃ bodhisattvānāṃ dhyānaṃ sarvabuddhadharmaparipūritayā;&nbsp;</span><span id='8993260bi' class='paragraph'>
+						 ākāśaspharaṇaṃ bodhisattvānāṃ dhyānaṃ jñānamahātmatayā.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996526bi' class='paragraph'>
+							What then are the sixteen forms?&nbsp;</span><span id='8996527bi' class='paragraph'>
+						 1) [It is hard to practise (duṣkaraviśeṣa):] The meditation of the bodhisattvas is not attached to anything [to reflecting (vitarka) and pondering (vicāra) related to the parts of the four states of meditation (dhyāna) and the four states of concentration (samāpatti), etc.], since it is to fulfil the meditation of the Tathāgatas;&nbsp;</span><span id='8996528bi' class='paragraph'>
+						 2) the meditation of the bodhisattvas is not tasted since there is no attachment to one’s own pleasure;&nbsp;</span><span id='8996529bi' class='paragraph'>
+						 3) the meditation of the bodhisattvas has great compassion as its object [on entering the first state of meditation (prathamadhyāna) ] since it practised to take away the vices of all living beings;&nbsp;</span><span id='8996530bi' class='paragraph'>
+						 4) the meditation of the bodhisattvas is returning from concentration [on higher stages] since it has the world of desire as its object;&nbsp;</span><span id='8996531bi' class='paragraph'>
+						 5) [pure by power of supernormal knowledge and great magic (abhijñāvikurvāṇavaśitāviśuddha):] the meditation of the bodhisattvas has completed the preparations for supernormal knowledge since it knows the mental behaviour of all beings;&nbsp;</span><span id='8996532bi' class='paragraph'>
+						 6) [the pure excellence of power to attain power of thought (cittavaśitāprāptivaśitāviśuddhaviśeṣa):] the meditation of the bodhisattvas is fitness of thought since it is knowledge of the power of thought;&nbsp;</span><span id='8996533bi' class='paragraph'>
+						 7) [the excellence of power of how to enter, stay in and emerge from (praveśasthitivyutthānaviśeṣa):] the meditation of the bodhisattvas is knowledge of all meditations, liberations, concentrations, attaining the states of meditation and emerging from them, since it conquers both the world of forms and the world without forms;&nbsp;</span><span id='8996534bi' class='paragraph'>
+						 8) [the excellence of power distinguished in being supramundane (lokottaraviśiṣṭavaśitāviśeṣa):] the meditation of the bodhisattvas is peaceful, absolutely peaceful, since it conquers the states of meditation of the disciples and the isolated buddhas;&nbsp;</span><span id='8996535bi' class='paragraph'>
+						 9) [the excellence of power not to lose meditation (acyutivaśitāviśeṣa) though getting out of meditation:] the meditation of the bodhisattvas is undisturbed since its certitude is infinite;&nbsp;</span><span id='8996536bi' class='paragraph'>
+						 10) [the excellence of power of no (hindrances concerning) objects to be known and vices (jñeyaniṣkleśavaśitāviśeṣa):] the meditation of the bodhisattvas is contrary to wrong practice since it obliterates all habits of vice which are connections to new births;&nbsp;</span><span id='8996537bi' class='paragraph'>
+						 11) [the pure excellence of views grasping neither for a living being nor for moments of existence (sattvadharmagrāhâpagatadṛṣṭiviśuddhaviśeṣa):] the meditation of the bodhisattvas is penetration into insight since it is transcending all worlds [which are attachment resulting from grasping for a living being or moments of existence (sattvadharmagrāhâbhiniveśa) ];&nbsp;</span><span id='8996538bi' class='paragraph'>
+						 12) [the pure excellence of doing good (anugrahaviśuddhaviśeṣa) with help to living beings in every way (sarvatra sattvânugraha):] the meditation of the bodhisattvas is (p. 55) preceded by intentions regarding all living beings since it is saving all living beings [from the suffering of lower existence and existence generally (durgatibhāvaduḥkha) ];&nbsp;</span><span id='8996539bi' class='paragraph'>
+						 13) [the pure excellence of power not to interrupt the tradition of the three jewels (triratnavaṃśânupacchedavaśitāviśuddhaviśeṣa):] the meditation of the bodhisattvas is the unbrokenness of the tradition of the three jewels since it is the fulfilment of the imperishability of the Tathāgata’s meditation;&nbsp;</span><span id='8996540bi' class='paragraph'>
+						 14) [the pure excellence of not losing it (acyutiviśuddhaviśeṣa):] the meditation of the bodhisattvas does not perish since they are always concentrated [in every situation, going, sitting, etc.];&nbsp;</span><span id='8996541bi' class='paragraph'>
+						 15) [the state of excellence of knowledge (jñānaviśeṣasthiti):] the meditation of the bodhisattvas is knowledge which is mastery of all moments of existence since it is the fulfilment of all the qualities of the Buddha;&nbsp;</span><span id='8996542bi' class='paragraph'>
+						 16) [with greatness of completion (niṣṭhāgamanamahātmyasaṃpanna):] the meditation of the bodhisattvas pervades all space because of the greatness of its knowledge.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999808bi' class='paragraph'>
+							bsam gtan mi zad pa la gnas pa’i byang chub sems dpa’ ni chos las mi g.yo ba’i byang chub sems dpa’ zhes bya’o. de bstan pa’i phyir <b>btsun pa sha ra dva ti’i bu, byang chub sems dpa’ rnams kyi bsam gtan gyi pha rol tu phyin pa mi zad pa ni rnam pa bcu drug ste</b> zhes bya ba la sogs pa gsungs so – "The bodhisattva established in the imperishability of meditation (dhyānākṣayatāpratiṣṭhita) is called a bodhisattva not swerving from religion (dharmācalita). To teach what he is it is said: ...".<br />bsam gtan mi zad pa yang rnam pa lngasa bstan te, 1) bsam gtan gyi rnam pa’i khyad par rnam par dag pa la gnas pa dang, 2) bsam gtan shin tu sbyangs pa’i ’bras bu la gnas pa dang, 3) mi mthun pa’i phyogs dpag tu med pa’i gnyen por gyur pas gnyen po tshad med pa dang ldan pa dang, 4) nges pa’i tshig gis dmigs pa tha dad pa la gnas pa dang, 5) mi mthun pa’i phyogs yid la byed pa spangs pa dang, 6) gnyen po rnam par dag pa la gnas pas bstan to.<br />de la byang chub sems dpa’i bsam gtan ni ’jig rten pa’i bsam gtan dang, snyoms par ’jug pa la sogs pa dang nyan thos dang rang sangs rgyas kyi bsam gtan las khyad par du ’phags te, de dag zil gyis non pa’i phyir dang, nyi ma’i sgron ma zhes bya ba la sogs pa’i ting nge ’dzin dpag tu med pa rnams dang ldan pas na mi zad pa yin no. For the expression cf. Aṣṭādasha (ii) p. 3725.<br />de la bsam gtan gyi rnam pa’i khyad par rnam par dag pa la gnas pa’i dbang du byas nas <b>btsun pa sha ra dva ti’i bu, byang chub sems dpa’ rnams kyi bsam gtan gyi pha rol tu phyin pa mi zad pa ni rnam pa bcu drug ste</b> zhes bya ba la sogs pa gsungs so.<br />The ṭīkā understands this paragraph partly through the Dhyānapaṭala of Bbh. p. 207-11, especially the part on vishuddhaṃ dhyānam p. 21018-2118: bsam gtan gyi rnam pa’i khyad par rnam par dag pa la gnas pa yang rnam pa bcu gnyis kyis bstan te: 1) dka’ bar spyod pa’i khyad par dang, 2) mngon par shes pa dang cho ’phrul chen po la dbang rnam par dag pa’i khyad par dang, 3) sems la dbang thob pa’i dbang gi khyad par rnam par dag pa dang, 4) ’jug pa dang gnas pa dang ldang ba la dbang ba’i khyad par dang, 5) ’jig rten las ’das pa las kyang ’phags pa’i dbang gi khyad par dang, 6) phyir nyams pa med pa’i dbang gi khyad par dang, 7) shes bya dang nyon mongs pa med pa’i dbang gi khyad par dang, 8) sems can dang chos su ’dzin pa dang bral bas lta ba rnam par dag pa’i khyad par dang, 9) rnam par thams cad du sems can la phan ’dogs pas phan ’dogs pa rnam par dag pa’i khyad par dang, 10) dkon mchog gsum gyi rigs mi gcod pa la dbang rnam par dag pa’i khyad par dang, 11) nyams pa med par rnam par dag pa’i khyad par dang, 12) ye shes kyi khyad par la gnas pa dang, 13) mthar phyin pa’i bdag nyid chen po dang ldan pa’o. de dag las kyang dka’ bar spyod pa’i khyad par ni mdo’i tshig dang po zhes bstan, lhag ma rnams ni mdo’i tshig re res bstan to – "The state of pure excellence of the forms of meditation is taught by twelve forms [thirteen are, however, listed]: 1) The excellence of hard to practise (corresponding to Bbh. p. 20810ff: duṣkaraṃ dhyānam), 2) the pure excellence of power of supernormal knowledge and great magic (corresponding to Bbh. p. 2111-2: abhijnyāvikurvaṇavashitāvishuddhyā vishuddhaṃ dhyānam), 3) the pure excellence of power to attain power of thought (cittavashitā, not in the Dhyānapaṭala, but mentioned in connection with the dhyānavimokṣa p. 38726), 4) the excellence of power of how to enter, stay in and emerge from (corresponding to Bbh. p. 21023-24: praveshasthitivyutthānavashitāvishuddhyā vishuddhaṃ dhyānam), 5) the excellence of power distinguished in being supramundane (corresponding to Bbh. p. 21020-21: akliṣṭaṃ lokottarayā shuddhyā vishuddhaṃ dhyānam), 6) the excellence of the power not to lose [meditation] again (corresponding to Bbh. p. 21024-25: dhyānavyāvartane punaḥsamāpadanavashitāvishuddhyā vishuddhaṃ dhyānam), 7) the excellence of power of no [hindrances concerning] objects to be known and vices (corresponding to Bbh. p. 2113-4: kleshajnyeyāvaraṇaprahāṇavishuddhyā vishuddhaṃ dhyānam), 8) the pure excellence of pure views through grasping neither for a living being nor for moments of existence (corresponding to Bbh. p. 2112-3: sarvadṛṣṭigatāpagamavishuddhyā vishuddhaṃ dhyānam), 9) the pure excellence of doing good (anugrahavishuddhavisheṣa) with help to living beings in every way (sarvatrasattvānugraha, not in Bbh.), 10) the pure excellence of power not to interrupt the tradition of the three jewels (triratnavaṃshānupacchedavashitāvishuddhavisheṣa, not in Bbh.), 11) the pure excellence of not losing it (acyutivishuddhavisheṣa, not in Bbh), 12) the state of excellence of knowledge (jnyānavisheṣasthiti, not in Bbh.), 13) with greatness of completion (niṣṭhāgamanamahātmyasaṃpanna, not in Bbh.). The excellence of <b>Hard to practise</b> corresponds to the first [four] items of the sūtra, the rest to each of the following items."&nbsp;</span><span id='8999809bi' class='paragraph'>
+						 <b>de bzhin gshegs pa’i bsam gtan</b> ni skyon thams cad dang bral ba ste, de <b>yongs su rdzogs par bya ba’i phyir, byang chub sems dpa’ rnams kyi bsam gtan ni</b> ’jig rten pa’i bsam gtan bzhi dang snyoms par ’jug pa bzhi’i yan lag rtog pa dang dpyod pa la sogs pa <b>de la ma chags pa’o</b>.&nbsp;</span><span id='8999810bi' class='paragraph'>
+						 &nbsp;</span><span id='8999811bi' class='paragraph'>
+						 <b>snying rje chen po la dmigs pa’o</b> zhes bya ba ni dang po bsam gtan la ’jug pa’i tshe <b>sems can thams cad kyi nyon mongs pa spang bar bya ba’i phyir</b> ro. bsam gtan la mnyam par bzhag go snyam du dmigs nas ’jug pa’i phyir ro.&nbsp;</span><span id='8999812bi' class='paragraph'>
+						 <b>’dod pa’i khams su dmigs pa</b> ni ’dod pa’i khams kyi sems can la lta ba ste, de’i <b>phyir, byang chub sems  dpa’ rnams kyi bsam gtan ni ting nge ’dzin ldog pa</b> yin te, ’jig rten la sogs pas ni khams gong ma’i ting nge ’dzin la gnas pa de las ldog cing khams gong mar gnas par mi nus kyi byang chub sems dpa’ rnams kyi bsam gtan ni shin tu dbang du gyur pas khams gong ma las ’dod pa’i khams su dmigs shing skyes kyang nyams par mi ’gyur zhes bya ba’i tha tshig ste, tshig de dag gis dka’ bar spyod pa bstan to.<br />Cf. Bbh. p. 21024: dhyānavyāvartane, and ibid. p. 20813-16: dhyānasukhaṃ vyāvartya pratisaṃkhyāya sattvānukaṃpayā prabhūtāṃ sattvārthakriyāṃ sattvaparipākaṃ samanupashyaṃtaḥ kāmadhātāv upapadyaṃte – "They return from the happiness of meditation and are deliberately born in the sphere of passion with a view to the maturation of living beings and to great action for the sake of living beings, out of compassion for living beings."&nbsp;</span><span id='8999813bi' class='paragraph'>
+						 <b>sems can thams cad kyi sems kyi spyod pa kun shes pa’i phyir</b> zhes pa la sogs pas mngon par shes pa dang cho ’phrul chen po la dbang rnam par dag pa (2) bstan te, sems kyi spyod pa yang sngar bstan la, phyis kyang ston par ’gyur ro. <b>mngon par shes pa yongs su sbyang ba byas pa</b> ni byang chub sems dpa’i bsam gtan sems kyi spyod pa kun shes pa des mngon par shes pa lnga las su rung bar byas so zhes bya ba’i don to.&nbsp;</span><span id='8999814bi' class='paragraph'>
+						 <b>sems kyi dbang phyug shes pa’i phyir</b> zhes bya ba la sogs pas sems la dbang thob pa’i dbang gi khyad par rnam par dag pa (3) bstan te, ting nge ’dzin rtse gcig pa’i mtshan nyid kyis dbang sgyur ba ni <b>sems kyi dbang phyug shes pa</b>’o. de’i phyir <b>sems las su rung ba</b> ste, ’dod chags la sogs pa nyon mongs pa’i dbang du mi ’gro zhing ji ltar ’dod pa bzhin du gnas su btub ces bya ba’i tha tshig go.&nbsp;</span><span id='8999815bi' class='paragraph'>
+						 <b>gzugs dang gzugs med pa’i khams zil gyis gnon pa’i phyir</b> zhes bya ba la sogs pas ’jug pa dang gnas pa dang ldang ba la dbang ba’i khyad par (4) bstan te, <b>byang chub sems dpa’ rnams kyi bsam gtan</b> ni bsam gtan la sogs pa la dang po yang ci dgar <b>snyoms par ’jug</b> la, bar du yang ji tsam ’dod pa’i bar du gnas shing tha mar yang nam dga’ ba na <b>ldang ba</b>r byed kyi, ’jig rten pa’i snyoms par ’jug pa dag ni dang po snyoms par ’jug pa’i shugs ma zad kyi bar du <b>ldang ba</b>r yang mi nus la, nam ’dod pa na bsam gtan gang yang rung ba la snyoms par ’jug pa yang mi nus pas <b>zil gyis gnon pa</b> zhes bya’o.&nbsp;</span><span id='8999816bi' class='paragraph'>
+						 <b>nyan thos dang rang sangs rgyas thams cad kyi snyoms par ’jug pa zil gyis gnon pa’i phyir</b> zhes bya ba la sogs pas ni ’jig rten las ’das pa las kyang ’phags pa’i dbang gi khyad par (5) bstan te, <b>zhi ba dang rab tu zhi ba</b> ni gzung ba dang ’dzin pa’i rtog pa zhi ba dang rab tu zhi ba’am, yang nyon mongs pa dang shes bya’i sgrib pa gnyis spong ba’i phyir zhi ba dang rab tu zhi ba zhes bya’o.&nbsp;</span><span id='8999817bi' class='paragraph'>
+						 <b>shin tu mthar thug pa’i phyir </b>zhes bya ba la sogs pas nyams pa med pa’i dbang gi khyad par (6) bstan te, <b>mi ’khrugs pa</b> ni mthar thug par gyur pa mi mthun pa’i phyogs kyis nyams par byar med pa’i tha tshig go. Cf. also Msa XIX, 38: samādhānācyuti, and p. 16624-25.<br />Cf. Lv p. 42217: akopyaṃ tac cakraṃ atyantaniṣṭhatvāt.&nbsp;</span><span id='8999818bi' class='paragraph'>
+						 <b>nyon mongs pa dang bag chags kyi mtshams sbyor ba thams cad legs par ’joms pa’i phyir</b> zhes bya ba la sogs pas shes bya dang nyon mongs pa med pa’i dbang gi khyad par (7) bstan te, <b>log par sgrub pa</b> ni las dang nyon mongs pa gang gis tshe rabs gzhan du nyid mtshams sbyor ba’i rgyu kun nas dkris pa dang bag la nyal yin te, de’i <b>gnyen po</b> zhes bya ba’i tha tshig go.&nbsp;</span><span id='8999819bi' class='paragraph'>
+						 <b>’jig rten thams cad las bsgral ba’i phyir</b> zhes bya ba la sogs pas sems can dang chos su ’dzin pa dang bral bas lta ba rnam par dag pa’i khyad par (8) bstan te, <b>’jig rten thams cad</b> ni sems can dang chos su ’dzin pa las mngon par zhen pa bstan te, de dag las <b>bsgral ba’i phyir byang chub sems dpa’ rnams kyi bsam gtan ni shes rab la ’jug pa</b> ste, bsam gtan ’dis sems can dang chos su ’dzin pa dang bral ba rnam par mi rtog pa’i ye shes la ’jug par byed ces bya ba’i tha tshig go.&nbsp;</span><span id='8999820bi' class='paragraph'>
+						 <b>sems can thams cad bsgral ba’i phyir</b> zhes bya ba la sogs pas ni rnam pa thams cad du sems can la phan ’dogs pas phan ’dogs pa rnam par dag pa’i khyad par (9) bstan te, <b>bsgral ba</b> ni ngan song dang srid pa’i sdug bsngal las bsgral ba’i phyir ro. <b>sems can thams cad kyi bsam pa sngon du ’gro ba</b> ni sems can thams cad la phan pa dang bde bar bya ba sngon du gtong ba’o.&nbsp;</span><span id='8999821bi' class='paragraph'>
+						 <b>de bzhin gshegs pa’i bsam gtan mi zad pa yongs su rdzogs par bya ba’i phyir</b> zhes bya ba la sogs pas dkon mchog gsum gyi rigs mi gcod pa la dbang rnam par dag pa’i khyad par (10) bstan te, de bzhin gsegs pa’i bsam gtan ni gong du bshad pa’o. bsam gtan des ’jig rten gyi khams gang du dkon mchog gsum gyi mtshan mi grag pa ni grag par byed, gang du grag par ni dkon mchog gsum gyi rigs rgyun mi chad par byed de, de ltar byed pa’i bsam gtan de yongs su rdzogs par bya ba’i phyir ’jug pas na <b>byang chub sems dpa’ rnams kyi bsam gtan ni dkon mchog gsum gyi rigs mi gcod pa’o</b>.&nbsp;</span><span id='8999822bi' class='paragraph'>
+						 <b>rtag tu mnyam par gzhag pa’i phyir</b> zhes bya ba la sogs pas nyams pa med pa rnam par dag pa’i khyad par (11) bstan te, ’gro ba dang ’dug pa la sogs pa’i gnas skabs thams cad du mnyam par gzhag pas <b>ma nyams pa</b> zhes bya ste,  spyod lam thams cad du nyams pa med pa’i phyir ro. Cf. item no. 9 of the mūla-text, and no. 6 of ṭ&nbsp;</span><span id='8999823bi' class='paragraph'>
+						 <b>sangs rgyas kyi chos thams cad yongs su rdzogs par bya ba’i phyir</b> zhes bya ba la sogs pas ye shes kyi khyad par la gnas pa (12) bstan te, stobs dang mi ’jigs pa la sogs pa rdzogs par bya ba’i phyir ’jug pas na <b>byang chub sems dpa’ rnams kyi bsam gtan ni chos thams cad la dbang byed pa’i ye shes</b> zhes bya ste, sangs rgyas kyi chos rnams la dbang sgyur ba’i ye shes dang ldan zhes bya ba’i tha tshig go.&nbsp;</span><span id='8999824bi' class='paragraph'>
+						 <b>ye shes kyi bdag nyid che ba’i phyir</b> zhes bya ba la sogs pas mthar phyin pa’i bdag nyid chen po dang ldan pa (13) bstan te, ye shes kyi bdag nyid che ba ni ye shes kyi mthu che ba’o. de lta bu dang ldan pa’i phyir <b>byang chub sems dpa’ rnams kyi bsam gtan ni nam mkha’ khyab</b> ces bya ste, nam mkha’ bzhin thogs pa dang chags pa med pa zhes bya ba’i tha tshig go.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003090bi' class='paragraph'>
+							.&nbsp;</span><span id='9003091bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003092bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003093bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003094bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003095bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003096bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003097bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003098bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003099bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003100bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003101bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003102bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003103bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003104bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003105bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003106bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006372bi' class='paragraph'>
+							.&nbsp;</span><span id='9006373bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006374bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006375bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006376bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006377bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006378bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006379bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006380bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006381bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006382bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006383bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006384bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006385bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006386bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006387bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006388bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8989979bi' class='paragraph'>
+							btsun pa sha ra dva ti’i bu, ’di ni byang chub sems dpa’ rnams kyi bsam gtan gyi pha rol tu phyin pa rnam pa bcu drug ste, gang nyan thos dang rang sangs rgyas rnams la med pa’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993261bi' class='paragraph'>
+							iyaṃ, bhadanta śāradvatīputra, bodhisattvānāṃ ṣoḍaśākārā dhyānapāramitā yā śrāvakapratyekabuddhānāṃ na saṃvidyate.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996543bi' class='paragraph'>
+							This, reverend Śāradvatīputra, is the bodhisattvas’ perfection of meditation in sixteen forms, which does not belong to the disciples and isolated buddhas.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999825bi' class='paragraph'>
+							bsam gtan rnam par dag pa bcu drug po de dag ni <b>nyan thos dang rang sangs rgyas rnams la</b> yang <b>med</b> na ’jig rten pa rnams la lta ga la yod ces bstan pas ni byang chub sems dpa’i bsam gtan gyi bdag nyid che ba brjod do.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003107bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006389bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8989980bi' class='paragraph'>
+							de la bsam gtan yongs su sbyang ba gang zhe na? gang mngon par shes pa dang ye shes yongs su rdzogs pa’o.&nbsp;</span><span id='8989981bi' class='paragraph'>
+						 de la mngon par shes pa ni gang, ye shes ni gang zhe na?&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993262bi' class='paragraph'>
+							tatra katamad dhyānaparikarma? yābhijñājñānaparipūriḥ.&nbsp;</span><span id='8993263bi' class='paragraph'>
+						 tatra katamābhijñā, katamaj jñānaṃ?&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996544bi' class='paragraph'>
+							[2. The pure fruit resulting from the tranquility of meditation (dhyānapraśrabdhiviśuddhaphala):] What then has meditation as its preparation? Fulfilment of supernormal knowledge and wisdom.&nbsp;</span><span id='8996545bi' class='paragraph'>
+						 What then is supernormal knowledge, what is wisdom?&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999826bi' class='paragraph'>
+							bsam gtan shin tu sbyangs pa’i ’bras bu rnam par dag pa’i dbang du byas nas <b>de la bsam gtan yongs su sbyangs pa gang zhe na?</b> zhes bya ba la sogs pa gsungs so. bsam gtan yongs su sbyangs pa zhes bya ba ni bsam gtan gyi yongs su sbyangs pa ste, sems las su rung ba’i ’bras bu gang sbyang ba la bya’o. de nyid kyang gang zhe na? <b>gang mngon par shes pa dang ye shes yongs su rdzogs pa’o</b> zhes bya ba gsungs te, ’og nas smos pa lta bu’i mngon par shes pa dang ye shes yongs su rdzogs pa rnams ni sems las su rung ba’i ’bras bu yin pa’i phyir ro. <b>gang gis gzugs su snang ba thams cad mthong ba</b> zhes bya ba la sogs pa tshig gi tshar phrugs lngas ni 1) lha’i mig dang, 2) lha’i rna ba dang, 3) pha rol gyi sems shes pa dang, 4) sngon gyi gnas rjes su dran pa dang, 5) rdzu ’phrul gyi mngon par shes pa rnams go rims bzhin du bstan to. de man chad tshig gi tshar phrugs gsum gyis ni 6) zag pa zad pa mngon par shes pa bstan te, dngos gsal ba rnams ni ma bshad do. The six supernormal powers (ṣaḍabhijnyāḥ) are the basis for the following paragraphs.&nbsp;</span><span id='8999827bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003108bi' class='paragraph'>
+							.&nbsp;</span><span id='9003109bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006390bi' class='paragraph'>
+							.&nbsp;</span><span id='9006391bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8989982bi' class='paragraph'>
+							gang gis gzugs su snang ba thams cad mthong ba, ’di ni mngon par shes pa zhes bya’o; gang gis gzugs thams cad kyi chos nyid mi zad par shes kyang mi zad pa’i chos mngon sum du mi byed pa, ’di ni ye shes shes bya’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993264bi' class='paragraph'>
+							yaḥ sarvarūpapratibhāsān paśyatīyam ucyate ’bhijñā; yaḥ sarvarūpadharmatām akṣayāṃ jānann api nākṣayadharmatāṃ sākṣātkarotīdam ucyate jñānam.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996546bi' class='paragraph'>
+							When he sees the appearance of all forms [with divine sight (divyacakṣur) ], it is called supernormal knowledge; when he knows the essence of all forms to be imperishable, but does not realize this imperishable essence [viz. extinction (nirvāṇa), as the disciples do], it is called wisdom.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999828bi' class='paragraph'>
+							<b>gang gis gzugs thams cad kyi chos nyid mi zad par shes kyang</b> zhes bya ba byang chub sems dpa’ gang gis gzugs bzang po dang ngan pa la sogs pa lha’i mig gis mthong ngo cog thams cad kyi chos nyid chos kyi dbyings stong pa nyid <b>shes kyang mi zad pa’i chos mngon sum du mi byed </b>de, ’phags pa’i nyan thos dag ltar mya ngan las ’das pa mngon sum du mi byed pa ni ye shes zhes bya’o. For this kind of expression where the relative pronoun is related to an implied correlative in the genitive, cf. ṭ. fol. 129a7 and the quotation from Rkp.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003110bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006392bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8989983bi' class='paragraph'>
+							gang gis sgrar grag pa thams cad thos pa, de ni mngon par shes pa zhes bya’o; gang sgra thams cad sngon gyi mtha’ dang phyi ma’i mtha’ brjod du med par shes pa, ’di ni ye shes shes bya’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993265bi' class='paragraph'>
+							yaḥ sarvarutānuravitāni śṛṇotīyam ucyate ’bhijñā; yat sarvapūrvāntāparāntaśabdānabhilāpyajñānam idam ucyate jñānam.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996547bi' class='paragraph'>
+							When he hears all words [with divine hearing (divyaśrotra) ], it is called supernormal knowledge; the knowledge that cannot be expressed by any words from endless past into the endless future [that is, knowledge without object (anālambana) ], is called wisdom.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999829bi' class='paragraph'>
+							<b>gang sgra thams cad sngon gyi mtha’ dang phyi ma’i mthar brjod du med par shes pa</b> ni sgra chen po’am chung ngu la sogs pa lha’i rna bas thos so cog ’das pa dang ma ’ongs pa’i mthar <b>brjod du med pa</b> ste, dmigs su med par <b>shes pa</b> ni <b>ye shes zhes bya’o</b>.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003111bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006393bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8989984bi' class='paragraph'>
+							gang gis sems can thams cad kyi sems kyi spyod pa rnams shes pa, ’di ni mngon par shes pa zhes bya’o; gang sems ’gog par shes la, sems ’gog pa mngon sum du yang mi byed pa, ’di ni ye shes shes bya’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993266bi' class='paragraph'>
+							yena sarvasattvānāṃ cittacaritāni jñātānīyam ucyate ’bhijñā; yo na cittanirodhajñāne cittanirodhaṃ sākṣātkarotīdam ucyate jñānam.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996548bi' class='paragraph'>
+							When he knows the mental behaviour of all living beings, it is called supernormal knowledge; when he does not realize the cessation of thought when experiencing the cessation of thought, it is called wisdom.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999830bi' class='paragraph'>
+							<b>sems ’gog par shes pa</b> ni sems kyi chos nyid gzung ba dang ’dzin pa gnyis dang bral bar shes pa ste, de ltar shes kyang sems kyi chos nyid <b>sems ’gog pa mngon sum du yang mi byed pa, ’di ni ye shes zhes bya’o</b>. ṭ interprets the cessation of thought as "the real nature of thought (cittadharmatā), freed from the duality of subject and object (grāhyagrāhaka)".&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003112bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006394bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8989985bi' class='paragraph'>
+							gang sngon gyi mtha’ dang phyi ma’i mtha’ rjes su dran pa, ’di ni mngon par shes pa zhes bya’o; gang dus gsum la ma chags par shes pa, ’di ni ye shes shes bya’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993267bi' class='paragraph'>
+							yā pūrvāntāparāntānusmṛtir iyam ucyate ’bhijñā; yat traikālyāsaktajñānam idam ucyate jñānam.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996549bi' class='paragraph'>
+							Recollection concerning all past and future is called supernormal knowledge; knowledge not attached to any of the three times [knowing their sameness] is called wisdom.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999831bi' class='paragraph'>
+							<b>sngon gyi mtha’ dang phyi ma’i mtha’ rjes su dran pa</b> ni bdag dang pha rol rnams ’das pa’i dus ni ji lta bur gyur cing byed pa dang, ma ’ongs pa’i dus na bdag dang pha rol rnams ji ltar ’gyur ba shes pa’o; <b>gang dus gsum la ma chags par shes pa</b> zhes bya ba ni dus gsum gyi dngos po rnams la mtshan ma dang dngos po nyid du mi ’dzin cing, dus gsum mnyam pa nyid du shes pa’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003113bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006395bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8989986bi' class='paragraph'>
+							gang sangs rgyas thams cad kyi zhing du ’gro ba, ’di ni mngon par shes pa zhes bya’o; gang gis zhing nam mkha’ dang mtshungs par shes pa, ’di ni ye shes shes bya’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993268bi' class='paragraph'>
+							yat sarvabuddhakṣetragamanam iyam ucyate ’bhijñā; yaḥ kṣetram ākāśasadṛśaṃ jānātīdam ucyate jñānam.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996550bi' class='paragraph'>
+							Going to all Buddha-fields is called supernormal knowledge; when he knows the Buddha-fields to be like empty space, it is called wisdom.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999832bi' class='paragraph'>
+							<b>zhing nam mkha’ dang mtshungs par shes pa</b> ni ji ltar nam mkha’ gser dang bai ḍū rya la sogs pa gang gi rang bzhin yang ma yin pa ltar sangs rgyas kyi zhing rnams kyang stong pa nyid du shes pa’o – "... As open space does not have the essence of gold and lapis lazuli, in the same way the buddha-fields are to be known as emptiness."&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003114bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006396bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8989987bi' class='paragraph'>
+							gang dbyer med pa’i chos ’dod pa, ’di ni mngon par shes pa zhes bya’o; gang chos thams cad mnyam par mthong ba’i shes pa, ’di ni ye shes shes bya’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993269bi' class='paragraph'>
+							yāsaṃbhinnadharmakāmateyam ucyate ’bhijñā; yat sarvadharmasamadarśanajñānam idam ucyate jñānam.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996551bi' class='paragraph'>
+							Seeking the unadulterated moments of existence is called supernormal knowledge; knowledge of seeing all moments of existence as the same is called wisdom.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999833bi' class='paragraph'>
+							<b>dbyer med pa’i chos</b> ni nyan thos dang rang sangs rgyas dang sangs rgyas bcom ldan ’das kyi zag pa med pa’i chos rnams rnam par grol bar ro gcig pa ste, de lta bu thob par <b>’dod pa ’di ni mngon par shes pa</b> yin la de’i ’og tu zag pa med pa’i <b>chos de dag kyang mnyam par mthong</b> ste, rnam par grol ba’i rang bzhin du yang mi dmigs pa’i ye shes lhun gyis grub pa la <b>ye shes zhes bya’o</b>.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003115bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006397bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8989988bi' class='paragraph'>
+							gang ’jig rten thams cad dbyer med pa’i mtshan nyid, ’di ni mngon par shes pa zhes bya’o; gang ’jig rten gyi chos thams cad dang ma ’dres par shes pa, ’di ni ye shes shes bya’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993270bi' class='paragraph'>
+							yat sarvalokāsaṃbhinnalakṣaṇam iyam ucyate ’bhijñā; yat sarvalokāsaṃsṛṣṭajñānam idam ucyate jñānam.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996552bi' class='paragraph'>
+							That which has the essential characteristic of not being adulterated in any world is called supernormal knowledge; knowledge of that which is not mingled with any world is called wisdom.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999834bi' class='paragraph'>
+							<b>’jig rten thams cad dbyer med pa’i mtshan nyid</b> ces bya ba ni bzo dang gso ba rig pa la sogs pa ’jig rten thams cad dbyer med cing thun mong du gyur pa’i shes pa ni <b>mngon par shes pa zhes bya</b> la rnam par mi rtog pa’i ye shes <b>’jig rten gyi chos thams cad dang ma ’dres par shes pa</b> ni ye shes yin par sbyar ro.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003116bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006398bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8989989bi' class='paragraph'>
+							gang brgya byin dang, tshangs pa dang, ’jig rten skyong ba rnams zil gyis gnon pa, ’di ni mngon par shes pa zhes bya’o; gang nyan thos dang rang sangs rgyas thams cad kyi spyi bor shes pa, ’di ni ye shes shes bya ste.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993271bi' class='paragraph'>
+							yaḥ śakrabrahmalokapālānām abhibhava iyam ucyate ’bhijñā; yat sarvaśrāvakapratyekabuddhamūrdhajñānam idam ucyate jñānam.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996553bi' class='paragraph'>
+							That which triumphs over the king of gods, the lord of the world and the world-protectors [by the power of the end of the sullied states (āsravakṣayaprabhāvena) ] is called supernormal knowledge; knowledge higher than that of disciples and isolated buddhas is called wisdom.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999835bi' class='paragraph'>
+							zag pa zad pa’i mthus <b>brgya byin</b> la sogs pa mthu dang rdzu ’phrul la sogs pa <b>zil gyis gnon pa, ’di ni mngon par shes pa</b> yin la, ’jig rten las ’das pa <b>nyan thos dang rang sangs rgyas thams cad</b> las kyang khyad par du ’phags te, <b>spyi bor shes pa, ’di ni ye shes</b> zhes bya bar sbyar te, mdor na gang ji tsam du mtshan ma dang rtsol ba dang bcas pa thams cad la ni <b>mngon par shes pa</b> zhes bya, mtshan ma med cing lhun gyis grub par shes pa thams cad ni <b>ye shes</b> zhes bya’o – "... In short, what is concerned with all kinds of distinguishing marks (nimitta) and effort (vyāyāma) is supernormal knowledge, while wisdom is all spontaneous (anābhoga) knowledge beyond distinguishing marks (animitta)."&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003117bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006399bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8989990bi' class='paragraph'>
+							btsun pa sha ra dva ti’i bu, de dag ni byang chub sems dpa’ rnams kyi bsam gtan yongs su sbyang ba zhes bya’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993272bi' class='paragraph'>
+							ima ucyete, bhadanta śāradvatīputra, bodhisattvānāṃ dhyānaparikarme.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996554bi' class='paragraph'>
+							These two, reverend Śāradvatīputra, are said to have the bodhisattvas’ meditation as preparation.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999836bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003118bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006400bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8989991bi' class='paragraph'>
+							&nbsp;</span><span id='8989992bi' class='paragraph'>
+						 yang sems can thams cad kyi nyon mongs pa dang sems g.yeng ba ji snyed par, byang chub sems dpa’ rnams kyi bsam gtan gyi tshogs dang sems gzhag pa shes pa yang de snyed de;&nbsp;</span><span id='8989993bi' class='paragraph'>
+						 sems can thams cad kyi nyon mongs pa dang sems g.yeng ba ji snyed pa, de snyed du byang chub sems dpas kyang bsam gtan gyi tshogs yang dag par bsgrub par bya’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993273bi' class='paragraph'>
+							&nbsp;</span><span id='8993274bi' class='paragraph'>
+						 punar yāvantaḥ sarvasattvānāṃ kleśā vikṣiptacittāni ca tāvān bodhisattvānāṃ dhyānasaṃbhāraś cittasthāpanājñānaṃ ca;&nbsp;</span><span id='8993275bi' class='paragraph'>
+						 yāvantaḥ sarvasattvānāṃ kleśā vikṣiptacittāni ca tāvad bodhisattvānāṃ dhyānasaṃbhārasamudānayanam.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996555bi' class='paragraph'>
+							[3. Since it is the antidote of an immeasurable contrary, it is an immeasurable antidote (apramāṇaḥ pratipakṣo ’pramāṇasya vipakṣasya pratipakṣabhūtatvāt):]&nbsp;</span><span id='8996556bi' class='paragraph'>
+						 Further, as many as are the vices and unconcentrated thoughts of all living beings, so great is the bodhisattvas’ accumulation of meditation [that is, the cause of meditation (dhyānahetu) ] and his knowledge of arresting thoughts [the fruit (phala) ];&nbsp;</span><span id='8996557bi' class='paragraph'>
+						 as many as are the vices and unconcentrated thoughts of all living beings, so great is the bodhisattvas’ gathering of the accumulation of meditation.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999837bi' class='paragraph'>
+							mi mthun pa’i phyogs dpag tu med pa’i gnyen por gyur pas gnyen po tshad med pa’i dbang du mdzad nas <b>yang sems can thams cad kyi nyon mongs pa dang sems g.yeng ba ji snyed par</b> zhes bya ba la sogs pa gsungs so.&nbsp;</span><span id='8999838bi' class='paragraph'>
+						 sems can thams cad kyi nyon mongs pa’i tshogs ji snyed yod pa dang dmigs pa de dang de dag la brten nas skad cig kyang mi gnas pa’i sems <b>g.yeng ba</b> ji snyed yod pa dang spong bar byed pa’i gnyen po <b>byang chub sems dpa’ rnams kyi bsam gtan gyi tshogs dang sems gzhag pa shes pa yang de snyed </b>cig yod do zhes bya ba’i tha tshig ste, de ni ’di skad du sems can gyi nyon mongs pa dang sems g.yeng ba dpag tu med de, de bzhin du byang chub sems dpa’i bsam gtan gyi tshogs dang, sems mnyam par gzhag pa shes pa yang dpag tu med do zhes ston to. de la <b>bsam gtan gyi tshogs</b> ni bsam gtan gyi rgyu la bya’o, <b>sems gzhag pa shes pa</b> ni ’bras bu la bya’o.&nbsp;</span><span id='8999839bi' class='paragraph'>
+						 <b>sems can thams cad kyi nyon mongs pa dang sems g.yeng ba ji snyed pa, de snyed du byang chub sems dpas kyang bsam gtan gyi tshogs yang dag par bsgrub par bya’o</b> zhes bya bas ni sems can gyi nyon mongs pa dang sems g.yeng ba de ltar dpag tu med pas na byang chub sems dpa’ bsam gtan gyi tshogs bsgrub par ’dod pas kyang, sems can gyi nyon mongs pa dang sems g.yeng ba dpag tu med pa’i gnyen po bsam gtan gyi tshogs kyang dpag tu med pa bsgrub par bya’o zhes ston to.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003119bi' class='paragraph'>
+							.&nbsp;</span><span id='9003120bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003121bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006401bi' class='paragraph'>
+							.&nbsp;</span><span id='9006402bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006403bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8989994bi' class='paragraph'>
+							mnyam pa nyid de la gnas pas na, de’i phyir mnyam par gzhag pa zhes bya’o.&nbsp;</span><span id='8989995bi' class='paragraph'>
+						 sems can mnyam pa nyid dang, sems mnyam pa nyid dang, bsam pa mnyam pa nyid dang, lhag pa’i bsam pa mnyam pa nyid dang, sbyor ba mnyam pa nyid dang, sbyin pa dang, tshul khrims dang, bzod pa dang, brtson ’grus dang, bsam gtan dang, shes rab mnyam pa nyid dang, sangs rgyas kyi chos thams cad mnyam pa nyid du gnas pas na, de’i phyir mnyam par gzhag pa zhes bya’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993276bi' class='paragraph'>
+							tatsamatāyāṃ sthitas, tenocyate samāhita iti.&nbsp;</span><span id='8993277bi' class='paragraph'>
+						 sattvasamatāyāṃ cittasamatāyām āśayasamatāyām adhyāśayasamatāyāṃ prayogasamatāyāṃ dānaśīlakṣāntivīryadhyānaprajñāsamatāyāṃ sarvabuddhadharmasamatāyāṃ sthitas, tenocyate samāhita iti.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996558bi' class='paragraph'>
+							[4. By the etymology (nirukti) is shown the purity of being established in the undifferentiatedness of objects (ālambanâprabhinnatva):] He is established in that sameness, and thus he is called concentrated.&nbsp;</span><span id='8996559bi' class='paragraph'>
+						 (p. 56) He is established in the sameness of all living beings, in the sameness of thoughts, in the sameness of intention, in the sameness of determination, in the sameness of action, in the sameness of generosity, morality, tolerance, vigour, meditation and insight, in the sameness of all the teachings of the Buddhas, and thus he is called concentrated.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999840bi' class='paragraph'>
+							&nbsp;</span><span id='8999841bi' class='paragraph'>
+						 nges pa’i tshig gis dmigs pa tha dad pa med pa la gnas pa rnam par dag pa’i dbang du byas nas <b>mnyam pa nyid de la gnas pas na, de’i phyir mnyam par gzhag pa zhes bya’o </b>zhes bya ba la sogs pa gsungs te, gang du smos pa <b>sems gzhag pa shes pa</b> ni bsam gtan gyi tshogs kyi ’bras bu zhum pa dang rgod pa spangs pa yin pas <b>mnyam pa nyid</b> ces bya ste, de la gnas pas na sems <b>mnyam par gzhag pa</b> zhes bya’o; yang na sngar smos pa lta bu’i chos rnams kyi <b>mnyam pa nyid</b> la sems rtse gcig tu gzhag pas na <b>mnyam par gzhag pa</b> zhes bya’o; yang na <b>mnyam pa nyid</b> de ni ’og nas smos pa ste, gang dang gang dag mnyam pa zhe na? <b>sems can mnyam pa nyid dang</b> zhes bya ba la sogs pa gsungs pa dang sbyar ro; sems can las nyon mongs pa ming gis smos pa de dag ni yang dag par na ji skad du brjod pa bzhin grub pa med de thams cad ro gcig cing mnyam pa yin te, <b>mnyam pa nyid</b> de la <b>gnas pas na, de’i phyir mnyam par gzhag pa zhes bya’o</b>.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003122bi' class='paragraph'>
+							.&nbsp;</span><span id='9003123bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006404bi' class='paragraph'>
+							.&nbsp;</span><span id='9006405bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8989996bi' class='paragraph'>
+							ting nge ’dzin gang dang mnyam pa, byang chub kyang de dang mnyam mo;&nbsp;</span><span id='8989997bi' class='paragraph'>
+						 byang chub gang dang mnyam pa, sems can thams cad kyang de dang mnyam mo;&nbsp;</span><span id='8989998bi' class='paragraph'>
+						 sems can thams cad gang dang mnyam pa, chos thams cad kyang de dang mnyam ste;&nbsp;</span><span id='8989999bi' class='paragraph'>
+						 mnyam pa nyid de la snyoms par zhugs pas na, de’i phyir snyoms par zhugs pa zhes bya’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993278bi' class='paragraph'>
+							samādhir yatsamo bodhir api tatsamā;&nbsp;</span><span id='8993279bi' class='paragraph'>
+						 bodhir yatsamā sarvasattvā api tatsamāḥ;&nbsp;</span><span id='8993280bi' class='paragraph'>
+						 sarvasattvā yatsamāḥ sarvadharmā api tatsamāḥ.&nbsp;</span><span id='8993281bi' class='paragraph'>
+						 tatsamatāṃ samāpannas, tenocyate samāpanna iti.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996560bi' class='paragraph'>
+							What concentration is the same as, awakening is also the same as that [both being empty];&nbsp;</span><span id='8996561bi' class='paragraph'>
+						 what awakening is the same as, all beings are also the same as that;&nbsp;</span><span id='8996562bi' class='paragraph'>
+						 what all beings are the same as, all moments of existence are also the same as that.&nbsp;</span><span id='8996563bi' class='paragraph'>
+						 He has entered this sameness, thus he is called concentrated.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999842bi' class='paragraph'>
+							&nbsp;</span><span id='8999843bi' class='paragraph'>
+						 &nbsp;</span><span id='8999844bi' class='paragraph'>
+						 &nbsp;</span><span id='8999845bi' class='paragraph'>
+						 <b>ting nge ’dzin</b> sems rtse gcig pa’i mtshan nyid <b>gang dang mnyam pa</b>, gnyis su med pa’i ye shes byang chub kyang de dang mnyam ste, stong pa nyid du ’dra zhes bya ba’i tha tshig go. de bzhin du tshig ’og ma rnams la yang rgya cher sbyar bar bya’o. byang chub gang dang mnyam pa stong pa nyid kyang de dang mnyam mo zhes bya ni byang chub dang stong pa nyid kyi ting nge ’dzin rang bzhin gcig ste, yang dag par na tha mi dad de zhes bya ba’i tha tshig go.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003124bi' class='paragraph'>
+							.&nbsp;</span><span id='9003125bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003126bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003127bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006406bi' class='paragraph'>
+							.&nbsp;</span><span id='9006407bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006408bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006409bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8990000bi' class='paragraph'>
+							stong pa nyid gang dang mnyam pa, mtshan ma med pa yang de dang mnyam mo; mtshan ma med pa gang dang mnyam pa, sems can thams cad kyang de dang mnyam mo; sems can thams cad gang dang mnyam pa, chos thams cad kyang de dang mnyam ste; mnyam pa nyid de la snyoms par zhugs pas na, de’i phyir snyoms par zhugs pa zhes bya’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993282bi' class='paragraph'>
+							śūnyatā yatsamānimittam api tatsamam, ānimittaṃ yatsamaṃ sarvasattvā api tatsamāḥ, sarvasattvā yatsamā sarvadharmā api tatsamāḥ; tatsamatāṃ samāpannas, tenocyate samāpanna iti.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996564bi' class='paragraph'>
+							What emptiness is the same as, absence of distinguishing marks is also the same as that; what absence of distinguishing marks is the same as, all beings are also the same as that; what all beings are the same as, all moments of existence are also the same as that. He has entered this sameness, thus he is called concentrated.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999846bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003128bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006410bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8990001bi' class='paragraph'>
+							mtshan ma med pa gang dang mnyam pa, smon pa med pa yang de dang mnyam mo; smon pa med pa gang dang mnyam pa, sems can thams cad kyang de dang mnyam mo; sems can thams cad gang dang mnyam pa, chos thams cad kyang de dang mnyam ste; mnyam pa nyid de la snyoms par zhugs pas na, de’i phyir snyoms par zhugs pa zhes bya’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993283bi' class='paragraph'>
+							ānimittaṃ yatsamam apraṇidhānam api tatsamam, praṇidhānaṃ yatsamaṃ sarvasattvā api tatsamāḥ, sarvasattvā yatsamāḥ sarvadharmā api tatsamāḥ; tatsamatāṃ samāpannas, tenocyate samāpanna iti.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996565bi' class='paragraph'>
+							What absence of distinguishing marks is the same as, no longing is also the same as that; what no longing is the same as, all beings are also the same as that; what all beings are the same as, all moments of existence are also the same as that. He has entered this sameness, thus he is called concentrated.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999847bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003129bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006411bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8990002bi' class='paragraph'>
+							smon pa med pa gang dang mnyam pa, mngon par ’du mi byed pa yang de dang mnyam mo; mngon par ’du mi byed pa gang dang mnyam pa, sems can thams cad kyang de dang mnyam mo; sems can thams cad gang dang mnyam pa, chos thams cad kyang de dang mnyam ste; mnyam pa nyid de la snyoms par zhugs pas na, de’i phyir snyoms par zhugs pa zhes bya’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993284bi' class='paragraph'>
+							apraṇidhānaṃ yatsamam anabhisaṃskāro ’pi tatsamaḥ, anabhisaṃskāro yatsamaḥ sarvasattvā api tatsamāḥ, sarvasattvā yatsamāḥ sarvadharmā api tatsamāḥ; tatsamatāṃ samāpannas, tenocyate samāpanna iti.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996566bi' class='paragraph'>
+							What no longing is the same as, the unconditioned is also the same as that; what the unconditioned is the same as, all beings are also the same as that; what all beings are the same as, all moments of existence are also the same as that. He has entered this sameness, thus he is called concentrated.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999848bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003130bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006412bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8990003bi' class='paragraph'>
+							mngon par ’du mi byed pa gang dang mnyam pa, mi skye ba yang de dang mnyam mo; mi skye ba gang dang mnyam pa, sems can thams cad kyang de dang mnyam mo; sems can thams cad gang dang mnyam pa, chos thams cad kyang de dang mnyam ste; mnyam pa nyid de la snyoms par zhugs pas na, de’i phyir snyoms par zhugs pa zhes bya’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993285bi' class='paragraph'>
+							anabhisaṃskāro yatsamo ’nutpādo ’pi tatsamaḥ, anutpādo yatsamaḥ sarvasattvā api tatsamāḥ, sarvasattvā yatsamāḥ sarvadharmā api tatsamāḥ; tatsamatāṃ samāpannas, tenocyate samāpanna iti.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996567bi' class='paragraph'>
+							What the unconditioned is the same as, the unoriginated is also the same as that; what the unoriginated is the same as, all beings are also the same as that; what all beings are the same as, all moments of existence are also the same as that. He has entered this sameness, thus he is called concentrated.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999849bi' class='paragraph'>
+							<b>mngon par ’du mi byed pa gang dang mnyam pa, mi skye ba yang de dang mnyam mo</b> zhes bya ba ni dge ba dang mi dge ba la sogs pa’i mngon par ’du byed pa dang bral ba’i chos nyid dang mi skye ba don gcig pa’i phyir ro. de bzhin du mi ’byung ba dang, gzung ba dang ’dzin pa’i dngos po med par yang rang bzhin gcig ces bya bar sbyar ro.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003131bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006413bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8990004bi' class='paragraph'>
+							mi skye ba gang dang mnyam pa, mi ’byung ba yang de dang mnyam mo; mi ’byung ba gang dang mnyam pa, sems can thams cad kyang de dang mnyam mo; sems can thams cad gang dang mnyam pa, chos thams cad kyang de dang mnyam ste; mnyam pa nyid de la snyoms par zhugs pas na, de’i phyir snyoms par zhugs pa zhes bya’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993286bi' class='paragraph'>
+							anutpādo yatsamo ’saṃbhavo ’pi tatsamaḥ, asaṃbhāvo yatsamaḥ sarvasattvā api tatsamāḥ, sarvasattvā yatsamāḥ sarvadharmā api tatsamāḥ; tatsamatāṃ samāpannas, tenocyate samāpanna iti.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996568bi' class='paragraph'>
+							What the unoriginated is the same as, the unproduced is also the same as that; what the unproduced is the same as, all beings are also the same as that; what all beings are the same as, all moments of existence are also the same as that. He has entered this sameness, thus he is called concentrated.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999850bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003132bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006414bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8990005bi' class='paragraph'>
+							mi ’byung ba gang dang mnyam pa, dngos po med pa yang de dang mnyam mo; dngos po med pa gang dang mnyam pa, sems can thams cad kyang de dang mnyam mo; sems can thams cad gang dang mnyam pa, chos thams cad kyang de dang mnyam ste; mnyam pa nyid de la snyoms par zhugs pas na, de’i phyir snyoms par zhugs pa zhes bya’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993287bi' class='paragraph'>
+							asaṃbhavo yatsamo ’bhāvo ’pi tatsamaḥ, abhāvo yatsamaḥ sarvasattvā api tatsamāḥ, sarvasattvā yatsamāḥ sarvadharmā api tatsamāḥ; tatsamatāṃ samāpannas, tenocyate samāpanna iti.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996569bi' class='paragraph'>
+							What the unproduced is the same as, the inexistent is also the same as that; what the inexistent is the same as, all beings are also the same as that; what all beings are the same as, all moments of existence are also the same as that. He has entered this sameness, thus he is called concentrated.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999851bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003133bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006415bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8990006bi' class='paragraph'>
+							dngos po med pa gang dang mnyam pa, rnam par dag pa yang de dang mnyam mo; rnam par dag pa gang dang mnyam pa, sems can thams cad kyang de dang mnyam mo; sems can thams cad gang dang mnyam pa, chos thams cad kyang de dang mnyam ste; mnyam pa nyid de la snyoms par zhugs pas na, de’i phyir snyoms par zhugs pa zhes bya’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993288bi' class='paragraph'>
+							abhāvo yatsamo viśuddhir api tatsamā, viśuddhir yatsamā sarvasattvā api tatsamāḥ, sarvasattvā yatsamāḥ sarvadharmā api tatsamāḥ; tatsamatāṃ samāpannas, tenocyate samāpanna iti.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996570bi' class='paragraph'>
+							What the inexistent is the same as, purity is also the same as that; what purity is the same as, all beings are also the same as that; what all beings are the same as, all moments of existence are also the same as that. He has entered this sameness, thus he is called concentrated.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999852bi' class='paragraph'>
+							gzung ba dang ’dzin pa rtog pa’i dri ma’i <b>dngos po med</b> de de dang bral ba nyid <b>rnam par dag pa</b> yin te, glo bur gyi dri ma dang bral ba’i phyir ro.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003134bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006416bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8990007bi' class='paragraph'>
+							rang gi sems mnyam pa sems can thams cad kyi sems mnyam pa nyid de la zhugs pas na, de’i phyir snyoms par zhugs pa zhes bya’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993289bi' class='paragraph'>
+							tāṃ svacittasamasarvasattvacittasamatām āpannas, tenocyate samāpanna iti.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996571bi' class='paragraph'>
+							(p. 57) [For a long time cultivating it] he has entered the sameness of all beings’ thoughts which are the same as one’s own thoughts [in being essentially and originally pure], thus he is called concentrated.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999853bi' class='paragraph'>
+							<b>rang gi sems</b> kyi rang bzhin ni de ltar gzod ma nas rnam par dag pa’i rang bzhin du<b> mnyam pa</b> dang <b>sems can thams cad kyi sems</b> kyi rang bzhin yang ’dra bar yun ring po nas bsgom zhing <b>mnyam pa nyid de zhugs pas na de’i phyir snyoms par bzhugs pa zhes bya’o</b>.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003135bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006417bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8990008bi' class='paragraph'>
+							&nbsp;</span><span id='8990009bi' class='paragraph'>
+						 phan par byed pa dang phan par mi byed pa thams cad la snyoms shing,&nbsp;</span><span id='8990010bi' class='paragraph'>
+						 sa dang mnyam pa’i sems,&nbsp;</span><span id='8990011bi' class='paragraph'>
+						 chu dang mnyam pa’i sems,&nbsp;</span><span id='8990012bi' class='paragraph'>
+						 me dang mnyam pa’i sems,&nbsp;</span><span id='8990013bi' class='paragraph'>
+						 rlung dang mnyam pa’i sems,&nbsp;</span><span id='8990014bi' class='paragraph'>
+						 nam mkha’ dang mnyam pa’i sems te,&nbsp;</span><span id='8990015bi' class='paragraph'>
+						 mi mtho mi dma’ bar gnas shing&nbsp;</span><span id='8990016bi' class='paragraph'>
+						 mi g.yo bar gyur pa,&nbsp;</span><span id='8990017bi' class='paragraph'>
+						 spyod lam thams cad du mnyam par gzhag pa,&nbsp;</span><span id='8990018bi' class='paragraph'>
+						 spyod lam ma bcos pa,&nbsp;</span><span id='8990019bi' class='paragraph'>
+						 rang bzhin gyis snyoms par zhugs pa,&nbsp;</span><span id='8990020bi' class='paragraph'>
+						 mi rgod pa dang, mi g.yeng ba,&nbsp;</span><span id='8990021bi' class='paragraph'>
+						 mu cor mi smra ba,&nbsp;</span><span id='8990022bi' class='paragraph'>
+						 tshig ma ’chal pa,&nbsp;</span><span id='8990023bi' class='paragraph'>
+						 don shes pa, chos shes pa,&nbsp;</span><span id='8990024bi' class='paragraph'>
+						 dus shes pa, tshod shes pa, dus min shes pa,&nbsp;</span><span id='8990025bi' class='paragraph'>
+						 ’jig rten thams cad kyi rjes su snyegs shing ’jig rten dang ma ’dres pa,&nbsp;</span><span id='8990026bi' class='paragraph'>
+						 ’jig rten gyi chos brgyad las ’das pa,&nbsp;</span><span id='8990027bi' class='paragraph'>
+						 nyon mongs pa thams cad dang ma ’dres pa,&nbsp;</span><span id='8990028bi' class='paragraph'>
+						 ’du ’dzi’i nang na yang spyod lam dben pa ste;&nbsp;</span><span id='8990029bi' class='paragraph'>
+						 de lta bu’i chos la gnas pa’i byang chub sems dpa’ ni mnyam par gzhag pa’i gnas kyang mi ’dor la, ’jig rten gyi bya ba thams cad du yang snang ste:&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993290bi' class='paragraph'>
+							&nbsp;</span><span id='8993291bi' class='paragraph'>
+						 sarvopakārāpakārasamatā,&nbsp;</span><span id='8993292bi' class='paragraph'>
+						 pṛthivīsamacittatā,&nbsp;</span><span id='8993293bi' class='paragraph'>
+						 apsamacittatā,&nbsp;</span><span id='8993294bi' class='paragraph'>
+						 tejaḥsamacittatā,&nbsp;</span><span id='8993295bi' class='paragraph'>
+						 vāyusamacittatā,&nbsp;</span><span id='8993296bi' class='paragraph'>
+						 ākāśasamacittatā,&nbsp;</span><span id='8993297bi' class='paragraph'>
+						 anunnāmāvanāmavihāritā,&nbsp;</span><span id='8993298bi' class='paragraph'>
+						 aniñjyabhūtatā;&nbsp;</span><span id='8993299bi' class='paragraph'>
+						 sarveryāpathasamāhitatā,&nbsp;</span><span id='8993300bi' class='paragraph'>
+						 īryāpathākṛtrimatā,&nbsp;</span><span id='8993301bi' class='paragraph'>
+						 prakṛtisamāpannatā&nbsp;</span><span id='8993302bi' class='paragraph'>
+						 anuddhatatā acapalatā,&nbsp;</span><span id='8993303bi' class='paragraph'>
+						 amukharatā,&nbsp;</span><span id='8993304bi' class='paragraph'>
+						 adaurvacasyatā;&nbsp;</span><span id='8993305bi' class='paragraph'>
+						 arthajñatā dharmajñatā;&nbsp;</span><span id='8993306bi' class='paragraph'>
+						 kālajñatā velājñatā asamayajñatā;&nbsp;</span><span id='8993307bi' class='paragraph'>
+						 sarvalokasamanubandhalokāsaṃsṛṣṭatā,&nbsp;</span><span id='8993308bi' class='paragraph'>
+						 aṣṭalokadharmātikramatā,&nbsp;</span><span id='8993309bi' class='paragraph'>
+						 sarvakleśāsaṃsṛṣṭatā,&nbsp;</span><span id='8993310bi' class='paragraph'>
+						 saṃgaṇikāyām apy īryāpathavivekatā;&nbsp;</span><span id='8993311bi' class='paragraph'>
+						 evaṃrūpeṣu dharmeṣv api viharan bodhisattvaḥ samāhitasthānam na vijahāti, sarvalokakriyāyāṃ tv āvirbhavati.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996572bi' class='paragraph'>
+							[5. Giving up mental effort concerned with being an antidote (pratipakṣamanasikāraprahāṇa), meditation is]&nbsp;</span><span id='8996573bi' class='paragraph'>
+						 sameness in any benefit and injury,&nbsp;</span><span id='8996574bi' class='paragraph'>
+						 [that is,] to have thoughts the same as earth,&nbsp;</span><span id='8996575bi' class='paragraph'>
+						 thoughts the same as water,&nbsp;</span><span id='8996576bi' class='paragraph'>
+						 thoughts the same as fire,&nbsp;</span><span id='8996577bi' class='paragraph'>
+						 thoughts the same as wind,&nbsp;</span><span id='8996578bi' class='paragraph'>
+						 thoughts the same as space, [to illustrate it with examples];&nbsp;</span><span id='8996579bi' class='paragraph'>
+						 not to behave so as to be conceited [when succeeding] or depressed [when failing in bodhisattva-meditation],&nbsp;</span><span id='8996580bi' class='paragraph'>
+						 being undisturbed;&nbsp;</span><span id='8996581bi' class='paragraph'>
+						 to be concentrated in all bodily movement,&nbsp;</span><span id='8996582bi' class='paragraph'>
+						 not artificial in bodily movement [being concentrated in construing each movement (pratyekaṃ parikalpayitvā samāhitaḥ) ],&nbsp;</span><span id='8996583bi' class='paragraph'>
+						 [but] naturally in a state of concentration,(prakṛtisamāpannatā),&nbsp;</span><span id='8996584bi' class='paragraph'>
+						 not agitated or wavering,&nbsp;</span><span id='8996585bi' class='paragraph'>
+						 moderation in speech,&nbsp;</span><span id='8996586bi' class='paragraph'>
+						 and no bad speech;&nbsp;</span><span id='8996587bi' class='paragraph'>
+						 knowing the meaning [of the teachings that things are empty, selfless, etc.] and knowing the [words, letters, etc., of the] teachings [both teaching the knowledge of the things on which to meditate (bhāvayitavyajñāna) ];&nbsp;</span><span id='8996588bi' class='paragraph'>
+						 knowing the time [that is, the seasons when to meditate], knowing [which] time [of the day to meditate], knowing the inopportune [and thus the time to get up, eat, walk about, etc., three items teaching the knowledge of the time of meditation (bhāvanākālajñāna) ];&nbsp;</span><span id='8996589bi' class='paragraph'>
+						 not to be mingled with the world though connected with all worlds,&nbsp;</span><span id='8996590bi' class='paragraph'>
+						 [combining in the bodhisattvas’ meditation (dhyāna) insight and expedient means yoked in a team (prajñopāyayuganaddhaparigṛhīta), in the way that he is] beyond the eight ways of the world,&nbsp;</span><span id='8996591bi' class='paragraph'>
+						 not mingled with any of the vices,&nbsp;</span><span id='8996592bi' class='paragraph'>
+						 aloofness of behaviour even in crowds;&nbsp;</span><span id='8996593bi' class='paragraph'>
+						 the bodhisattva stays within these moments of existence and does not give up the state of being concentrated [by insight (prajñā) ], but even so he manifests himself in every worldly matter [through expedient means (upāya) ].&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999854bi' class='paragraph'>
+							mi mthun pa’i phyogs yid la byed pa spangs pa’i dbang du byas nas <b>phan par byed pa dang phan par mi byed pa thams cad la snyoms shing</b> zhes bya ba la sogs pa gsungs so.&nbsp;</span><span id='8999855bi' class='paragraph'>
+						 <b>phan bar byed pa</b> ni phan ’dogs pa’o; <b>phan par mi byed pa </b>ni gnod pa byed pa ste, de gnyis la ’dra bar sems pas na <b>snyoms pa</b> zhes bya’o.&nbsp;</span><span id='8999856bi' class='paragraph'>
+						 &nbsp;</span><span id='8999857bi' class='paragraph'>
+						 &nbsp;</span><span id='8999858bi' class='paragraph'>
+						 &nbsp;</span><span id='8999859bi' class='paragraph'>
+						 &nbsp;</span><span id='8999860bi' class='paragraph'>
+						 snyoms pa’i dpes bstan pa’i phyir <b>sa dang mnyam pa’i sems</b> zhes bya ba la sogs pa gsungs so.&nbsp;</span><span id='8999861bi' class='paragraph'>
+						 &nbsp;</span><span id='8999862bi' class='paragraph'>
+						 <b>mi mtho ba</b> ni ting nge ’dzin gyi khyad par thob pas rlom sems su mi byed par gnas pa’o, <b>mi dma’ ba</b> ni byang chub sems dpa’i ting nge ’dzin mang zhing rgya che ba dag thos nas bsgrub mi nus so snyam du sems zhum pa med pa ste, de ltar mi mtho mi dma’ bar gnas pas <b>mi g.yo bar gyur pa</b> yin te, gang gis kyang bskyod mi nus par gyur ces bya ba’i don to.<br />Cf. Lv p. 337: anunayapratighaprahāṇaṃ dharmālokamukham anunnāmāvanāmatāyai saṃvartate; and Sdhmp p. 16110: cittaṃ pi te shāntagataṃ susaṃsthitam aninyjyabhūtaṃ sadā aprakampyam.&nbsp;</span><span id='8999863bi' class='paragraph'>
+						 &nbsp;</span><span id='8999864bi' class='paragraph'>
+						 <b>spyod lam thams cad du mnyam par gzhag pa</b> zhes bya ba la sogs pas ni lus dang, sems dang, ngag yongs su dag pa bstan te, ’gro ba dang ’dug pa la sogs pa’i <b>spyod lam thams cad du mnyam par gzhag pa</b> dang, de yang so sor kun brtags nas mnyam par gzhag pa ltar bcos pa ma yin pas <b>spyod lam ma bcos pa</b> ste, tshig de gnyis kyis ni lus yongs su dag par bstan te – "... By these two words purity of body (kāyaparishuddhi) is taught".&nbsp;</span><span id='8999865bi' class='paragraph'>
+						 &nbsp;</span><span id='8999866bi' class='paragraph'>
+						 so sor kun tu brtags nas snyoms par zhugs pa ma yin gyi, dus thams cad du <b>rang bzhin gyis snyoms par zhugs pa</b> dang, rgyu ba’i tshe mig la sogs pa’i dbang po’i yul la <b>mi rgod pa</b> dang, gnas pa’i tshe ’dod pa la ’dun pa dang gnod sems la sogs pa la <b>mi g.yeng ba</b>’i tshig de gsum gyis sems yongs su dag pa bstan to – "... By these three words purity of thought (cittaparishuddhi) is taught".&nbsp;</span><span id='8999867bi' class='paragraph'>
+						 &nbsp;</span><span id='8999868bi' class='paragraph'>
+						 ran par smra zhing mang du mi smra bas <b>mu cor mi smra ba</b> dang, chos smra ba dang bden par smra bas <b>tshig ma ’chal pa</b> de gnyis kyis ni ngag yongs su dag pa bstan to – "... By these two words purity of speech (vākparishuddhi) is taught".&nbsp;</span><span id='8999869bi' class='paragraph'>
+						 <b>don shes pa</b> la sogs pas ni bsgom par bya ba’i don dang chos dang sgom pa’i dus shes pa bstan te: stong pa dang bdag med pa la sogs pa chos rnams kyi <b>don shes pa</b> dang, ming dang tshig dang yi ges bsdus pa gsung rab kyi yan lag gi <b>chos shes pa </b>gnyis kyis ni gang bsgom par bya ba shes pa bstan to.&nbsp;</span><span id='8999870bi' class='paragraph'>
+						 dbyar dang ston dang dgun dang dgun smad dang dpyid dang sos ka’i dus gang gi tshe ji ltar bsgom pa shes pas <b>dus shes pa</b> dang, de la yang nam gyi cha stod dang cha smad la sogs pa gang gi tshe bsgom pa shes pas <b>tshod shes pa </b>dang, ’di ni ldang ba’i dus so, ’di zas kyi dus so, ’di ni ’chags pa’i dus so zhes bya ba la sogs pa shes pa ni <b>dus min shes pa </b>ste. tshig de dag gis ni bsgom pa’i dus shes pa bstan to.&nbsp;</span><span id='8999871bi' class='paragraph'>
+						 &nbsp;</span><span id='8999872bi' class='paragraph'>
+						 &nbsp;</span><span id='8999873bi' class='paragraph'>
+						 <b>’jig rten thams cad kyi rjes su snyegs shing</b> zhes bya ba la sogs pas ni byang chub sems dpa’i bsam gtan thabs dang shes rab zung du ’brel bas zin pa ston te, sngar bstan pa ltar spyod lam thams cad du mnyam par gzhag pa yin yang sems can yongs su smin par bya ba’i ched du rgyal rigs dang rje’u rigs la sogs pa ’jig rten thams cad kyi rjes su snyegs te, de dag mthun par spyod pa’i thabs mkhas pa dang yang ldan la, shes rab kyis zin pas de dag gi nang na gnas kyang <b>’jig rten dang ma ’dres pa</b> yin no. ji ltar ma ’dres she na? <b>’jig rten gyi chos brgyad las ’das pa, nyon mongs pa thams cad dang ma ’dres pa</b> zhes gsungs so. On the concept prajnyopāyayuganaddhavāhī mārgaḥ cf. the introduction.&nbsp;</span><span id='8999874bi' class='paragraph'>
+						 <b>’du ’dzi’i nang na yang spyod lam dben pa</b> ni sems can gyi don la ’jig rten gyi rjes su snyegs shing ’du ’dzi mang po’i nang na gnas na yang sems dben cing rtse gcig tu gnas shes bya ba’i tha tshig go.&nbsp;</span><span id='8999875bi' class='paragraph'>
+						 <b>de lta bu’i chos la gnas pa</b> ni bstan ma thag pa’i chos la gnas pa ste, <b>byang chub sems dpa’ de ni</b> shes rab kyis yongs su zin pas nyon mongs pa dang ’jig rten gyi chos dag gi dbang du mi ’gyur ba’i phyir <b>mnyam par  bzhag pa’i gnas kyang mi ’dor la</b>, thabs kyis yongs su zin pas <b>’jig rten gyi bya ba thams cad du yang snang</b> ngo. On sarvalokakriyā cf. Dbh. pp. 144, 628 and 9718.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003136bi' class='paragraph'>
+							.&nbsp;</span><span id='9003137bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003138bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003139bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003140bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003141bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003142bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003143bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003144bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003145bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003146bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003147bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003148bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003149bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003150bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003151bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003152bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003153bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003154bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003155bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003156bi' class='paragraph'>
+						 .&nbsp;</span><span id='9003157bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006418bi' class='paragraph'>
+							.&nbsp;</span><span id='9006419bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006420bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006421bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006422bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006423bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006424bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006425bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006426bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006427bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006428bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006429bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006430bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006431bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006432bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006433bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006434bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006435bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006436bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006437bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006438bi' class='paragraph'>
+						 .&nbsp;</span><span id='9006439bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8990030bi' class='paragraph'>
+							btsun pa sha ra dva ti’i bu, ’di ni byang chub sems dpa’i thabs dang shes rab kyis mngon par bsgrubs pa’i bsam gtan gyi pha rol tu phyin pa zhes bya’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993312bi' class='paragraph'>
+							iyam ucyate, bhadanta śāradvatīputra, bodhisattvasya prajñopāyābhinirhṛtā dhyānapāramitā.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996594bi' class='paragraph'>
+							This, reverend Śāradvatīputra, is called the bodhisattva’s perfection of meditation brought about through insight and expedient means.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999876bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003158bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006440bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8990031bi' class='paragraph'>
+							de la byang chub sems dpa’i thabs ni gang, shes rab ni gang zhe na?&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993313bi' class='paragraph'>
+							tatra katamo bodhisattvasyopāyaḥ katamā prajñā?&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996595bi' class='paragraph'>
+							What then is the bodhisattva’s expedient means, what is his insight?&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999877bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003159bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006441bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8990032bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993314bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996596bi' class='paragraph'>
+							[6. Staying with the purified antidote (viśuddhapratipakṣasthiti), by which is explained fully how insight and expedient means yoked in a team are combined (prajñopāyayuganaddhaparigṛhīta) in the bodhisattva’s meditation (dhyāna):]&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999878bi' class='paragraph'>
+							<b>thabs dang shes rab kyis mngon par bsgrubs pa’i bsam gtan</b> zhes bshad na, thabs dang shes rab gang yin snyam nas <b>de la byang chub sems dpa’i thabs ni gang shes rab ni gang zhe na</b> zhes dris pa dang, gnyen po rnam par dag pa la gnas pa’i dbang du byas nas <b>gang byang chub sems dpa’ mnyam par gzhog pa na sems can la blta ba’i phyir</b> zhes bya ba la sogs pa byang chub sems dpa’i bsam gtan thabs dang shes rab kyis zin pa rgya cher gsungs so.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003160bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006442bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8990033bi' class='paragraph'>
+							gang byang chub sems dpa’ mnyam par gzhog pa na sems can la lta ba’i phyir snying rje chen po’i dmigs pa la sems ’dogs pa, ’di ni byang chub sems dpa’i thabs shes bya’o; gang zhi ba dang rab tu zhi bar bsam gtan du byed pa, ’di ni de’i shes rab bo.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993315bi' class='paragraph'>
+							yo bodhisattvaḥ samāpattau sattvāvekṣayā mahākaruṇārambaṇaṃ cittaṃ prajñapayaty ayaṃ bodhisattvasyopāyaḥ; yo śāntapraśāntaṃ dhyānaṃ dhyāyatīyaṃ tasya prajñā.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996597bi' class='paragraph'>
+							When the bodhisattva in a state of concentration with regard for living beings produces thoughts with great compassion as the object, it is the bodhisattva’s expedient means; when he practises meditation which is peace [and thus beyond thought-constructions and action], it is his insight.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999879bi' class='paragraph'>
+							<b>mnyam par gzhog pa na</b> zhes bya ba ni dang po rnal ’byor du snyoms par ’jug pa’i tshe’o. <b>snying rje chen po’i dmigs pa la sems</b> <b>’dogs pa</b> ni khams dang ’gro ba dang skye gnas kyis bsdus pa’i sems can thams cad ni sdug bsngal rnam pa gsum gyis ji ltar mthun pa bzhin du sdug bsngal ba yin no snyam du sems mngon par ’du byed pa ste, de ni <b>thabs</b> so. de’i ’og tu sems can sdug bsngal la sogs pa’i mtshan ma yang rab tu spangs te, rtog pa <b>zhi ba dang</b> spyod pa <b>rab tu zhi bar bsam gtan du byed pa ’di ni de’i shes rab</b> ste, tshig mthun pa rnams ni ’og ma dag la yang mthun mthun du sbyar ro. Sūtrasamuccaya fol. 208a5-b1, quoting Akṣ, reads snyoms par ’jug pa na – samāpattau for Akṣ mnyam par gzhog pa na. ’dogs does not seem to have any other possible equivalent apart from prajnyapayati, ṭ glosses cittam abhisaṃskaroti. For the expression dhyānaṃ dhyāyati cf. Mv ii, p. 2082: yaṃ bodhisatvo āsphanakaṃ dhyānam dhyāyati, and Edg s. v. āsphānaka. On case and gender of the relative pronoun cf. ṭ. fol. 129a7, 130b2, etc.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003161bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006443bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8990034bi' class='paragraph'>
+							gang byang chub sems dpa’ mnyam par gzhog pa na sangs rgyas kyi ye shes la rton pa, ’di ni de’i thabs so; gang chos gang la yang mi gnas par bsam gtan byed pa, ’di ni de’i shes rab bo.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993316bi' class='paragraph'>
+							yo bodhisattvaḥ samāpattau buddhajñānaṃ pratisaraty ayaṃ tasyopāyaḥ; yo na kaṃcid dharmam āśritaṃ dhyānaṃ dhyāyatīyaṃ tasya prajñā.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996598bi' class='paragraph'>
+							When the bodhisattva in a state of concentration has confidence that he will attain the knowledge of a Buddha, it is his expedient means; when he practises meditation not dependent on any moment of existence whatsoever, it is his insight.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999880bi' class='paragraph'>
+							<b>sangs rgyas kyi ye shes</b> ni ye shes bzhi ste, de dag thob par bya’o snyam nas bsam gtan la ’jug pa ni <b>ye shes la rton pa</b>’o; <b>chos gang la yang mi gnas pa</b> ni sangs rgyas kyi ye shes la sogs pa gang la yang ma chags par <b>bsam gtan byed pa</b>’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003162bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006444bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8990035bi' class='paragraph'>
+							gang byang chub sems dpa’ mnyam par gzhog pa na dam pa’i chos yongs su bzung ba la lta ba, ’di ni de’i thabs so; gang chos kyi dbyings dbyer med par bsam gtan byed pa, ’di ni de’i shes rab bo.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993317bi' class='paragraph'>
+							yo bodhisattvaḥ samāpattau saddharmaparigraham avekṣate ’yaṃ tasyopāyaḥ; yo dharmadhātvasaṃbhinnaṃ dhyānaṃ dhyāyatīyaṃ tasya prajñā.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996599bi' class='paragraph'>
+							When the bodhisattva in a state of concentration has grasping true religion in view, it is his expedient means; when he practises meditation inseparable from absolute reality, it is his insight.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999881bi' class='paragraph'>
+							<b>dam pa’i chos </b>ni gsung rab kyi yan lag bcu gnyis po ste, de dag gi don dang tshig rnams gzung bar bya ba’i phyir bsam gtan la ’jug pa ni <b>dam pa’i chos yongs su gzung ba la lta ba</b>’o; gsung rab kyi yan lag de dag thams cad kyang de bzhin nyid la gzhol ba, de bzhin nyid la ’bab pa, de bzhin nyid la bab pa’i don du ’dra bar ’dris pa’i chos la dmigs pa’i bsam gtan ni <b>chos dbyer med par bsam gtan byed pa</b>’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003163bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006445bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8990036bi' class='paragraph'>
+							gang byang chub sems dpa’ mnyam par gzhog pa’i tshe sangs rgyas kyi sku’i rgyan mngon du byed pa, ’di ni de’i thabs so; gang chos kyi sku dbyer med par bsam gtan byed pa, ’di ni de’i shes rab bo.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993318bi' class='paragraph'>
+							yo bodhisattvaḥ samāpattikāle buddhakāyālaṃkāratāṃ sākṣātkaroty ayaṃ tasyopāyaḥ; yo dharmakāyāsaṃbhinnaṃ dhyānaṃ dhyāyatīyaṃ tasya prajñā.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996600bi' class='paragraph'>
+							When the bodhisattva during his states of concentration realizes the embellishment of a Buddha’s body [with the characteristics of a great man and the marks of beauty (lakṣaṇānuvyañjana) ], it is his expedient means; when he practises meditation inseparable from the body of absolute reality, it is his insight.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999882bi' class='paragraph'>
+							<b>sangs rgyas kyi sku’i rgyan</b> ni mtshan dang dpe byad dag ste, de dag re re nas yid la byed pa ni <b>mngon du byed pa</b>’o; <b>chos kyi sku dbyer med pa</b> ni mtshan dang dpe byad dag gis mtshan nyid du <b>dbyer med pa</b>’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003164bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006446bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8990037bi' class='paragraph'>
+							gang byang chub sems dpa’ mnyam par gzhog pa na sangs rgyas kyi gsung tshangs pa’i sgra dbyangs la sems pa, de ni de’i thabs so; gang chos nyid brjod du med par bsam gtan byed pa, ’di ni de’i shes rab bo.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993319bi' class='paragraph'>
+							yo bodhisattvaḥ samāpattau brahmasvarabuddhavacanaṃ cintayaty ayaṃ tasyopāyaḥ; yo dharmatānabhilāpyatāṃ dhyāyatīyaṃ tasya prajñā.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996601bi' class='paragraph'>
+							When the bodhisattva in a state of concentration thinks about the Buddha’s speech being like the voice of Brahmā, it is his expedient means; when he meditates on the ineffability of the true nature of things, it is his insight.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999883bi' class='paragraph'>
+							<b>chos nyid brjod du med pa</b> ni <b>sangs rgyas kyi gsung tshangs pa’i sgra dbyangs</b> kyis btags te, brjod pa yang ’dul ba’i skye bo’i ngor brjod par zad kyi, <b>chos nyid</b> ni des kyang <b>brjod du med pa</b>r shes pa’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003165bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006447bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8990038bi' class='paragraph'>
+							gang byang chub sems dpa’ mnyam par gzhog pa na sems rdo rje lta bur byin gyis rlob pa, ’di ni de’i thabs so; gang rang bzhin gyis g.yeng ba med par bsam gtan byed pa, ’di ni de’i shes rab bo.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993320bi' class='paragraph'>
+							yo bodhisattvaḥ samāpattau cittaṃ vajropamam adhitṣṭhaty ayaṃ tasyopāyaḥ; yaḥ prakṛtyavikṣiptatāṃ dhyāyatīyaṃ tasya prajñā.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996602bi' class='paragraph'>
+							When the bodhisattva in a state of concentration masters thought in a way that it becomes [invulnerable (avraṇita) to the vices and able to crush the vices] like diamond, it is his expedient means; when he meditates on the originally undistracted [the essence of thought beyond subject and object], it is his insight.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999884bi' class='paragraph'>
+							<b>sems rdo rje lta bur byin gyis rlob pa</b> ni sems la nyon mongs pa rnams kyis rma mi phyin pa dang sems kyi nyon mongs pa rnams ’bigs par mthu skyed pa’o; <b>rang bzhin gyis g.yeng ba med par bsam gtan byed pa </b>ni sems kyi ngo bo nyid ni gzung ba dang ’dzin pa dang zhum pa dang rgod pa la sogs pa dang bral ba ste, de kho na bzhin du <b>bsam gtan byed pa</b>’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003166bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006448bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8990039bi' class='paragraph'>
+							gang mnyam par gzhog pa na sngon gyi smon lam gyis sems can yongs su smin par byin gyis rlob pa, ’di ni de’i thabs so; gang sems can thams cad la bdag med par bsam gtan byed pa, ’di ni de’i shes rab bo.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993321bi' class='paragraph'>
+							yaḥ samāpattau pūrvapraṇidhānena sattvaparipākam adhitiṣṭhaty ayaṃ tasyopāyaḥ; yaḥ sarvasattvānātmatāṃ dhyāyatīyaṃ tasya prajñā.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996603bi' class='paragraph'>
+							When the bodhisattva in a state of concentration masters maturing living beings through his earlier vows [from the time when he first produced the thought of awakening (prathamacittotpāda) ], it is his expedient means; when he meditates on the selflessness of all beings, it is his insight.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999885bi' class='paragraph'>
+							<b>sngon gyi smon lam</b> ni dang po byang chub tu sems bskyed pa na: "sems can rnams yongs su smin par bya’o," zhes smon lam btab pa ste, des: "da yang bsam gtan la brten nas rdzu ’phrul la sogs pas sems can yongs su smin par bya’o," zhes sems kyi mthu bskyed cing byin gyis rlob pa ni <b>thabs so</b>.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003167bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006449bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8990040bi' class='paragraph'>
+							gang mnyam par gzhog pa na dge ba’i rtsa ba thams cad la lhag par dmigs te bsam gtan byed pa, ’di ni de’i thabs so; gang dge ba’i rtsa ba’i gnas nam mkha’ dang mtshungs par bsam gtan byed pa, ’di ni de’i shes rab bo.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993322bi' class='paragraph'>
+							yaḥ samāpattau sarvakuśalamūlāny adhyālambamāno dhyāyaty ayaṃ tasyopāyaḥ; yaḥ kuśalamūlasthānam ākāśasamaṃ dhyāyatīyaṃ tasya prajñā.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996604bi' class='paragraph'>
+							When he in a state of concentration meditates reaching for all roots of the good, it is his expedient means; when he meditates on the location of the roots of good as similar to empty space [seeing that meditation and roots of good are without essence (niḥsvabhāva) ], it is his insight.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999886bi' class='paragraph'>
+							<b>dge ba’i rtsa ba thams cad la lhag par dmigs pa</b> ni bsam gtan ’dis ’dod chags med pa1 la sogs pa’i dge ba’i rtsa ba bskyed do snyam du dmigs pa’o. <b>dge ba’i rtsa ba’i gnas nam mkha’ dang mtshungs pa</b> ni bsam gtan dang dge ba’i rtsa ba gnyis ka yang rang bzhin med par mthong ba’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003168bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006450bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8990041bi' class='paragraph'>
+							gang mnyam par gzhog pa na sangs rgyas kyi zhing yongs su dag pa mngon du byed pa, ’di ni de’i thabs so; gang zhing nam mkha’ dang mtshungs par bsam gtan byed pa, ’di ni de’i shes rab bo.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993323bi' class='paragraph'>
+							yaḥ samāpattau buddhakṣetrapariśuddhiṃ sākṣātkaroty ayaṃ tasyopāyaḥ; yaḥ kṣetrasyākāśasamatāṃ dhyāyatīyaṃ tasya prajñā.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996605bi' class='paragraph'>
+							When he in a state of concentration realizes the purity of his Buddha-field, it is his expedient means; when he meditates on the Buddha-field’s likeness to empty space, it is his insight.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999887bi' class='paragraph'>
+							<b>sangs rgyas kyi zhing yongs su dag pa</b> ni bai ḍū rya dang shel la sogs pa’i rang bzhin las grub pa, tha gru che zhing mnyam pa la sogs pa mdo dag las gsungs pa lta bu ste, de lta bu dag gzung bar sems pa ni <b>mngon du byed pa</b>’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003169bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006451bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8990042bi' class='paragraph'>
+							gang mnyam par gzhog pa na byang chub kyi snying po’i rgyan bkod pa dmigs pa mngon du byed pa, ’di ni de’i thabs so; gang nyon mongs pa thams cad zhi bar bya ba’i phyir bsam gtan byed pa, ’di ni de’i shes rab bo.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993324bi' class='paragraph'>
+							yaḥ samāpattau bodhimaṇḍālaṃkāravyūhālambanaṃ sākṣātkaroty ayaṃ tasyopāyaḥ; yaḥ sarvakleśaśamanāya dhyāyatīyaṃ tasya prajñā.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996606bi' class='paragraph'>
+							(p. 58)When he in a state of concentration realizes as an object the splendour of the embellishment of the place of awakening, it is his expedient means; when he meditates to calm all vices, it is his insight.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999888bi' class='paragraph'>
+							<b>byang chub kyi snying po’i rgyan bkod pa</b> ni mngon par byang chub pa’i tshe bskal pa du mar bsod nams dang ye shes kyi tshogs bsags pa’i rgyus byang chub kyi shing dang rdo rje’i gdan la sogs pa phun sum tshogs pa mdo dag las gsungs pa ste, de lta bu thob par bya ba’i bsam pa sngon du gtong ba ni <b>mngon du byed pa</b>’o; <b>nyon mongs pa thams cad</b> ni mthong ba dang bsgom pas spang bar bya ba’i nyon mongs pa bag la nyal ba dang bcas pa ste, de dag <b>zhi bar bya ba’i phyir</b> zhes sbyar ro.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003170bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006452bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8990043bi' class='paragraph'>
+							gang mnyam par gzhog pa na chos kyi ’khor lo rab tu bskor bar ’dod pa, ’di ni de’i thabs so; gang bskor ba’ang med, mi bskor ba’ang med par bsam gtan byed pa, ’di ni de’i shes rab bo.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993325bi' class='paragraph'>
+							yaḥ samāpattau dharmacakrapravartanam ākāṃkṣaty ayaṃ tasyopāyaḥ; yo na pravartanaṃ nāpravartanaṃ dhyāyatīyaṃ tasya prajñā.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996607bi' class='paragraph'>
+							When he in a state of concentration wishes to turn the wheel of religion, it is his expedient means; when he meditates on neither turning nor not turning, it is his insight.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999889bi' class='paragraph'>
+							<b>chos kyi ’khor lo rab tu bskor bar ’dod pa</b> ni mngon par rdzogs par byang chub pa’i ’og tu ’phags pa’i bden pa bzhi la sogs pa bshad par bya ba’i bsam pa sngon du gtong ba’o; <b>bskor ba yang med pa</b> ni chos rnams brjod du med pa’i phyir ’phags pa’i bden pa la sogs pa bshad du med pa’o, <b>mi bskor ba yang med pa</b> ni ji ltar brjod du med kyang de rtogs par bya ba’i thabs tsam du ming dang brdar btags te bshad pa’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003171bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006453bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8990044bi' class='paragraph'>
+							gang byang chub sems dpa’ mnyam par gzhog pa na byang chub kyi yan lag gi tshogs la rnam par mi g.yeng ba mngon du byed pa, ’di ni de’i thabs so;&nbsp;</span><span id='8990045bi' class='paragraph'>
+						 gang nyon mongs pa dang nye ba’i nyon mongs pa’i gdung ba, de bzhin gshegs pa’i ye shes kyis mkhyen pa, sems dang ldan pa dang sems dang mi ldan pa dang, ’du shes med pa dang ’du shes dang bcas pa ji snyed pa, de dag yongs su bsal ba’i phyir byang chub sems dpa’ thams cad kyi nges par gyur pa dang ’thun par bsam gtan byed pa, ’di ni de’i shes rab ste.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993326bi' class='paragraph'>
+							yo bodhisattvaḥ samāpattau bodhyaṅgasaṃbhārāvikṣiptatāṃ sākṣātkaroty ayaṃ tasyopāyaḥ;&nbsp;</span><span id='8993327bi' class='paragraph'>
+						 yo yāvantaḥ kleśopakleśasaṃtāpās tathāgatajñānajñātāś cittasaṃprayuktāś cittaviprayuktāś cāsaṃjñinaś ca saṃjñāinaś ca teṣāṃ sarveṣāṃ parihārāya sarvabodhisattvaniyatānulomaṃ dhyānaṃ dhyāyatîyaṃ tasya prajñā.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996608bi' class='paragraph'>
+							When the bodhisattva in a state of concentration realizes the absence of distraction in the accumulation of the members of awakening, it is his expedient means;&nbsp;</span><span id='8996609bi' class='paragraph'>
+						 when he practises meditation in accordance with all that is determined for the bodhisattva to get rid of all the burning pains of vices and impurities [that torment the train of thoughts (cittasaṃtāna) ] known by the Tathāgatas, mental or not mental, beyond perception or through perception, it is his insight.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999890bi' class='paragraph'>
+							&nbsp;</span><span id='8999891bi' class='paragraph'>
+						 <b>byang chub kyi yan lag gi tshogs</b> ni zhi gnas dang lhag mthong ste, de gnyis la sems rtse gcig tu bsgom pa’i bsam pa mngon du gtong ba ni <b>rnam par mi g.yeng ba mngon du byed pa</b>’o; <b>nyon mongs pa dang nye ba’i nyon mongs pa’i gdung ba</b> ni ’dod chags la sogs pa ste, de dag nyid sems kyi rgyud gdung bar byed pa’i phyir ro; de dag su’i spyod yul zhe na? <b>de bzhin gshegs pa’i ye shes kyis mkhyen pa</b> zhes gsungs so; nyon mongs pa dang nye ba’i nyon mongs pa de dag thams cad las kyang kha cig ni <b>sems dang ldan pa</b>, kha cig ni <b>sems dang mi ldan pa</b> yin la, de dag gi nang nas kyang kha cig ni <b>’du shes med pa</b>, kha cig ni <b>’du shes dang bcas pa</b> ste, <b>de dag bsal ba’i phyir</b> zhes bya bar sbyar ro, <b>nges par gyur pa</b> ni sa dang po la chos kyi dbyings rnam par dag pa mngon sum du rtogs pa ste, de las gzhan du ’gyur ba mi srid pa’i phyir ro, de <b>dang mthun pa</b> ni sa dang po rtogs pa dang rjes su mthun pa mos pa dang spyod pa’i sa bzhi po rnams kyi shes pa bskyed pa la bya’o.<br />ṭ. fol. 87b5-88a1: mdor na ji tsam du sems can yongs su smin par bya ba dang, sangs rgyas kyi chos yongs su smin par bya ba dang, sangs rgyas kyi zhing yongs su dag par bya ba’i phyir mtshan ma dang bcas pa’i smon pa dang re ba sngon du gtong ba ni thabs su shes par bya  la; ji tsam du de dag gi rang bzhin mi dmigs pa ni shes rab tu shes par bya’o. de lta mod kyi, sems rab tu sbyangs pa’i mthus byang chub sems dpa’ mnyam par ’jog pa’i tshe na dus gcig tu thabs dang shes rab gnyis la spyod kyang, thabs kyi dbang du gyur nas mtshan ma ’ba’ zhig la dmigs pa’am, shes rab kyi dbang du gyur nas thabs dang bral na mtshan ma med pa nyi tshe sgom pa yang ma yin te, gnyis ka la lhun gyis grub par spyod pa, de ni thabs dang shes rab zung du ’brel ba’i bsam gtan zhes bya’o – "In short, expedient means (upāya) should be known as that which is concerned with vows and wishes characterized by distinguishing marks (sanimitta) and formerly undertaken for the sake of maturing living beings, maturing the qualities of a Buddha and purifying a buddha-land; while insight (prajnyā) amounts to not apprehending an essence (svabhāvānupalambha) of those things. But even so, the bodhisattva at the time of concentration (samāpattikāle) – by the power of tranquility of thought (cittaprashrabdhibalena) – practises both insight and expedient means at the same time: If he focusses on expedient means (upāyam adhikṛtya), it is not in the way that he apprehends (upalabhate) only distinguishing marks (nimitta), and, if he focusses on insight (prajnyām adhikṛtya), it is not in the way that he only cultivates meditation without distinguishing marks (kevalam ānimittabhāvanā) as if being without expedient means (anupāya). He practises both spontaneously (anābhogena), and that is called meditation uniting insight and expedient means (idam ucyate prajnyopāyayuganaddhaṃ dhyānam)."&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003172bi' class='paragraph'>
+							.&nbsp;</span><span id='9003173bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006454bi' class='paragraph'>
+							.&nbsp;</span><span id='9006455bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8990046bi' class='paragraph'>
+							de lta bu dang ldan pa’i byang chub sems dpa’ ni bsam gtan gyi pha rol tu phyin pa mi zad pa yin no. bdud thams cad kyis kyang de la glags mi rnyed cing, de la sangs rgyas kyi chos thams cad kyi snod kyang nye bar gnas pa yin te, thams cad mkhyen pa’i ye shes kyang ’thob bo.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993328bi' class='paragraph'>
+							tatsamanvāgato bodhisattvo dhyānapāramitākṣayaḥ, na cāsya sarvamārā avatāraṃ labhante, tatra ca sarvabuddhadharmabhājanaṃ pratyupasthito bhavati, sarvajñajñānaṃ prāpnoti.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996610bi' class='paragraph'>
+							The bodhisattva provided with such qualities is imperishable through the perfection of meditation, and none of the Evil Ones are able to get at him; he is near to the vessel filled with all the qualities of the Buddha, and he attains the wisdom of omniscience.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999892bi' class='paragraph'>
+							<b>bdud thams cad kyis kyang de la glags mi rnyed</b> ces bya ba ni bstan ma thag pa lta bu’i bsam gtan gyi pha rol tu phyin pa la gnas pa’i byang chub sems dpa’ de la ni bdud rnams kyis bar chad bya bar yang mi nus la, bdud rnams kyi dbang du mi ’gyur zhes bya ba’i tha tshig go; <b>de la sangs rgyas kyi chos thams cad kyi snod kyang nye bar gnas pa yin</b> zhes bya ba ni gsung rab thams cad kyi snod du ’gyur zhes bya ba’i tha tshig go.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003174bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006456bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8990047bi' class='paragraph'>
+							bsam gtan mi zad pa zhi ba ’di bstan pa na, byang chub sems dpa’ sum khri nyis stong nyi ma’i sgron ma’i ting nge ’dzin thob par gyur to.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993329bi' class='paragraph'>
+							asyāṃ praśāntadhyānākṣayatāyāṃ nirdiśyamānāyāṃ dvātriṃśatyā bodhisattvasahasrāṇāṃ sūryapradīpaḥ samādhiḥ pratilabdhaḥ.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996611bi' class='paragraph'>
+							When this imperishability of peaceful meditation was taught, the concentration named “Light of the sun” was attained by thirty-two thousand bodhisattvas.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999893bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003175bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006457bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8990048bi' class='paragraph'>
+							ci’i phyir ting nge ’dzin de nyi ma’i sgron ma zhes bya zhe na?&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993330bi' class='paragraph'>
+							tat kasya hetor asau samādhiḥ sūryapradīpa iti nāma?&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996612bi' class='paragraph'>
+							Why is that concentration called “Light of the sun“?&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999894bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003176bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006458bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8990049bi' class='paragraph'>
+							’di lta ste dper na: nyi ma ’char ba na, zla ba dang skar ma’i sgron ma dang, mar me’i sgron ma dang, rtsva’i me’i sgron ma thams cad mog mog por ’gyur ro. de bzhin du byang chub sems dpa’ nyi ma’i sgron ma’i ting nge ’dzin thob na, ma rabs dang nyi tshe ba’i shes rab thams cad shes rab kyi snang bas zil gyis mnan te, slob pa dang mi slob pa thams cad kyi shes rab dang, rang sangs rgyas kyi shes rab dang, de ma yin pa gzhan sems can phal pa thams cad kyi shes rab kyang shes rab kyi snang bas zil gyis gnon pas na, de’i phyir nyi ma’i sgron ma zhes bya’o.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993331bi' class='paragraph'>
+							tad yathāpi nāma sūryodaye sarve candrajyotiḥpradīpās tailapradīpāś ca tṛṇāgnipradīpāś ca dhyāmībhavanti, evam eva bodhisattvena sūryapradīpe samādhau pratilabdhe sarvanīcaprādeśikaprajñā prajñālokena jihmīkṛtā, sarvaśaikṣāśaikṣāṇāṃ ca prajnā pratyekabuddhānāṃ ca prajñā sarveṣāṃ ca tadanyānāṃ prākṛtakānāṃ sattvānām prajñā prajñālokena jihmībhavati, tenocyate sūryapradīpaḥ.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996613bi' class='paragraph'>
+							Just as all the lights of the moon and the stars, the light of oil-lamps, and the light of grass on fire is eclipsed when the sun rises, in the same way, when the bodhisattva has attained the concentration “Light of the sun”, all inferior and limited insight is eclipsed by the light of his insight, the insight of those still to be trained and the trained, the insight of the isolated buddhas and the insight of all ordinary beings besides is eclipsed by the light of his insight; and that is why it is called “Light of the sun“.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999895bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003177bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006459bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8990050bi' class='paragraph'>
+							bsam gtan gyi pha rol tu phyin pa la gnas pa’i byang chub sems dpa’ ni ting nge ’dzin rnam pa mang po bye ba khrag khrig brgya stong du ma mngon par bsgrubs te, de dag la phyogs tsam zhig bstan to:&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993332bi' class='paragraph'>
+							dhyānapārimitāyāṃ sthito bodhisattvo ’nekakoṭinayutāni vividhasamādhyākāraśatasahasrāṇy abhinirharati, teṣāṃ tu diṅmātram upadiṣṭam:&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996614bi' class='paragraph'>
+							The bodhisattva abiding in the perfection of meditation attains different forms of concentration in a number amounting to several billion times a million times a hundred thousand, so only a small fraction of them is taught here:&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999896bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003178bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006460bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8990051bi' class='paragraph'>
+							glog gi sgron mas brgyan dang zla ba’i ’od /<br />dge bkod rnam snang de bzhin bsam mi khyab /<br />’phags par snang dang dri ma med pa dang /<br />chos rnams kun la dbang byed yon tan ’od /<br />mya ngan med dang brtul zhugs grub pa dang /<br />grags pa brtan dang kun nas ’phags pa dang /<br />chos kyi sgron ma chos dpal lhun po che /<br />chos kyi dbang phyug chos shes dbang byed dang /<br />chos kyi phung po rnam par ’thor ba dang /<br />chos rnams ’dzin pa rnam par dag pa dang /<br />pha rol sems kyi spyod par spyod pa dang /<br />rgyal mtshan rtse mo’i dpung rgyan nyon mongs sel /<br />bdud bzhi’i stobs rnams rab tu ’joms pa dang /<br />stobs bcu ’phags pa stobs dang ldan pa dang /<br />chags med chags pa shin tu gcod pa dang /<br />lag na sgron ma shin tu sgra bsgrags dang /<br />sa ’dzin dang ni brtan pa’i rang bzhin dang /<br />lhun po sgron ma mi pham rgyal ba dang /<br />shes rab skyed dang ye shes ta la la /<br />bsam gtan ’byung gnas mtha’ yas dbang byed dang /<br />sems rnams las su rung bar byed pa dang /<br />byed dang byas dang tshor byed med pa dang /<br />chu yi zla ba nyi ma’i dbyangs dag dang /<br />ting ’dzin mi gtong bdud rnams ’joms pa dang /<br />rnam pa sna tshogs ’du shes med pa dang /<br />stag dang glang po shin tu dul ba dang /<br />rgyal ba kun gyi rjes su dran pa dang /<br />chos dran dge ’dun ye shes dbang byed dang /<br />mi ldog pa dang ldog pa med pa dang /<br />mig mi ’dzums dang bdag med rab dag dang /<br />rtag tu stong pa’i rnam par ’jug pa dang /<br />rtag tu mtshan med rtag tu mi smon dang /<br />gnas par bsam gtan byed pa mi chags dang /<br />rdo rje lta bu’i ting ’dzin ces bya’o /<br />mngon par ’phags dang nges par bcom pa dang /<br />kun nas ’khyil dang rnam par dag pa dang /<br />nges par sems dang nyon mongs bral ba dang /<br />yangs pa nam mkha’ lta bu zhes kyang bya /<br />gzud pa dang ni yon tan ’jug pa dang /<br />dran rtogs blo gros shes rab sgrub pa dang /<br />spobs pa dag ni mi zad byed pa dang /<br />sgra ston pa dang bden pa mthong ba dang /<br />’dzin pa zhes kyang bya ba’i ting nge ’dzin /<br />chud mi za dang legs byas sbyin pa dang /<br />’gro ba tshim par byed dang bltar mi mthong /<br />rab tu rtogs dang dga’ mgu skyed pa dang /<br />byams pa ’phags pa’i ting nge ’dzin dag dang /<br />snying rje chen po’i rtsa ba bsam dag pa /<br />dga’ ba’i rnam pa dag la ’jug pa dang /<br />btang snyoms gnyis la chags las grol ba dang /<br />chos don chos byed ye shes ta la la /<br />mi ’khrugs pa dang ye shes rgya mtsho dang /<br />’gro ba tshim byed rnam par dul ba dang /<br />rnam par grol ba’i ye shes dbang byed dang /<br />rdo rje’i rgyal mtshan snying po’i pad ma dang /<br />pad ma ’das dang ’jig rten chos bral dang /<br />mi g.yo ba zhes bya ba’i ting ’dzin dang /<br />rdo rje lta bu’i ting nge ’dzin dag dang /<br />dpa’ bar ’gro zhes bya ba’i ting nge ’dzin /<br />sangs rgyas dgongs dang de bzhin mi ’khrugs dang /<br />gzi brjid can dang gzi brjid ’od zer dang /<br />rnam par grol ba’i ye shes mchog sbyin dang /<br />sangs rgyas rgyan rnams shin tu bkod pa dang /<br />kun tu snang dang sangs rgyas zhing dag dang /<br />sems can bsam pa rab tu ’jug pa dang /<br />mgu byed shin tu mgu byed ting ’dzin dang /<br />byang chub lam gyi rjes su ’thun pa dang /<br />pha rol phyin brgyan gtsug na rin po che /<br />byang chub yan lag me tog sbyin pa dang /<br />rnam par grol ba’i ’bras bu sbyin pa ste /<br />mi ’chi dbyangs dang dmigs med rlung bzhin ’gro /<br />rin chen mtha’ dang rgya mtsho’i shugs ’dzin dang /<br />ri dang brag rnams rdob par byed pa dang /<br />rdzu ’phrul don chen yang dag skyed pa dang /<br />sangs rgyas dpag tu med pa mthong ba dang /<br />thos pa thams cad ’dzin dang mi g.yeng dang /<br />skad cig gcig la ye shes sbyin pa dang /<br />yon tan mtha’ yas rgya mtsho rnam par dag /&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993333bi' class='paragraph'>
+							1) vidyutpradīpālaṃkāra,  2) candraprabha, 3) śubhavyūhapratibhāsa, 4) acintya, 5) udgataprabha, 6) vimala, 7) sarvadharmavaśavartin, 8) guṇaprabha, 9) aśoka, 10) siddhavrata, 11) dṛḍhakīrti, 12) samudgata, 13) dharmapradīpa, 14) dharmaśrīmahāmeru, 15) dharmeśvara, 16) dharmajñānavaśavartin, 17) dharmaskandha, 18) vikiraṇa, 19) dharmadharaviśuddhi, 20) paracittacaritacaryā, 21) dhvajāgrakeyūra, 22) kleśāpaha, 23) caturmārabalapramardin, (p. 59) 24) daśabalodgatabalin, 25) asaṅgasaṅgātyantasamuccheda, 26) hastadīpa, 27) atyantaśabdita, 28) nimiṃdhara, 29) dṛḍhasvabhāva, 30) merupradīpa, 31) ajitaṃjaya, 32) prajñotpāda, 33) jñānolka, 34) dhyānākara, 35) anantavaśavartin, 36) cittakarmaṇyatākāra, 37) akārakakṛtakavedaka, 38) udakacandra, 39) sūryaghoṣa, 40) samādhyanutsarga, 41)  mārapramardaka, 42) avicitrasaṃjñin, 43) suvinītahastivyāghra, 44) sudāntahastivyāghra, 45) sarvajinvānusmṛti, 46) dharmānusmṛtisaṃghajñānavaśavartin, 47) avivarta, 48) avinivartanīya, 49) animiṣa, 50) nairātmyapraśuddhi, 51) nityaśūnyākārapraveśa, 52) nityānimitta, 53) nityāpraṇihita, 54) saṃsthitāsaktadhyāyin, 55) vajropamasamādhi, 56) abhyudgata, 57) nirghāta, 58) samāvarta, 59) viśuddha, 60) nidhyapti, 61) apagatakleśa, 62) ākāśasamavipula, 63) avatāraṇa, 64) guṇāvatāra, 65) smṛtigatimatiprajñāsādhaka, 66) pratibhānākṣayakārin, 67) śabdaśāsana, 68) satyadarśana, 69) dhāraṇa, 70) avipraṇāśa, 71) sukṛtadāna, 72) jagatsaṃtarpaṇa, 73) adṛśya, 74) prativedha, 75) susthityutpāda, 76) maitryudgata, 77) mahākaruṇāmūlaśuddhāśaya, 78) muditākārapraveśa, 79) dvayasaṅgavimuktopekṣa, 80) dharmārthadharmakāryajñānolka, 81) avikopita, 82) jñānasāgara, 83) vinītajagatsaṃtarpaṇa, 84) vimuktijñānavaśavartin, 85) vajradhvaja, 86) hṛdayakamala, 87) atikrāntakamala, 88) lokadharmavirahita, 89) aniñjya, 90) vajra, 91) śūraṃgama, (p. 60) 92) buddhābhiprāya, 93) aprakampya,  94) tejovatī, 95) tejoraśmi, 96) vimuktijñānavarada, 97) buddhālaṃkārātyantavyūha, 98) samantāloka, 99) viśuddhabuddhakṣetra, 100) sattvāśayapraveśa, 101) ārādhana, 102) atyantārādhana, 103) bodhipathānulomika, 104) pāramitālaṃkāracūḍamaṇi, 105) bodhyaṅgapuṣpadāna, 106) vimuktiphaladāna, 107) amṛtasvara, 108) yathāvāyvanālambanagamana, 109) ratnakoṭi, 110) arṇavavegadhārin, 111) giriśailāsphalana, 112) maharddhyarthasamutpāda, 113) aprameyabuddhadarśana, 114) sarvaśrutadhāra, 115) avikṣipta, 116) atandrita, 117) ekakṣaṇajñānadātṛ, 118) anantaguṇaviśuddhārṇava.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996615bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999897bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003179bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006461bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8990052bi' class='paragraph'>
+							de ltar ting ’dzin ’di dag mtha’ yas dpag med de /<br />bsam gtan bye ba khrag khrig dag gi pha rol song /<br />byang chub sems dpa’ dam pa mchog rab ’jigs med pa /<br />brtan mchog sems dpa’ chen po ting ’dzin rnam dag rtogs /&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993334bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996616bi' class='paragraph'>
+							Thus, these concentrations (samādhi) are infinite (ananta) and immeasurable (aprameya), and the excellent (pravarottama) and fearless (nirbhaya) bodhisattvas who have perfected these ten million times a thousand billion meditations (dhyānakoṭinayutapāramiṃgata), these very steadfast (dṛḍhavara) great beings (mahāsattva) understand pure concentration (viśuddhasamādhi).&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999898bi' class='paragraph'>
+							<b>de ltar ting ’dzin ’di dag mtha’ yas dpag med de</b> zhes bya ba ni gong du ming gis smos pa’i ting nge ’dzin de dag dang ting nge ’dzin de dag lta bu gzhan yang mtha’ yas te, ’di snyed cig yod do zhes dpag par mi nus pa’i don to; <b>bsam gtan bye ba khrag khrig dag gi pha rol song</b> zhes bya ba ni gong du bshad pa’i bsam gtan gyi pha rol tu phyin pa la gnas pa, byang chub sems dpa’ rnams kyi ting nge ’dzin de ltar mtha’ yas shing dpag tu med pa rnam par dag par rtogs so zhes bya ba’i tha tshig go.<br />bsam gtan mi zad pa bshad zin to.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003180bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006462bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8990053bi' class='paragraph'>
+							btsun pa sha ra dva ti’i bu, ’di ni byang chub sems dpa’ rnams kyi bsam gtan mi zad pa zhes bya’o.&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "8989959";
+							kilderef = "Akṣ Tib: Braarvig (1993)  54 - Tib: Braarvig (1993) 60";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='8993335bi' class='paragraph'>
+							idam ucyate, bhadanta śāradvatīputra, bodhisattvānām akṣayaṃ dhyānam.&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "8993241";
+							kilderef = "Akṣ San rec: Braarvig (1993)  - San rec: Braarvig (1993) ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='8996617bi' class='paragraph'>
+							This, reverend Śāradvatīputra, is called the bodhisattvas’ imperishable meditation.&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "8996523";
+							kilderef = "Akṣ Eng:  181 - Eng: 200";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='8999899bi' class='paragraph'>
+							&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "8999805";
+							kilderef = "Akṣ Tib ṭīkā:  - Tib ṭīkā: ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9003181bi' class='paragraph'>
+							.&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "9003087";
+							kilderef = "Akṣ Chi: T. 403, 竺法護 Zhu Fahu, Dharmarakṣa  - Chi: T. 403, 竺法護 Zhu Fahu, Dharmarakṣa ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='9006463bi' class='paragraph'>
+							.&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "9006369";
+							kilderef = "Akṣ Chi: T. 397(13), 智嚴 Zhiyan & 寶雲 Baoyun  - Chi: T. 397(13), 智嚴 Zhiyan & 寶雲 Baoyun ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'></div><div class='textvar' style='width:15.666666666667%;'></div><div class='textvar' style='width:15.666666666667%;'></div><div class='textvar' style='width:15.666666666667%;'></div><div class='textvar' style='width:15.666666666667%;'></div><div class='textvar' style='width:15.666666666667%;'></div></div><div class='clear'></div><div class="fontboks"><a onClick=onOffdiv('permlink') name="permlink" href="#permlink">Permanent link</a></div><div class='clear'></div><div class='perm_felt' id='permlink'>http://www2.hf.uio.no/common/apps/permlink/permlink.php?app=polyglotta&amp;context=ctext&amp;uid=616852f7-189e-11e4-856a-001cc4ddf0f4</div></div></div><!-- infofelt --></div><!-- divControl --><div class="clear"></div>
+<div style="clear:both"></div><div class="signatur"><div class="signatur_left">
+		<a href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation">Go to Wiki Documentation</a></br>Enhet: <a HREF=http://www.hf.uio.no>Det humanistiske fakultet</a> &nbsp; Utviklet av: <a href="http://www.hf.uio.no/tjenester/it">IT-seksjonen ved HF</a></div><!--signatur_left -->
+		<div class="signatur_right"><a href="/polyglotta/admin/index.php">Login</a></div>
+		<div style="clear:both"></div></div>
+</body></html><SCRIPT LANGUAGE="JAVASCRIPT">
+	
+	$("#tr_IA").click(function(){
+	    if ($("#toggle_container_IA").is(':hidden'))
+	    	$("#toggle_container_IA").show();
+	    else{
+	        $("#toggle_container_IA").hide();
+	    }
+	    return false;
+		});
+
+	$("#tr_lang").click(function(){
+	    if ($("#toggle_container_lan").is(':hidden'))
+	    	$("#toggle_container_lan").show();
+	    else{
+	        $("#toggle_container_lan").hide();
+	    }
+	    return false;
+	});
+
+	$("#tr_img").click(function(){
+	    if ($("#toggle_container_img").is(':hidden'))
+	    	$("#toggle_container_img").show();
+	    else{
+	        $("#toggle_container_img").hide();
+	    }
+	    return false;
+	});
+
+	$("#diac2button").click(function(){
+	   if ($("#ex3a").is(':hidden')){
+		   $("#ex3a").show();
+	       $("#diac2button").html("Hide&#32Diacritica-help");
+	   }else{
+	       $("#ex3a").hide();
+	       $("#diac2button").html("Diacritica-help");
+	   }
+	   return false;
+	});
+
+	$("#diacbutton").click(function(){
+	   if ($("#diacritical_sign").is(':hidden')){
+		   	$("#diacritical_sign").show();
+	      	$("#diacbutton").html("Hide&#32diacritica");
+	   }else{
+	        $("#diacritical_sign").hide();
+	        $("#diacbutton").html("Diacritica");
+	   }
+	   return false;
+    });
+
+	$('#toggle_container_IA').click(function(e) {
+	   e.stopPropagation();
+	});
+
+	$('#toggle_container_lan').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#toggle_container_img').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#ex3a').click(function(e) {
+	    e.stopPropagation();
+	});
+
+	$('#diacritical_sign').click(function(e) {
+        e.stopPropagation();
+    });
+
+	//Kode for å sette inn diakritiske tegn
+	$('#diacritical > tbody > tr > td').click(function() {
+	  	//alert('red');
+		$("#sokeboks").val($("#sokeboks").val() + $(this).text());
+	});
+
+	$('.diac2button').text(($('.diacbutton').text() == 'Diacritica-help') ? 'Hide Diacritica-help' : 'Diacritica-help');
+	
+	//Lukker alle åpnede pop'uper ved klikk på siden
+	$(document).click(function() {
+		$('#toggle_container_IA').hide();
+	    
+        $('#toggle_container_lan').hide();
+    
+        $('#toggle_container_img').hide();
+   
+   		$('#diacritical_sign').hide();
+   		$("#diacbutton").html("Diacritica");
+   
+       	$('#ex3a').hide();
+       	$("#diac2button").html("Diacritica-help");
+   });
+	</SCRIPT>
